@@ -1,0 +1,287 @@
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  z-index: 1000000000000000;
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: $modal-delay;
+          transition-delay: $modal-delay;
+
+  text-align: center;
+}
+
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  -webkit-box-align: start;
+     -ms-flex-align: start;
+        align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  z-index: 1000000000;
+  max-width: 950px;
+  min-width: 50%;
+  padding: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  padding: 1.8rem 2.2rem;
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__content--active {
+  opacity: 1;
+}
+
+.modal__content p {
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2; 
+  color: rgba(0,0,0,.5);
+}
+
+.modal__content h1 { 
+  font-size: 44px;
+  line-height: .6; 
+}
+
+.modal__content h2 { 
+  font-size: 16px;
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+}
+
+
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+.modal__trigger {
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  padding: 5px 6px;
+  color: rgba(255,255,255,1);
+ 
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+/*
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          
+*/
+
+  -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       -o-transition: all .2s ease;
+          transition: all .2s ease;
+          
+}
+ 
+
+.modal__trigger--active {
+  z-index: 10;
+}
+.modal__trigger:hover { 
+}
+
+
+
+.modal__trigger:before {
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 0 1px 9px rgba(0,0,0,0.25);
+}
+
+
+a.modal__trigger img:before  {
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: none;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 0 1px 9px rgba(0,0,0,0);
+}
+
+
+.modal__trigger:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.char {
+  font-size: 44px;
+  line-height: .5;/*
+  vertical-align: middle;*/
+  display: inline-block;
+}
+
+
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #000;
+  background: #fff;
+
+/*  background: url("../media/sonder-main-background.jpg");
+  background-size: 150px;
+  -webkit-filter: blur(5px);
+     -moz-filter: blur(5px);
+       -o-filter: blur(5px);
+       ms-filter: blur(5px);
+          filter: blur(5px);*/
+
+  opacity: 1;
+
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+
+.demo-close {
+	color: #000;
+	font-family: "sofia-pro", sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-style: normal;
+	letter-spacing: 3px;
+	font-weight: 600;
+	-webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+    transition: all ease-in-out .2s;
+   }
+
+.demo-close:hover {
+	opacity: .5;
+}
+
+@media (max-width: 550px) {
+
+.modal__content p {
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2; 
+  color: rgba(0,0,0,.5);
+}
+
+.modal__content h1 { 
+  font-size: 28px;
+  line-height: 1.1 ;
+}
+
+.modal__content h2 { 
+  font-size: 14px;
+  font-family: "sofia-pro",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+}
+
+ 
+  .modal__dialog {
+  width: 80%; 
+  }
+  
+  
+  .modal__trigger:before {
+  content: "";
+  position: absolute; 
+  width: 100%;
+  height: 0px; 
+}
+
+
+.modal__trigger:hover:before {
+  visibility: hidden;
+}
+
+.modal__trigger:hover {
+	opacity: .5;
+}
+
+
+
+
+ 
+
+
+
+
+}
+
+
