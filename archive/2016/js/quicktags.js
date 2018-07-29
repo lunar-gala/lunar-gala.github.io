@@ -20,7 +20,7 @@
 
 // new edit toolbar used with permission
 // by Alex King
-// http://www.alexking.org/
+// https://www.alexking.org/
 
 var QTags, edCanvas,
 	edButtons = [];
@@ -629,7 +629,7 @@ function edButton(id, display, tagStart, tagEnd, access) {
 		}
 
 		if ( ! defaultValue ) {
-			defaultValue = 'http://';
+			defaultValue = 'https://';
 		}
 
 		if ( t.isOpen(ed) === false ) {
@@ -654,7 +654,7 @@ function edButton(id, display, tagStart, tagEnd, access) {
 	qt.ImgButton.prototype = new qt.TagButton();
 	qt.ImgButton.prototype.callback = function(e, c, ed, defaultValue) {
 		if ( ! defaultValue ) {
-			defaultValue = 'http://';
+			defaultValue = 'https://';
 		}
 		var src = prompt(quicktagsL10n.enterImageURL, defaultValue), alt;
 		if ( src ) {

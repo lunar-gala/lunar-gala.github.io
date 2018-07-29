@@ -3,7 +3,7 @@
  * Copyright jQuery Foundation and other contributors
  */
 (function( jQuery, window, undefined ) {
-// See http://bugs.jquery.com/ticket/13335
+// See https://bugs.jquery.com/ticket/13335
 // "use strict";
 
 
@@ -567,7 +567,7 @@ jQuery.each( [ "load", "unload", "error" ], function( _, name ) {
 		// Use .triggerHandler here because:
 		// - load and unload events don't need to bubble, only applied to window or image
 		// - error event should not bubble to window, although it does pre-1.7
-		// See http://bugs.jquery.com/ticket/11820
+		// See https://bugs.jquery.com/ticket/11820
 		this.triggerHandler.apply( this, args );
 		return this;
 	};

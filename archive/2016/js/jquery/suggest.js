@@ -1,11 +1,11 @@
 /*
  *	jquery.suggest 1.1b - 2007-08-06
  * Patched by Mark Jaquith with Alexander Dick's "multiple items" patch to allow for auto-suggesting of more than one tag before submitting
- * See: http://www.vulgarisoip.com/2007/06/29/jquerysuggest-an-alternative-jquery-based-autocomplete-library/#comment-7228
+ * See: https://www.vulgarisoip.com/2007/06/29/jquerysuggest-an-alternative-jquery-based-autocomplete-library/#comment-7228
  *
  *	Uses code and techniques from following libraries:
- *	1. http://www.dyve.net/jquery/?autocomplete
- *	2. http://dev.jquery.com/browser/trunk/plugins/interface/iautocompleter.js
+ *	1. https://www.dyve.net/jquery/?autocomplete
+ *	2. https://dev.jquery.com/browser/trunk/plugins/interface/iautocompleter.js
  *
  *	All the new stuff written by Peter Vulgaris (www.vulgarisoip.com)
  *	Feel free to do whatever you want with this file

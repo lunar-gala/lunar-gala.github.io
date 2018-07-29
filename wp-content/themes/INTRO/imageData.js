@@ -114,7 +114,7 @@ var imageData = [{
     "year":2009,
     "producers":["Terrence Boyd","Jessica Meng"],
     "quote":"",
-    "links":[{"type": "video", "links": ["https://www.youtube.com/watch?v=F9g5Id9uNGQ", "https://www.youtube.com/watch?v=F9g5Id9uNGQ", "http://lunargala.tumblr.com/post/299391562"]}],
+    "links":[{"type": "video", "links": ["https://www.youtube.com/watch?v=F9g5Id9uNGQ", "https://www.youtube.com/watch?v=F9g5Id9uNGQ", "https://lunargala.tumblr.com/post/299391562"]}],
     "title":"Evolve",
     "animal": "ox",
     "desc":""
@@ -150,7 +150,7 @@ var imageData = [{
     "count":27,
     "year":2013,
     "links":[{"type": "video", "links": ["https://thetartan.org/2013/2/18/pillbox/lunargala", "https://www.youtube.com/watch?v=tikThvtXb_U",  "https://www.youtube.com/watch?v=TzPdNTu7LbI", "https://www.youtube.com/watch?v=A0fqfJLcQTY"]},
-             {"type": "article", "links": ["http://4.bp.blogspot.com/-akzj2hWSlxA/URr5atV_m9I/AAAAAAAACfQ/s9JDOH4xcbk/s1600/venin+(1).jpg"]}],
+             {"type": "article", "links": ["https://4.bp.blogspot.com/-akzj2hWSlxA/URr5atV_m9I/AAAAAAAACfQ/s9JDOH4xcbk/s1600/venin+(1).jpg"]}],
     "title":"Venin",
     "animal": "snake",
     "producers":["Chris Ioffreda","Joanne Yun","Alex Deronde"],
@@ -168,7 +168,7 @@ var imageData = [{
 },{
     "count":27,
     "year":2015,
-    "links":[{"type": "website", "links": ["http://2015.lunargala.org"]},
+    "links":[{"type": "website", "links": ["https://2015.lunargala.org"]},
              {"type": "video", "links": ["https://www.youtube.com/watch?v=qA_eEz5e2Go", "https://www.youtube.com/edit?o=U&video_id=8ABvXV5SoBw"]}],
     "title":"Vestige",
     "animal": "goat",
@@ -178,7 +178,7 @@ var imageData = [{
 },{
     "count":29,
     "year":2016,
-    "links":[{"type": "website", "links": ["http://2016.lunargala.org"]},
+    "links":[{"type": "website", "links": ["https://2016.lunargala.org"]},
              {"type": "video", "links": ["https://www.youtube.com/watch?v=BNB7bdi2mWw&feature=youtu.be","https://youtu.be/7Au1KumBiYE", "https://youtu.be/20bksB2Xd7I"]}],
     "title":"Strain",
     "animal": "monkey",
@@ -188,7 +188,7 @@ var imageData = [{
 },{
   "count":26,
   "year":2017,
-  "links":[{"type": "website", "links": ["http://2017.lunargala.org"]},
+  "links":[{"type": "website", "links": ["https://2017.lunargala.org"]},
            {"type": "video", "links": ["https://youtu.be/mthoGEVeMpI", "https://youtu.be/ootduS2YHUY", "https://youtu.be/ALTPrhvka2I"]}],
   "title":"Sonder",
   "animal":"rooster",

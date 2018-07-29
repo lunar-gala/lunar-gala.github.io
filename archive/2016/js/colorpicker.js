@@ -1,6 +1,6 @@
 // ===================================================================
 // Author: Matt Kruse <matt@mattkruse.com>
-// WWW: http://www.mattkruse.com/
+// WWW: https://www.mattkruse.com/
 //
 // NOTICE: You may use this code for any purpose, commercial or
 // private, without any further permission from the author. You may
@@ -191,7 +191,7 @@ win.populate(string);
 
 // set the URL of the window, rather than populating its contents
 // manually
-win.setUrl("http://www.site.com/");
+win.setUrl("https://www.site.com/");
 
 // Refresh the contents of the popup
 win.refresh();

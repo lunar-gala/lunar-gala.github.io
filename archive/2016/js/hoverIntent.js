@@ -1,6 +1,6 @@
 /*!
  * hoverIntent v1.8.1 // 2014.08.11 // jQuery v1.9.1+
- * http://cherne.net/brian/resources/jquery.hoverIntent.html
+ * https://cherne.net/brian/resources/jquery.hoverIntent.html
  *
  * You may use hoverIntent under the terms of the MIT license. Basically that
  * means you are free to use hoverIntent as long as this header is left intact.

@@ -1,10 +1,10 @@
 // Parameters
  
-const SOURCE_IMG = 'http://2017.lunargala.org/wp-content/themes/2017/media/sonder-main-background2.jpg';
+const SOURCE_IMG = 'https://2017.lunargala.org/wp-content/themes/2017/media/sonder-main-background2.jpg';
 
 if ( $(window).width() < 769) {
 					
-                const SOURCE_IMG = 'http://2017.lunargala.org/wp-content/themes/2017/media/sonder-main-background.jpg';
+                const SOURCE_IMG = 'https://2017.lunargala.org/wp-content/themes/2017/media/sonder-main-background.jpg';
 
                 
                  } 
