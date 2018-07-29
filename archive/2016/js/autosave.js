@@ -253,7 +253,7 @@ window.autosave = function() {
 				post_id = $('#post_ID').val() || 0;
 
 				// Check if the local post data is different than the loaded post data.
-				if ( $( '#wp-content-wrap' ).hasClass( 'tmce-active' ) ) {
+				if ( $( '#main-content-wrap' ).hasClass( 'tmce-active' ) ) {
 					// If TinyMCE loads first, check the post 1.5 sec. after it is ready.
 					// By this time the content has been loaded in the editor and 'saved' to the textarea.
 					// This prevents false positives.

@@ -264,12 +264,12 @@ const NUM_PEOPLE = 118;
  
 				if ( $(window).width() < 769) {
 					
-                images[num].src = 'https://2017.lunargala.org/wp-content/themes/2017/media/lines-small/line'+num+'.jpg';
+                images[num].src = 'https://2017.lunargala.org/main-content/themes/2017/media/lines-small/line'+num+'.jpg';
                 $(new Image()).src = images[num];
                 
                  } else {
 	                 
-	            images[num].src = 'https://2017.lunargala.org/wp-content/themes/2017/media/lines2/line'+num+'.jpg';
+	            images[num].src = 'https://2017.lunargala.org/main-content/themes/2017/media/lines2/line'+num+'.jpg';
                 $(new Image()).src = images[num];
                 
                 
