@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Blog Post A
+title:  Sample Blog Post
 date:   2015-11-17 16:16:01 -0600
 categories: jekyll update
 image1: https://images.unsplash.com/photo-1491956142110-8a4226a12077?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d65bd7937511c934d4b450d31f2c1ec&auto=format&fit=crop&w=1350&q=80
