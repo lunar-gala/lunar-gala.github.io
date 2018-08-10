@@ -78,7 +78,7 @@ $(document).ready(function(){
     <span></span>
   </div>
 
-     {% for post in site.posts %}
+     {% for post in paginator.posts %}
 
 	   <div class="post">
 	     <h1>{{post.title}}</h1>
@@ -120,7 +120,7 @@ $(document).ready(function(){
 
 	 <div class="nav" id="fullpage">
 
-     {% for post in site.posts %}
+     {% for post in paginator.posts %}
 
 	   <div class="section section1">
 	     <div class="images">
