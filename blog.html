@@ -1,6 +1,6 @@
 ---
 heading: Blog
-pagination: 
+pagination:
   enabled: true
 ---
 <!DOCTYPE html>
@@ -10,16 +10,19 @@ pagination:
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/INTRO-style.css" />
-<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/2017changes.css" />
-<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/INTRO-responsive.css" />
-<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/BLOG-fullpage.css" />
+<link rel="stylesheet" type="text/css" href="../../../main-content/themes/INTRO/INTRO-style.css" />
+<link rel="stylesheet" type="text/css" href="../../../main-content/themes/INTRO/2017changes.css" />
+<link rel="stylesheet" type="text/css" href="../../../main-content/themes/INTRO/INTRO-responsive.css" />
+<link rel="stylesheet" type="text/css" href="../../../main-content/themes/INTRO/BLOG-fullpage.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+<script src="main-content/themes/INTRO/Blog.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../..//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../..//favicon-16x16.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
@@ -77,13 +80,13 @@ $(document).ready(function(){
     <span></span>
   </div>
 
+     {% for post in paginator.posts %}
 
-	{% for post in paginator.posts %}
 	   <div class="post">
 	     <h1>{{post.title}}</h1>
 	    <div class="ladder-background">
 	       <div class="ladder-container">
-	         <div class="ladder-element ladder-img ladder-b" style="background-image:url({{post.image1}})"></div>
+	         <div class="ladder-element ladder-img ladder-b" style="background-image:url('{{post.image1}}')"></div>
 	         <div class="ladder-element ladder-text ladder-a">
 	           <div class="text-content">
 	            <h3>{{post.subtitle1}}</h3>
@@ -113,23 +116,32 @@ $(document).ready(function(){
 	     <br><br><br>
 	   </div>
 
+     {% endfor %}
+
+   </div>
+
 	 <div class="nav" id="fullpage">
+
+     {% for post in paginator.posts %}
+
 	   <div class="section section1">
 	     <div class="images">
-	      <div class="img imgA">
+	      <div class="img imgA" style="background-image:url('{{post.image1}}')">
 	       </div>
-	       <div class="img imgB">
+	       <div class="img imgB" style="background-image:url('{{post.image2}}')">
 	       </div>
-	       <div class="img imgC">
+	       <div class="img imgC" style="background-image:url('{{post.image3}}')">
 	      </div>
 	       <div class="text">
 	        <h1>{{post.title}}</h1>
 	      </div>
 	    </div>
 	   </div>
+
+     {% endfor %}
+
 	 </div>
-	 </div>
-{% endfor %}
+
 
 
 
@@ -164,7 +176,4 @@ $(document).ready(function(){
 
 
 </body>
-	
-<script src="main-content/themes/INTRO/Blog.js"></script>
-	
 </html>

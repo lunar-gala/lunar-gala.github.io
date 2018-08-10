@@ -1,16 +1,18 @@
 function change(index, direction) {
-  
+
   if (direction == "down") {
-    $(".post" + index).removeClass("active");
-    $(".post" + (index + 1)).addClass("active");
+    $(".post").eq(index - 1).removeClass("active");
+    $(".post").eq(index).addClass("active");
   }
   else if (direction == "up") {
-    $(".post" + index).removeClass("active");    
-    $(".post" + (index - 1)).addClass("active");
+    $(".post").eq(index - 1).removeClass("active");
+    $(".post").eq(index - 2).addClass("active");
   }
 }
 
 window.onload = function() {
+
+
   $("#fullpage").fullpage({
     navigation: true,
     continuousVertical: false,
@@ -26,8 +28,9 @@ window.onload = function() {
 
   setTimeout(function() {
     $(".nav").addClass("start");
-    $(".post1").addClass("active");
+    $(".post").eq(0).addClass("active");
   }, 250);
+
 
   $(".images").click(function() {
     $(".blogs").addClass("active");
@@ -41,4 +44,6 @@ window.onload = function() {
     $.fn.fullpage.setAllowScrolling(true);
     $(".post").animate({ scrollTop: 0 }, "fast");
   });
+
+
 };
