@@ -44,9 +44,6 @@ $(document).ready(function(){
 
 
 
-
-
-
 <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -60,6 +57,14 @@ $(document).ready(function(){
 		outline: none;
 		border: solid black 2px;
   	}
+
+    #social {
+        height: 700px;
+        position: absolute;
+        margin: 50px 0 100px 0;
+        margin-bottom: 100px;
+
+    }
 
   	.contact-form {
 		max-width: 580px;
@@ -104,6 +109,31 @@ $(document).ready(function(){
 		font-family: 'DIN Light';
 		border-radius: 0;
 	}
+
+    .contact-text {
+        font-size: 26px;
+        line-height: 34px;
+        font-family: 'DIN Light';
+        width: 70%;
+        color: #737373; 
+        margin-bottom: 120px;
+    }
+
+
+    .contact-text a {
+        color: #000; 
+        -webkit-transition: all ease-in-out .15s;
+        -moz-transition: all ease-in-out .15s;
+        -o-transition: all ease-in-out .15s;
+        transition: all ease-in-out .15s;
+        text-decoration: none;
+        opacity: .5;
+    }
+         
+        
+    .contact-text a:hover {
+        opacity: 1; 
+    } 
 
 
   	.contact-send-button {
@@ -375,10 +405,71 @@ h1{
 </div>
 
 <div class="contact-form">
-  <h1>Get in touch</h1>
-  <h1>Please email cmu.lunargala@gmail.com</h1>
+    <h1>Get in touch</h1>
+    <div role="form" class="wpcf7" id="wpcf7-f1484-o1" lang="en-US" dir="ltr">
+        <div class="screen-reader-response"></div>
+    
+        <form action="https://formspree.io/contact-us@lunargala.org" method="post" class="wpcf7-form" novalidate="novalidate">
+            <div style="display: none;">
+                <input type="hidden" name="_wpcf7" value="1484" />
+                <input type="hidden" name="_wpcf7_version" value="5.0.2" />
+                <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1484-o1" />
+                <input type="hidden" name="_wpcf7_container_post" value="0" />
+            </div>
+        
+            <p><label> Name<span>*</span><br />
+                <span class="wpcf7-form-control-wrap your-name">
+                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required contact-text-field" aria-required="true" aria-invalid="false" />
+                </span> 
+            </label></p>
+        
+            <p><label> Email<span>*</span><br />
+                <span class="wpcf7-form-control-wrap your-email">
+                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email contact-text-field" aria-required="true" aria-invalid="false" />
+                </span>
+            </label></p>
+
+            <p><label> Subject<br />
+                <span class="wpcf7-form-control-wrap your-subject">
+                    <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text contact-text-field" aria-invalid="false" />
+                </span> 
+            </label></p>
+
+            <p><label> Message<br />
+                <span class="wpcf7-form-control-wrap your-message">
+                    <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea contact-text-area" aria-invalid="false"></textarea>
+                </span> 
+            </label></p>
+            
+            <p>
+                <input type="submit" name="submit-message" value="Send" class="wpcf7-form-control wpcf7-submit contact-send-button" />
+            </p>
+
+            <div class="wpcf7-response-output wpcf7-display-none"></div>
+        </form>
+    </div>
+
+    <div id="social" class="contact-text">
+        <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg">
+            <img class="contact-icon" src="main-content/icons/Youtube.png"/>
+        </a>
+        <a href="https://vimeo.com/lunargala">
+            <img class="contact-icon" src="main-content/icons/Vimeo.png"/>
+        </a>
+        <a href="https://www.facebook.com/lunargala">
+            <img class="contact-icon" src="main-content/icons/Facebook.png"/>
+        </a>
+        <a href="https://www.instagram.com/lunargala/">
+            <img class="contact-icon" src="main-content/icons/Instagram.png"/>
+        </a>
+        <a href="mailto:cmu.lunargala@gmail.com">
+            <img class="contact-icon" src="main-content/icons/Email.png"/>
+        </a>
+    </div>
+
+</div>
+
 
 </body>
-
-
 </html>
