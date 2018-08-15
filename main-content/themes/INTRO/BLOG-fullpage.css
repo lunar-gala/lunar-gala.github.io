@@ -265,6 +265,7 @@ body * {
 
 @media (max-width: 600px) {
   .images {
+    margin-top: 70px;
     width: 80%;
     -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
@@ -445,6 +446,7 @@ body * {
   height: 100vh;
   overflow-y: scroll;
   opacity: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post.active {
