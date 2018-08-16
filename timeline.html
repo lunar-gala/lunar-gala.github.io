@@ -21,13 +21,13 @@
 
 
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<link rel="icon" href="../main-content/uploads/2017/09/cropped-Fav-32x32.png" sizes="32x32" />
-<link rel="icon" href="../main-content/uploads/2017/09/cropped-Fav-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="../main-content/uploads/2017/09/cropped-Fav-180x180.png" />
-<meta name="msapplication-TileImage" content="../main-content/uploads/2017/09/cropped-Fav-270x270.png" />
-<link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/grid-timeline.css" />
-<link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/style-timeline.css" />
-<script type="text/javascript" src="../main-content/themes/INTRO/imageData.js"></script>
+		<link rel="icon" href="main-content/uploads/2017/09/cropped-Fav-32x32.png" sizes="32x32" />
+<link rel="icon" href="main-content/uploads/2017/09/cropped-Fav-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="main-content/uploads/2017/09/cropped-Fav-180x180.png" />
+<meta name="msapplication-TileImage" content="main-content/uploads/2017/09/cropped-Fav-270x270.png" />
+<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/grid-timeline.css" />
+<link rel="stylesheet" type="text/css" href="main-content/themes/INTRO/style-timeline.css" />
+<script type="text/javascript" src="main-content/themes/INTRO/imageData.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -134,7 +134,7 @@ window.mobilecheck = function() {
 		  currentGallery = `<div id="image${i}" class="gallery-image-container visible">`;
 		  //looping for each of the image in that year's gallery
 		  if(imageData[i-startYear].count === 0){
-			  currentGallery += `<img class = "slide gallery-image" data-src="../main-content/timeline-images/NonAvail.png">`;
+			  currentGallery += `<img class = "slide gallery-image" data-src="main-content/timeline-images/NonAvail.png">`;
 		  }
 		  else{
         pngYears = [2003,2004,2005,2006];
@@ -145,7 +145,7 @@ window.mobilecheck = function() {
            else{
              ext = ".jpg"
            }
-				   currentGallery += `<img class = "slide gallery-image" data-src="/main-content/timeline-images/${i}/${j+1}${ext}">`;
+				   currentGallery += `<img class = "slide gallery-image" data-src="main-content/timeline-images/${i}/${j+1}${ext}">`;
 			  }
 		  }
 		  currentGallery += `</div>`;
@@ -468,11 +468,11 @@ $(document).ready(function(){
 	  for (i = lastYear-1; i >= startYear; i--){
 		cardStart = "<div class = 'card' id ='year"+parseInt(i)+"'>";
 		if(imageData[i-startYear].count != 0){
-		  path = '/main-content/timeline-images/mobile-picks/'+parseInt(i)+'.jpg'
+		  path = 'main-content/timeline-images/mobile-picks/'+parseInt(i)+'.jpg'
 		  image = "<img src="+path+"></img>";
 		}
 		else{
-		  image = "<img src= '../main-content/timeline-images/NonAvail.png'></img>";
+		  image = "<img src= 'main-content/timeline-images/NonAvail.png'></img>";
 		}
 		text = "<div class='text info'><div class='card-title'>"+parseInt(i)+"</div></div>";
 		$(".content").append(cardStart+image+text+cardEnd);
