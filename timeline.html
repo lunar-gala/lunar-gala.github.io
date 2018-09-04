@@ -34,13 +34,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
-			$(this).toggleClass('collapsed');
-			$(this).toggleClass('open');
-			$(".menu").toggleClass('on');
-			$(".menu li").toggleClass('open').toggleClass('ani');
-			$(".logo").toggleClass('hidden');
-			$(".title-mb").toggleClass('hidden');
+	$(".button-container").click(function() {
+	  $(".button-container").toggleClass("open");
+	  $(".mobile-menu").toggleClass("open");
 	});
 });
 </script>
