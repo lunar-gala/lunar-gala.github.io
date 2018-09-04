@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/INTRO-style.css" />
 <link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/2017changes.css" />
 <link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/INTRO-responsive.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <title>Contact &#8211; Lunar Gala</title>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -30,14 +31,11 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
-			$(this).toggleClass('collapsed');
-			$(this).toggleClass('open');
-			$(".menu").toggleClass('on');
-			$(".menu li").toggleClass('open').toggleClass('ani');
-			$(".logo").toggleClass('hidden');
-			$(".title-mb").toggleClass('hidden');
+	$(".button-container").click(function() {
+	  $(".button-container").toggleClass("open");
+	  $(".mobile-menu").toggleClass("open");
 	});
+
 });
 </script>
 </head>
@@ -404,6 +402,50 @@ h1{
 	</div>
 </div>
 
+
+<!--MOBILE NAV-->
+
+<div class="mobile-container">
+
+  <div class="mobile-head">
+
+    <div class="title">LUNAR GALA</div>
+
+    <div class="button-container">
+      <!--
+      <div class="a">Menu</div>
+      <div class="b">Close</div>
+      -->
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <div class="mobile-menu">
+    <div class="back" style="background-image:url(2017images/blobs.jpg)"></div>
+
+    <div class="links">
+      <ul>
+        <li> <a href="index.html">About</a></li>
+        <li> <a href="blog.html">Blog</a></li>
+        <li> <a href="timeline.html">Timeline</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="icons">
+      <ul>
+        <li> <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg"><i class="fa fa-youtube-play"></i></a></li>
+        <li> <a href="https://vimeo.com/lunargala"><i class="fa fa-vimeo-square"></i></a></li>
+        <li> <a href="https://www.facebook.com/lunargala"><i class="fa fa-facebook"></i></a></li>
+        <li> <a href="https://www.instagram.com/lunargala/"><i class="fa fa-instagram"></i></a></li>
+        <li> <a href="mailto:cmu.lunargala@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
 
 <!-- 
 <script>
