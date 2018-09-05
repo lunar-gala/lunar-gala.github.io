@@ -30,6 +30,7 @@
 <link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/style-timeline.css" />
 <script type="text/javascript" src="../main-content/themes/INTRO/imageData.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../main-content/themes/INTRO/INTRO-responsive.css" />
 
 
 <script type="text/javascript">
@@ -435,28 +436,50 @@ $(document).ready(function(){
   if(window.mobilecheck() || w <= maxSize){
 	  $("body").addClass("mobile");
 	  $("body").html(`
-		  <div class ="nav row">
-			  <div class ="mobile-logo col-xs-4">
-				  <a href="../index.html">
-             <img src="../2017images/LOGO-black-header.png">
-          </a>
+		  	<!--MOBILE NAV-->
+
+			<div class="mobile-container">
+
+			  <div class="mobile-head">
+
+			    <div class="title">LUNAR GALA</div>
+
+			    <div class="button-container">
+			      <!--
+			      <div class="a">Menu</div>
+			      <div class="b">Close</div>
+			      -->
+			      <span></span>
+			      <span></span>
+			    </div>
+
 			  </div>
-			  <div class ="mobile-links col-xs-4 col-xs-offset-4">
-					  <li class=""><a href="../index.html"> About</a>
-					  <li class=""><a href="/blog"> Blog </a>
-					  <li class="active"><a href="/timeline"> Timeline </a>
-					  <li class=""><a href="/contact"> Contact </a>
+
+			  <div class="mobile-menu">
+			    <div class="back" style="background-image:url(2017images/blobs.jpg)"></div>
+
+			    <div class="links">
+			      <ul>
+			        <li> <a href="index.html">About</a></li>
+			        <li> <a href="blog.html">Blog</a></li>
+			        <li> <a href="timeline.html">Timeline</a></li>
+			        <li> <a href="contact.html">Contact</a></li>
+			      </ul>
+			    </div>
+
+			    <div class="icons">
+			      <ul>
+			        <li> <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg"><i class="fa fa-youtube-play"></i></a></li>
+			        <li> <a href="https://vimeo.com/lunargala"><i class="fa fa-vimeo-square"></i></a></li>
+			        <li> <a href="https://www.facebook.com/lunargala"><i class="fa fa-facebook"></i></a></li>
+			        <li> <a href="https://www.instagram.com/lunargala/"><i class="fa fa-instagram"></i></a></li>
+			        <li> <a href="mailto:cmu.lunargala@gmail.com"><i class="fa fa-envelope"></i></a></li>
+			      </ul>
+			    </div>
 			  </div>
-			  <div class ="mobile-title col-xs-12">
-				   <a href="/timeline">TIMELINE</a>
-			  </div>
-			  <div id="nav-icon">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				  <span></span>
-			  </div>
-		  </div>
+
+			</div>
+
 		  <div class="content">
 	</div>
 	  `);
