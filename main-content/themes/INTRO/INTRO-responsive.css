@@ -214,13 +214,13 @@
 }
 
 
-.links {
+.mobile-container .links {
   position: absolute;
   top: 150px;
 	left: 30px;
 }
 
-.links ul li {
+.mobile-container .links ul li {
   list-style-type: none;
   font-family: "DIN medium";
 	text-transform: uppercase;
@@ -228,10 +228,11 @@
   margin-bottom: 30px;
 }
 
-.links ul li a {
+.mobile-container .links ul li a {
   color: #333;
   text-decoration: none;
 }
+	
 .icons {
   position: absolute;
   bottom: 0px;
