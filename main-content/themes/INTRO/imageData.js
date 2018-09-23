@@ -196,11 +196,11 @@ var imageData = [{
   "quote":"“Consumed by our everyday agenda, one can pass by the same places and faces with no concern of the significance of each interaction.”",
   "desc":"Inspired by bright colors and kaleidoscopic textures, Sonder personified the awakening through which we become aware of the parallels between our own vivid and complex experiences and that of any passerby. This was the first year Lunar Gala Alumni took part in the show, bringing together the past and present."
 },{
-  "count":26,
+  "count":24,
   "year":2018,
   "links":[{"type": "website", "links": ["https://2018.lunargala.org"]},
            {"type": "video", "links": ["https://www.youtube.com/watch?v=tMoRp8GI53g&list=PLCSO71HhvyTxyoRO8kYOT4EurAb8mDnZ5"]}],
-  "title":"Ferrox",
+  "title":"Ferox",
   "animal":"dog",
   "producers":["Grace Kao","Gilly Johnson","Jarret Lin"],
   "quote":"“Ferox is primal. Ferox is chaotic. Ferox is a return to instinct. Embodied by the human species, Ferox represents a blind and reckless freedom that must be contained for the sake of maintaining the civility we all value and from which we all benefit. Ultimately... Ferox must be quelled.”",
