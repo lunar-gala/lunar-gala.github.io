@@ -195,6 +195,16 @@ var imageData = [{
   "producers":["Michelle Cho","Catherine Zheng","Lynzky Deleon"],
   "quote":"“Consumed by our everyday agenda, one can pass by the same places and faces with no concern of the significance of each interaction.”",
   "desc":"Inspired by bright colors and kaleidoscopic textures, Sonder personified the awakening through which we become aware of the parallels between our own vivid and complex experiences and that of any passerby. This was the first year Lunar Gala Alumni took part in the show, bringing together the past and present."
+},{
+  "count":26,
+  "year":2018,
+  "links":[{"type": "website", "links": ["https://2018.lunargala.org"]},
+           {"type": "video", "links": ["https://www.youtube.com/watch?v=tMoRp8GI53g&list=PLCSO71HhvyTxyoRO8kYOT4EurAb8mDnZ5"]}],
+  "title":"Ferrox",
+  "animal":"dog",
+  "producers":["Grace Kao","Gilly Johnson","Jarret Lin"],
+  "quote":"“Ferox is primal. Ferox is chaotic. Ferox is a return to instinct. Embodied by the human species, Ferox represents a blind and reckless freedom that must be contained for the sake of maintaining the civility we all value and from which we all benefit. Ultimately... Ferox must be quelled.”",
+  "desc":"The Lunar Gala: an intergalactic celebration of the yearly contributions of the Interplanetary Federation for Peace and Protection. The year is 2268, and, on this 250th anniversary of the planet Earth’s quarantine, we present Ferox, a public demonstration of the hostility of the Earth’s previously dominant species, the homosapien. We invite Federation sponsors and visitors to observe, for the first time, the savagery we have successfully contained. Infused with Federation principles, the previously dangerous human race is now docile - an allegory for the potential of the IFPP to mollify threatening agents intergalactically. Come celebrate with us! And, in the process, bear witness to a species, that, prior to this event, has been contained for centuries."
 }];
 
 
