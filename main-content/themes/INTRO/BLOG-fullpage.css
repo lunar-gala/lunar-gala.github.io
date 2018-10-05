@@ -336,15 +336,15 @@ body * {
 
 
 .text {
-  font-family: "Poppins";
-  letter-spacing: 3px;
-  font-size: 50px;
+  font-family: "Din Medium", Sans-Serif;
+  font-size: 24px;
   line-height: 70px;
   font-weight: 700;
+  text-transform: uppercase;
 
   position: absolute;
   top: 50%;
-  right: -210px;
+  right: -220px;
   width: 200px;
   z-index: 100;
 
@@ -415,8 +415,9 @@ body * {
   z-index: 1000;
   text-align: center;
   letter-spacing: 6px;
-  font-family: "Poppins";
+  font-family: "Din Medium", Sans-Serif; 
   font-size: 20px;
+  text-transform: uppercase;
   font-weight: 700;
   z-index: 5;
 }
@@ -457,7 +458,7 @@ body * {
 .post h1 {
   text-align: center;
   font-size: 30px;
-  font-family: "Poppins";
+  font-family: "Din Medium", Sans-Serif;
 }
 
 .post h3 {
@@ -533,9 +534,9 @@ body {
 .ladder-text {
   width: 50%;
   display: flex;
-  margin-top: 150px;
   justify-content: center;
-  font-family: "Poppins";
+  align-items: center;
+  font-family: "Din Medium", Sans-Serif;
 }
 
 .text-content {
@@ -543,8 +544,11 @@ body {
   text-align: left;
 }
 
+.ladder-text h1 {
+  text-align: left; 
+}
+
 .ladder-text h3 {
-  letter-spacing: 3px;
   margin-top: 10px;
   margin-bottom: 25px;
   font-size: 35px;
