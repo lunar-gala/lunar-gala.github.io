@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <title>Lunar Gala</title>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Lunar Gala is a student fashion organization of Carnegie Mellon University" />
+  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
   <link rel="stylesheet" type="text/css" href="assets/css/submit.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <meta name="google-site-verification" content="B68ik7WUPaZAuaI3ESFvUtDBJjroRlqbYffx0Lj01tE" />
+
 </head>
-<!--this is a change-->
 <body>
 
   <div class="logo-right active">
@@ -72,7 +73,7 @@
            <li class="three">application</li>
          </ul>
        </div>
-
+<!-- 
        <div class="content after-freeze-min elem-one">
          <h1>Deadlines</h1>
          <h3>Info Meeting</h3>
@@ -93,7 +94,7 @@
          <p>10-15-18</p>
          <p>through</p>
          <p>11-01-18</p>
-       </div>
+       </div> -->
 
        <div class="content after-freeze-min elem-two">
          <h1>Requirements</h1>
@@ -122,46 +123,64 @@
     <div class="apply elem-one">
       <br><br>
       <h2>Application</h2>
-      <form>
-        Title of Line<br>
-        <input class="whole" type="text" name="firstname">
-        <br>
-        Team type
-        <input class="whole" type="text" name="lastname">
+      <h3>Title of Line</h3>
+      <input id="inputLine" type="text" name="name" placeholder="Line Title" /><br>
+      <label class="container">LOCAL
+       <input id="local" type="radio" name="radio"><br>
+      <span class="checkmark"></span><br>
+     </label>
+      <label class="container">CMU
+       <input id="cmu" type="radio" checked="checked" name="radio"><br>
+      <span class="checkmark"></span><br>
+     </label>
+       <form action="https://script.google.com/macros/s/AKfycbwrBXNdz1WbrB2jqZ5UIyfJje663ZI9WyQPrrQltZPo7Mn6-Ls/exec" id="form" method="post">
 
-        <div class="names">
-          <div class="left">
-            <h3>Name(s)</h3>
-            <input class="left-half"></input>
-            <input class="left-half"></input>
-            <input class="left-half"></input>
-          </div>
+        <div id="data"></div>
+           <label for="andrewID1">Team Andrew Ids (up to 3, 1 required)</label><br>
+        <input id="andrewID1" name="andrewID1" type="text" placeholder="AndrewID 1"><br>
+        <input id="andrewID2" name="andrewID2" type="text" placeholder="AndrewID 2"><br>
+        <input id="andrewID3" name="andrewID3" type="text" placeholder="AndrewID 3"><br>
 
-          <div class="right">
-            <h3>Andrew ID</h3>
-            <input class="right-half"></input>
-            <input class="right-half"></input>
-            <input class="right-half"></input>
-          </div>
-        </div>
+        <label for="uploadfile">Upload your portfolio as a ZIP file (limit: 50MB):</label><br>
+        <input id="uploadfile" name="portfolio" type="file"><br>
+          <input id="submit" type="submit">
+        </form>
 
-        <div class="upload">
-          <h3>PDF Upload</h3>
-          <input class="box">
-          </input>
-          <h3>Please make sure your PDF includes all the <span class="one">requirements</span></h3>
-          <div class="arrow">
-
-          </div>
-        </div>
-
-
-      </form>
       </div>
+
+
+         <script>
+    $('#uploadfile').on("change", function() {
+        var file = this.files[0];
+        var fr = new FileReader();
+        fr.fileName = file.name
+        fr.onload = function(e) {
+            e.target.result
+            html = '<input type="hidden" name="data" value="' + e.target.result.replace(/^.*,/, '') + '" >';
+            html += '<input type="hidden" name="mimetype" value="' + e.target.result.match(/^.*(?=;)/)[0] + '" >';
+            html += '<input type="hidden" name="filename" value="' + e.target.fileName + '" >';
+
+            if(document.getElementById("cmu").checked){
+                 html += '<input type="hidden" name="reference" value="' + "cmu" + '" >';
+            }
+            else{
+                 html += '<input type="hidden" name="reference" value="' + "local" + '" >';
+            }
+
+            html += '<input type="hidden" name="andrewID1" value="' + e.target.andrewID1 + '" >';
+            html += '<input type="hidden" name="andrewID2" value="' + e.target.andrewID2 + '" >';
+            html += '<input type="hidden" name="andrewID3" value="' + e.target.andrewID3 + '" >';
+
+            $("#data").empty().append(html);
+        }
+        fr.readAsDataURL(file);
+    });
+    </script>
+
 
       <div class="container">
 
-  <div class="calendar">
+ <!--  <div class="calendar">
     <div class="month">
       <div class="month-title">
         <h1>September</h1>
@@ -201,7 +220,7 @@
 
     </div>
 
-  </div>
+  </div> -->
 
 </div>
 
