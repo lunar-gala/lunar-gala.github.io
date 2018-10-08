@@ -348,3 +348,44 @@ color: black;
   background-image: url("../img/Contact.png");
   opacity: .3;
 }
+
+.blog-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/blog.jpg");
+  opacity: .1;
+}
+
+.blog-item h1, h5 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-item h1 {
+  margin-top: 50px;
+  margin-bottom: 4px;
+}
+
+.blog-image {
+  clear: both;
+  width: 40% !important;
+  margin-right: 50px !important;
+  float: left;
+}
+
+.blog-image-right {
+  float: right;
+  margin-right: 0px !important;
+  margin-left: 50px !important;
+}
+
+.blog-section {
+  padding-top: 35px;
+}
