@@ -389,3 +389,7 @@ color: black;
 .blog-section {
   padding-top: 35px;
 }
+
+.blog-section strong {
+  font-style: oblique;
+}
