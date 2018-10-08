@@ -130,11 +130,6 @@ text {
   opacity: .6;
 }
 
-
-
-
-
-
 .grid-system {
   position: relative;
   margin: 0;
@@ -145,7 +140,6 @@ text {
   justify-content: center;
   font-size: 1.5rem;
   font-family: "Din Regular";
-  /*text-decoration: */
 }
 
 .grid-system > div {
@@ -251,12 +245,6 @@ text {
   font-size: 24px;
   cursor: pointer;
 }
-
-/*
-.submenu li.active {
-  text-decoration: underline;
-}
-*/
 
 .grid-system .after-freeze {
   padding-top: 75px;
