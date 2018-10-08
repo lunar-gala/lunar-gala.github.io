@@ -375,12 +375,13 @@ color: black;
 
 .blog-image {
   clear: both;
-  width: 40% !important;
+  width: 58% !important;
   margin-right: 50px !important;
   float: left;
 }
 
 .blog-image-right {
+  clear: both;
   float: right;
   margin-right: 0px !important;
   margin-left: 50px !important;
@@ -388,6 +389,7 @@ color: black;
 
 .blog-section {
   padding-top: 35px;
+  clear: both;
 }
 
 .blog-section strong {
