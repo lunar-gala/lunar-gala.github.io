@@ -9,7 +9,8 @@ border: solid #fff 2px;
 }
 
 #social {
-    position: absolute;
+    /*position: absolute;*/
+    margin: auto;
 }
 
 .contact-form {
@@ -28,7 +29,7 @@ font-size: 18px;
 }
 
 .contact-form p {
-margin-top: 30px;
+/*margin-top: 30px;*/
 }
 
 .contact-form span {
@@ -40,8 +41,8 @@ width: calc(100% - 20px);
   padding: 10px 10px 0px 0px;
   margin: 0 0 5px 0;
 font-size: 18px;
-  border: none;
-border-bottom: solid #fff 1px;
+    border: solid #fff 1px;
+    /* border-bottom: solid #fff 1px; */
   background-color: rgba(0,0,0,0);
 color: rgb(100,100,100);
 font-family: 'DIN Light';
@@ -50,14 +51,14 @@ border-radius: 0;
 
 .contact-text-area {
 width: calc(100% - 31px);
-  padding: 10px;
-  margin-top: 5px;
-font-size: 15px;
-  border: solid black 1px;
-  background-color: rgba(255,255,255,0.8);
-color: rgb(100,100,100);
-font-family: 'DIN Light';
-border-radius: 0;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: solid white 1px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(100,100,100);
+    font-family: 'DIN Light';
+    border-radius: 0;
 }
 
 .contact-text {
@@ -66,7 +67,7 @@ border-radius: 0;
     font-family: 'DIN Light';
     width: 70%;
     color: #737373;
-    margin-bottom: 120px;
+    margin-top: 100px !important;
 }
 
 
@@ -87,17 +88,17 @@ border-radius: 0;
 
 
 .contact-send-button {
-width: calc(100% - 8px);
-padding: 15px;
-color: white;
-background-color: rgba(0,0,0,1);
-margin-top: 15px;
-border: solid black 1px;
-font-size: 18px;
-font-family: 'DIN Light';
-transition: background-color 0.2s;
-border-radius: 0;
--webkit-appearance: none;
+    width: calc(100% - 8px);
+    padding: 15px;
+    color: white;
+    background-color: rgba(0,0,0,1);
+    /* margin-top: 15px; */
+    border: solid white 1px;
+    font-size: 18px;
+    font-family: 'DIN Light';
+    transition: background-color 0.2s;
+    border-radius: 0;
+    -webkit-appearance: none;
 }
 
 .contact-send-button:hover {
@@ -288,7 +289,7 @@ display: none;
 z-index: -1;
 position: fixed;
 display: block;
-/* 		width: 100%; */
+/*    width: 100%; */
 }
 
 
