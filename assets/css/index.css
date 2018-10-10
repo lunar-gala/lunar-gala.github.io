@@ -257,3 +257,58 @@ text.fade {
 .get-involved a {
   text-decoration: underline !important;
 }
+
+.hover-text {
+  z-index: 1000;
+  text-decoration: underline;
+  cursor: crosshair;
+  display: inline;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.hover-img {
+  position: fixed;
+  width: 750px;
+  border: 1px solid #fff;
+  height: 500px;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background: red;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  pointer-events: none;
+  background-position: center center;
+}
+
+.hover-text:hover + .hover-img {
+  opacity: 1;
+}
+
+.hover-img-1 {
+  background-image: url("../img/1.jpg");
+}
+
+.hover-img-2 {
+  background-image: url("../img/2.jpg");
+}
+
+.hover-img-3 {
+  background-image: url("../img/3.jpg");
+}
+
+.hover-img-4 {
+  background-image: url("../img/4.jpg");
+}
+
+.hover-img-5 {
+  background-image: url("../img/5.jpg");
+}
+
+.hover-img-6 {
+  background-image: url("../img/6.jpg");
+}
