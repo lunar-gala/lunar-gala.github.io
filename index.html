@@ -103,9 +103,17 @@
 		padding-top: 20px !important;
 		padding-bottom: 20px !important;
 		font-size: 1.5rem;
+		z-index: 9999;
 	}
 	#tickets a{
 		color: #4885ed;	
+	}
+	
+	@media screen and (max-width: 1000px) {
+	  #tickets {
+		  display: none;
+		  z-index: -1;
+		}
 	}
 </style>
 	
