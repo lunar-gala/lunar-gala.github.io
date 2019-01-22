@@ -228,6 +228,7 @@ text {
   width: 100%;
   margin: 25px 0;
   border: 1px solid white;
+  transform: scaleX(-1);
 }
 
 .grid-system .freeze {
