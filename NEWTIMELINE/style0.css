@@ -86,7 +86,7 @@ html, body {
   color: #000000;
   font-family: "DIN Regular";
     height: 100vh;
-    overflow-y: hidden;
+/*    overflow-y: hidden;*/
 
 }
 
@@ -97,12 +97,13 @@ html, body {
     transform: rotate(90deg);
     z-index: 100;
       font-family: "DIN Regular";
-    color: rgb(0,0,0);!important
+    color: rgb(0,0,0)!important;
     font-size: 1.2em;
+    text-decoration: none!important;
 }
 .nav:hover {
     color:black;!important
-    text-decoration: none;
+text-decoration: none;!important
 }
 #sidebar {
   display: block;
@@ -323,7 +324,7 @@ html, body {
     font-weight:bold;
     transform: rotate(00deg);
     font-size: 1em;
-    text-decoration: none;
+    text-decoration: none!important;
 }
      #sidebar {
     font-size: 1.2em;
@@ -385,10 +386,10 @@ html, body {
     display:block;
     position:absolute;
     width: 100%;
-    height: 50vh;!important
+    height: 50vh!important;
     bottom:0;
     z-index: 1;
-          -webkit-safari-bottom:0;!important
+          -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
@@ -473,10 +474,10 @@ html, body {
     display:block;
     position:absolute;
     width: 100%;
-    height: 50vh;!important
+    height: 50vh!important;
     bottom:0;
     z-index: 1;
-          -webkit-safari-bottom:0;!important
+          -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
@@ -560,10 +561,10 @@ html, body {
     display:block;
     position:absolute;
     width: 100%;
-    height: 50vh;!important
+    height: 50vh!important;
     bottom:0;
     z-index: 1;
-          -webkit-safari-bottom:0;!important
+          -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
@@ -647,10 +648,10 @@ html, body {
     display:block;
     position:absolute;
     width: 100%;
-    height: 50vh;!important
+    height: 50vh!important;
     bottom:0;
     z-index: 1;
-          -webkit-safari-bottom:0;!important
+          -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
@@ -734,10 +735,10 @@ html, body {
     display:block;
     position:absolute;
     width: 100%;
-    height: 50vh;!important
+    height: 50vh!important;
     bottom:0;
     z-index: 1;
-          -webkit-safari-bottom:0;!important
+          -webkit-safari-bottom:0!important;
 }
 
   .swiper-slide {
@@ -821,8 +822,8 @@ html, body {
     position:absolute;
     width: 100%;
     height: 65vh;
-    -webkit-safari-bottom:0;!important
-    bottom:0;!important
+    -webkit-safari-bottom:0!important;
+    bottom:0!important;
     z-index: 1;
 }
 
