@@ -162,28 +162,6 @@ html, body {
     }
 
 
-/*
-a:link {
-  color: #F8F2FF;
-  color: black;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #F8F2FF;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #48444C;
-  text-decoration: none;
-}
-
-a:active {
-  color: #2D2833;
-  text-decoration: none;
-}
-*/
 
 .active {
   font-family: "DIN Medium";
@@ -345,6 +323,7 @@ a:active {
     font-weight:bold;
     transform: rotate(00deg);
     font-size: 1em;
+    text-decoration: none;
 }
      #sidebar {
     font-size: 1.2em;
