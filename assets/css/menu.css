@@ -20,7 +20,8 @@
   width: 100%;
   height: 50px;
   z-index: 1000;
-  background: #000;
+  background: white;
+  opacity: .9;
   top: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -34,7 +35,7 @@
   transition: all 0.8s ease;
   opacity: 0;
   pointer-events: none;
-  background: #000;
+  background: white;
   z-index: 999;
   top: 0;
   -webkit-transform: translate3d(0, 0, 0);
@@ -46,7 +47,7 @@
   font-family: "DIN Medium";
   line-height: 50px;
   padding-left: 10px;
-  color: #fff;
+  color: black;
 }
 
 .mobile-menu.open {
@@ -62,7 +63,7 @@
   opacity: 0.1;
   background-size: cover;
   background-position: center center;
-  background-image: url("https://images.unsplash.com/photo-1491956142110-8a4226a12077?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d65bd7937511c934d4b450d31f2c1ec&auto=format&fit=crop&w=1350&q=80");
+    background-image: url(../img/backgroundm.png)
 }
 
 
@@ -79,7 +80,7 @@
 }
 
 .links ul li a {
-  color: #CCC;
+  color: black;
   text-decoration: none;
 }
 
@@ -95,7 +96,7 @@
   width: 40px;
   margin-bottom: 10px;
   border: 2px solid #999;
-  color: #fff;
+  color: black;
   border-radius: 100%;
   text-align: center;
   -webkit-transition: all .5s ease;
@@ -159,7 +160,7 @@
   width: 30px;
   height: 1px;
   left: 55px;
-  background: #fff;
+  background:black;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }

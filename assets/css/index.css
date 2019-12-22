@@ -1,7 +1,7 @@
 .Landing {
   width: 100%;
   height: 100vh;
-  background: #000;
+  background: white;
 }
 
 .fixed-image {
@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-image: url(../img/theshow.png);
+  background-image: url(../img/background.png);
   opacity: 0;
   background-size: cover;
   -webkit-transition: all 6s ease;
@@ -33,8 +33,8 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  background: #000;
-  opacity: .5;
+  background: white;
+  opacity: 0.1;
 }
 
 .logo {
@@ -56,8 +56,8 @@
 path {
   -webkit-transition: stroke-dashoffset 3s ease, fill 1s ease 2s;
   transition: stroke-dashoffset 3s ease, fill 1s ease 2s;
-  fill: rgba(255,255,255,0);
-  stroke: #fff;
+  fill: black;
+  stroke: black;
   stroke-width: 2px;
 }
 
@@ -84,7 +84,7 @@ path {
 
 .logo path.stroke {
   stroke-dashoffset: 0;
-  fill: #fff;
+  fill: black;
 }
 
 
@@ -119,7 +119,7 @@ text.fade {
 .month-title {
   width: 100%;
   height: 200px;
-  border: 1px solid #fff;
+  border: 1px solid black;
   font-size: 25px;
   box-sizing: border-box;
 }
@@ -134,7 +134,7 @@ text.fade {
   display: inline-block;
   width: 50%;
   padding-bottom: calc(50% - 380px);
-  border: 1px solid #fff;
+  border: 1px solidb lack;
   box-sizing: border-box;
 }
 
@@ -144,7 +144,7 @@ text.fade {
   left: 0;
   width: 180px;
   height: 180px;
-  border: 1px solid #fff;
+  border: 1px solid black;
   text-align: center;
   line-height: 180px;
   font-size: 50px;
