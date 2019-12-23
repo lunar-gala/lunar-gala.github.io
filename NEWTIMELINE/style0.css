@@ -78,12 +78,22 @@ table {
   font-family: "DIN Regular Alternate";
   src: url("fonts/DIN-RegularAlternate.ttf");
 }
-
-
+a {
+    color: black;
+}
+a.dropdown * {
+    color: black;
+}
+a: any-link {
+    color: black;
+}
+a:default {
+    color: black;
+}
 html, body {
 
   background-color: #FFFFFF;
-  color: #000000;
+  color: black !important;
   font-family: "DIN Regular";
     height: 100vh;
   overflow-y: hidden;
@@ -154,6 +164,7 @@ text-decoration: none;!important
     width: 100%;
     height: 100vh;
     max-width: 1920px;
+    color: black;
 }
 
 .swiper-wrapper {
@@ -185,11 +196,14 @@ text-decoration: none;!important
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: -2em;;
+  bottom: -2em;
+    color: black;
 }
 
 /*post modifications*/
-
+div.caption {
+    color:black;
+}
 .post {
     margin-top: 10vw;
     margin-left: 10vw;
@@ -338,7 +352,7 @@ text-decoration: none;!important
     position: absolute;
     font-size: 2.2vmax;
     overflow: auto;
-    height:35vh;
+    height:42vh;
     min-height:50px;
     padding-top:0px;
     margin-top: 8vh;
@@ -354,7 +368,7 @@ text-decoration: none;!important
     height: 54vh;
     margin-top:2vh;
     padding-bottom:2em;
-    top: 40vh;
+    top: 45vh;
     z-index: 1;
     overflow-y: scroll;
 }
@@ -420,7 +434,7 @@ text-decoration: none;!important
     position: absolute;
     font-size: 2.2vmax;
     overflow: auto;
-    height:25vh;
+    height:30vh;
     min-height:50px;
     padding-top:25px;
     margin-top: 8vh;
@@ -436,7 +450,7 @@ text-decoration: none;!important
     height: 63vh;
     margin-top:2vh;
     padding-bottom:2em;
-    top: 40vh;
+    top: 33vh;
     z-index: 1;
         overflow-y: scroll;
 

@@ -4,10 +4,10 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
   centeredSlides: true,
   effect: "coverflow",
-  mousewheelControl: true,
+  mousewheelControl: false,
   direction: 'horizontal',
   mousewheel: {
-    releaseOnEdges: true,
+    releaseOnEdges: false,
   },
   coverflowEffect: {
     rotate: 0,
