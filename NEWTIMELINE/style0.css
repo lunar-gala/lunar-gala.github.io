@@ -354,9 +354,9 @@ text-decoration: none;!important
     height: 54vh;
     margin-top:2vh;
     padding-bottom:2em;
-    bottom:0;
+    top: 40vh;
     z-index: 1;
-          -webkit-safari-bottom:0!important;
+    overflow-y: scroll;
 }
 
   .swiper-slide {
@@ -436,9 +436,10 @@ text-decoration: none;!important
     height: 63vh;
     margin-top:2vh;
     padding-bottom:2em;
-    bottom:0;
+    top: 40vh;
     z-index: 1;
-          -webkit-safari-bottom:0!important;
+        overflow-y: scroll;
+
 }
 
   .swiper-slide {
@@ -462,6 +463,7 @@ text-decoration: none;!important
   }
 }
 
+/*
 @media only screen and (min-width: 1024px) and (max-width: 1366px){ 
 
   .nav {
@@ -543,4 +545,4 @@ text-decoration: none;!important
   .arrows-container {
     display: none;
   }
-}
+}*/
