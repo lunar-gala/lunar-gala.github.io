@@ -282,6 +282,14 @@ text a{
     flex-grow: 0;
     visibility: hidden;
   }
+        #desc {
+        display: none;
+        
+    }
+    #abt{
+        width:80vw!important;
+        left:-20vw!important;
+    }
 }
 
 @media (max-width: 800px) {
