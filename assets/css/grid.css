@@ -46,7 +46,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -80,6 +80,7 @@ html, body {
 }
 
 text {
+background: white;
  position: fixed;
  transform: translate(100px, 395px);
  font-family: "Din Regular";
@@ -94,9 +95,11 @@ text {
  transition-delay: 2s;
 }
 
-
+.landing path.active {
+    opacity:0;
+}
 .logo-right path {
-  fill: #fff
+  fill: black;
 }
 
 .logo-right.active {
@@ -262,7 +265,10 @@ text {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-
+text a{
+    text-decoration: none;
+    color: black;
+}
 @media (max-width: 800px) {
   .grid-system > div.left {
     flex-grow: 0;
@@ -279,6 +285,14 @@ text {
 }
 
 @media (max-width: 800px) {
+    #desc {
+        display: none;
+        
+    }
+    #abt{
+        width:80vw!important;
+        left:-20vw!important;
+    }
   .logo-right {
     display: none;
   }
@@ -294,4 +308,7 @@ text {
   .grid-system p {
     font-size: 20px;
   }
+}
+img.contact-icon {
+    width: 15%;
 }
