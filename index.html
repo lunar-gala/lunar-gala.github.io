@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
   <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+  <style>
+.mySlides {display:none;}
+</style>
 </head>
 
 <body>
@@ -53,9 +56,40 @@
 	c-2.3,12-4.6,24.1-6.9,36.1c-0.1,0.5-0.2,1-0.4,1.6C190.2,325.5,176.2,325.5,162,325.5z"/>
 
 </svg>
-    <text id="desc" style="font-size: 1em; letter-spacing: 0px; left: 10vw; position: absolute; padding-top: 40vh; padding-bottom: 10vh; width: 20vw;">
-        Originally created in 1997 to ring in the Chinese New Year, Lunar Gala has transformed into a highly anticipated event that hundreds hope to be part of and thousands hope to come see. While staying true to its original intent, it has developed into a much larger production and has become a more impactful organization to the CMU and Pittsburgh community. Every year, the theme of the show is centered around the Zodiac animal of the lunar calendar. <br><br>
-        Now, Lunar Gala is arguably one of the largest fashion events in Pittsburgh, having sold out over 1200 seats each year with 140+ students involved in producing, designing, modeling, and dancing in the show. Students across all majors and cultures create original and creative lines, infusing technology and complex materials with wearable fashion. Last year, 17 design teams created nearly 150 looks that incorporated mood sensing Intel chips, zip ties, sheet metal, and much more into lines that reflected culture, technology, and reactions to current events in society today.
+<!--
+<div id="slideshow">
+
+  <img class="mySlides" src="NEWTIMELINE/images/COVER/2018.jpg" style="left: 50vw; position: absolute; padding-top: 110vh; padding-bottom: 10vh; width: 20vw;">
+  <img class="mySlides" src="NEWTIMELINE/images/COVER/2017.jpg" style="left: 50vw; position: absolute; padding-top: 110vh; padding-bottom: 10vh; width: 20vw;">
+  <img class="mySlides" src="NEWTIMELINE/images/COVER/2016.jpg" style="left: 50vw; position: absolute; padding-top: 110vh; padding-bottom: 10vh; width: 20vw;">
+  <img class="mySlides" src="NEWTIMELINE/images/COVER/2015.jpg" style="left: 50vw; position: absolute; padding-top: 110vh; padding-bottom: 10vh; width: 20vw;">
+  <img class="mySlides" src="NEWTIMELINE/images/COVER/2014.jpg" style="left: 50vw; position: absolute; padding-top: 110vh; padding-bottom: 10vh; width: 20vw;">
+   
+</div>
+-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); 
+        }
+    </script>
+    <text id="desc" style="font-size: 1em; letter-spacing: 0px; left: 10vw; position: absolute; padding-top: 60vh; padding-bottom: 10vh; width: 20vw;">
+                Lunar Gala was originally created in 1997 to ring in the Chinese New Year, or more generally referred to as the Lunar New Year.  The New Year cycles through 12 animal signs and celebrates good fortune and prosperity.  As a part of the celebration, it is customary to wear new clothes which has inspired our fashion show. Since its inception, Lunar Gala has transformed into a highly anticipated event that hundreds hope to be part of and thousands hope to come see. <br><br>
+        Now, Lunar Gala is arguably one of the largest fashion events in Pittsburgh, having sold out nearly 1100 seats each year with 140+ students involved in producing, designing, modeling, and dancing in the show. Students across all majors and cultures create original and creative lines, infusing technology and complex materials with wearable fashion. Last year, 17 design teams created nearly 150 looks that incorporated mood sensing Intel chips, glow-in the dark resin, sheet metal, and much more reflecting the culture, technology, and reactions to current events in society. <br><br>
+        In recent years, Lunar Gala has been able to branch out into the greater Pittsburgh community and collaborate with local creatives.
+ <br><br>
+        Although Lunar Gala has developed into a much larger production, it stays true to its original intent.  Every year, the theme of the show is centered around the Zodiac animal of the lunar calendar.
+
         <br><br><br><br><br><br>
 			<a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg" style="width:20%;">
 				<img class="contact-icon" src="main-content/icons/Youtube.png"/>

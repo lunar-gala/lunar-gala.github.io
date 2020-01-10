@@ -269,7 +269,16 @@ text a{
     text-decoration: none;
     color: black;
 }
+.mdesc {
+    display: none;
+}
+    .heads {
+        padding-top: 0vh;
+    }
 @media (max-width: 800px) {
+    .mdesc {
+    display: block;
+}
   .grid-system > div.left {
     flex-grow: 0;
     visibility: hidden;
@@ -289,10 +298,21 @@ text a{
     #abt{
         width:80vw!important;
         left:-20vw!important;
+    }    .heads {
+        padding-top: 71vh;
     }
 }
 
 @media (max-width: 800px) {
+    #slideshow {
+        display: none;
+    }
+    .heads {
+        padding-top: 71vh;
+    }
+    .mdesc {
+    display: block;
+}
     #desc {
         display: none;
         
