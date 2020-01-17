@@ -44,7 +44,7 @@
 
 .title {
   position: absolute;
-  font-family: "DIN Medium";
+  font-family: "DIN Medium", sans-serif;
   line-height: 50px;
   padding-left: 10px;
   color: black;
@@ -74,7 +74,7 @@
 
 .links ul li {
   list-style-type: none;
-  font-family: "Din Medium";
+  font-family: "Din Medium", sans-serif;
   font-size: 30px;
   margin-bottom: 10px;
 }

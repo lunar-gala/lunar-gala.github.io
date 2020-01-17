@@ -51,32 +51,32 @@ table {
 
 @font-face {
   font-family: "DIN Black Alternate";
-  src: url("fonts/DIN-BlackAlternate.ttf");
+  src: url("../assets/fonts/DIN-BlackAlternate.ttf");
 }
 
 @font-face {
   font-family: "DIN Bold";
-  src: url("fonts/DIN-Bold.ttf");
+  src: url("../assets/fonts/dinpro-bold-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Light";
-  src: url("fonts/DIN-Light.ttf");
+  src: url("../assets/fonts/DIN-Light.ttf");
 }
 
 @font-face {
   font-family: "DIN Medium";
-  src: url("fonts/DIN-Medium.ttf");
+  src: url("../assets/fonts/dinpro-medium-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular";
-  src: url("fonts/DIN-Regular.ttf");
+  src: url("../assets/fonts/dinpro-regular-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular Alternate";
-  src: url("fonts/DIN-RegularAlternate.ttf");
+  src: url("../assets/fonts/DIN-RegularAlternate.ttf");
 }
 
 
@@ -84,7 +84,7 @@ html, body {
 
   background-color: #FFFFFF;
   color: #000000;
-  font-family: "DIN Regular";
+  font-family: "DIN Regular", sans-serif;
 
 
 }
@@ -101,7 +101,7 @@ html, body {
           rgba(256,256,256,.5), 
 
           rgba(256,256,256,0));
-  font-family: "DIN Regular";
+  font-family: "DIN Regular", sans-serif;
   font-size: 1em;
   top:0;
   left:0;
@@ -120,7 +120,7 @@ html, body {
           rgba(256,256,256,.5), 
 
           rgba(256,256,256,0));
-  font-family: "DIN Regular";
+  font-family: "DIN Regular", sans-serif;
   font-size: 1em;
   top:0;
   right:0;
@@ -186,7 +186,7 @@ a:active {
 }
 
 .active {
-  font-family: "DIN Medium";
+  font-family: "DIN Medium", sans-serif;
 }
 
 .swiper-container {
@@ -238,12 +238,12 @@ a:active {
 }
 
 article {
-    font-family: "DIN Light";
+    font-family: "DIN Light", sans-serif;
     margin-top: 2em;
 }
 
 .start {
-    font-family: "DIN Light";
+    font-family: "DIN Light", sans-serif;
     font-style:italic;
     margin-bottom: 10rem;
     font-size: 1.6rem;
@@ -257,7 +257,7 @@ p {
 }
 
 #bod p::first-letter {
-    font-family: "DIN Bold";
+    font-family: "DIN Bold", sans-serif;
     opacity: 0.7;
 
 }
@@ -314,7 +314,7 @@ p {
 }
 
 .headtitle {
-    font-family: "DIN Bold";
+    font-family: "DIN Bold", sans-serif;
     color: white;
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -333,7 +333,7 @@ p {
 */
 
 .sub {
-    font-family: "DIN Light";
+    font-family: "DIN Light", sans-serif;
     color: white;
     font-style: italic;
     font-size: 2em;
