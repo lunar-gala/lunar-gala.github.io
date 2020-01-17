@@ -299,7 +299,7 @@ p {
   height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 }
