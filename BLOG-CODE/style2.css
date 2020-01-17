@@ -253,6 +253,7 @@ article {
 p {
     margin-bottom: 1.2rem;
     line-height: 1.2rem;
+    z-index: 10,000;
 }
 
 #bod p::first-letter {
