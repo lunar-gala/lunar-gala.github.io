@@ -50,7 +50,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'DIN Light';
+  font-family: 'DIN Light', sans-serif;
 }
 
 
@@ -83,7 +83,7 @@ text {
 background: white;
  position: fixed;
  transform: translate(100px, 395px);
- font-family: "Din Regular";
+ font-family: "Din Regular", sans-serif;
  font-weight: 500;
  font-size: 50px;
  letter-spacing: 16px;
@@ -117,7 +117,7 @@ background: white;
 
 .nav-left ul li {
   list-style-type: none;
-  font-family: "Din Regular";
+  font-family: "Din Regular", sans-serif;
   line-height: 1.6em;
   font-size: 1.2em;
 }
@@ -142,7 +142,7 @@ background: white;
   color: white;
   justify-content: center;
   font-size: 1.5rem;
-  font-family: "Din Regular";
+  font-family: "Din Regular", sans-serif;
 }
 
 .grid-system > div {
@@ -224,7 +224,7 @@ background: white;
   text-align: left;
   font-size: 1.2rem;
     line-height: 1.75rem;
-  font-family: "Din Regular";
+  font-family: "Din Regular", sans-serif;
 }
 
 .grid-system img {

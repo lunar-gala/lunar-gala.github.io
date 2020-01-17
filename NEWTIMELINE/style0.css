@@ -51,33 +51,34 @@ table {
 
 @font-face {
   font-family: "DIN Black Alternate";
-  src: url("fonts/DIN-BlackAlternate.ttf");
+  src: url("../assets/fonts/DIN-BlackAlternate.ttf");
 }
 
 @font-face {
   font-family: "DIN Bold";
-  src: url("fonts/DIN-Bold.ttf");
+  src: url("../assets/fonts/dinpro-bold-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Light";
-  src: url("fonts/DIN-Light.ttf");
+  src: url("../assets/fonts/DIN-Light.ttf");
 }
 
 @font-face {
   font-family: "DIN Medium";
-  src: url("fonts/DIN-Medium.ttf");
+  src: url("../assets/fonts/dinpro-medium-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular";
-  src: url("fonts/DIN-Regular.ttf");
+  src: url("../assets/fonts/dinpro-regular-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular Alternate";
-  src: url("fonts/DIN-RegularAlternate.ttf");
+  src: url("../assets/fonts/DIN-RegularAlternate.ttf");
 }
+
 a {
     color: black;
 }
@@ -94,7 +95,7 @@ html, body {
 
   background-color: #FFFFFF;
   color: black !important;
-  font-family: "DIN Regular";
+  font-family: "DIN Regular", sans-serif;
     height: 100vh;
   overflow-y: hidden;
 
@@ -106,7 +107,7 @@ html, body {
     top: 48vh;
     transform: rotate(90deg);
     z-index: 100;
-      font-family: "DIN Regular";
+      font-family: "DIN Regular", sans-serif;
     color: rgb(0,0,0)!important;
     font-size: 1.2em;
     text-decoration: none!important;
@@ -124,7 +125,7 @@ text-decoration: none;!important
   position: absolute;
     z-index: 10;
   background-image: linear-gradient(to right, rgba(256,256,256,1), rgba(256,256,256,.9),rgba(256,256,256,.0));
-  font-family: "DIN Regular";
+  font-family: "DIN Regular", sans-serif;
   font-size: 1em;
   top:0;
   left:0;
@@ -161,7 +162,7 @@ text-decoration: none;!important
 }
 
 .active {
-  font-family: "DIN Medium";
+  font-family: "DIN Medium", sans-serif;
 }
 
 .swiper-container {
@@ -216,7 +217,7 @@ div.caption {
 }
 
 .body {
-    font-family: "DIN Light";
+    font-family: "DIN Light", sans-serif;
     margin-top: 2em;
 }
 
@@ -230,7 +231,7 @@ div.caption {
 
 
 .year {
-    font-family: "DIN Bold";
+    font-family: "DIN Bold", sans-serif;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -239,7 +240,7 @@ div.caption {
 }
 
 .animal {
-    font-family: "DIN Bold";
+    font-family: "DIN Bold", sans-serif;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -248,7 +249,7 @@ div.caption {
 }
 
 .producer {
-    font-family: "DIN Light";
+    font-family: "DIN Light", sans-serif;
     
 }
 
