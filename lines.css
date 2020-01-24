@@ -218,11 +218,12 @@ body {
   }
 }
 .tv-container {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   overflow: hidden;
   top: 0;
+      background-image: url("GIFS/Space%20Corners.gif");
 }
 .tv-container::after {
   content: " ";
@@ -625,7 +626,7 @@ body {
   transform: translate(-50%, 0);
 }
 
-#line-img-1 .background {
+#line-img-1 .one-back {
   background-image: url("GIFS/Space%20Corners.gif");
 }
 #line-img-2 .two-back {
