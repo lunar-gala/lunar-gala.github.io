@@ -73,7 +73,7 @@ window.onload = function() {
       state = -1;
     }
     //glitchOff($(".one"));
-    if ((state == -1 && on != 1) || (state == 1 && on != 4)) {
+    if ((state == -1 && on != 1) || (state == 1 && on != 16)) {
       $(".tv-container").removeClass("on");
       $(".tv-container").addClass("off");
       $(".text").removeClass("active");
@@ -84,7 +84,7 @@ window.onload = function() {
           imgPrev(on);
           on -= 1;
         }
-        if (state == 1 && on != 4) {
+        if (state == 1 && on != 16) {
           imgNext(on);
           on += 1;
         }

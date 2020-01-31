@@ -24,6 +24,26 @@ body {
   width: 100%;
   text-align: center;
   bottom: 100px;
+        color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 
 .loader .static {
@@ -47,29 +67,36 @@ body {
   background-image: url("LINES.jpg");
 }
 
-.tv {
+.tv img{
   position: fixed;
   z-index: 10000;
-  bottom: -150px;
-  left: 55%;
-  -webkit-transform: translate(-50%, 0) scale(.8);
-  transform: translate(-50%, 0) scale(.8);
+  top: 45vh;
+  left: 45vw;
+    width: 35vw;
+/*
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+*/
 }
 
 
 .outer {
   position: absolute;
-  width: 400px;
-  height: 300px;
-  bottom: 240px;
-  left: 58%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  width: 30vw;
+  height: 33vh;
+  top: 50vh;
+  left: 48vw;
   cursor: pointer;
-  margin-left: -75px;
-  background: #111;
+  background: black;
 }
-
+.tv-container {
+  width: 30vw;
+  height: 33vh;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+      background-image: url("GIFS/Space%20Corners.gif");
+}
 .button {
   position: relative;
   display: inline-block;
@@ -216,14 +243,6 @@ body {
   100% {
     opacity: 0.5454010698;
   }
-}
-.tv-container {
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-      background-image: url("GIFS/Space%20Corners.gif");
 }
 .tv-container::after {
   content: " ";
@@ -520,9 +539,9 @@ body {
 
 .text {
   position: fixed;
-  top: 70%;
-  width: 300px;
-  left: -30vw;
+  top: 50vh;
+  width: 22vw;
+  left: 8vw;
   z-index: 100000;
 }
 
@@ -545,21 +564,86 @@ body {
 .line-text h1 {
   margin: 0;
   font-family: FONT;
-  font-size: 40px;
+  font-size: 3em;
+    letter-spacing: .1em;
+    line-height: 1em;
+        color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 
 .line-text h3 {
   font-family: Helvetica, 'Bai Jamjuree', sans-serif;
         font-weight: 700;
+    margin-top: .5em;
+        color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 
 .line-text p {
   font-family: Helvetica, 'Bai Jamjuree', sans-serif;
-        font-weight: 700;
-    font-size: .8em;
+    margin-top: 3em;
+    font-size: 1em;
+        color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 
 .line-links {
+    width: 70vw;
+    text-align: center;
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -573,9 +657,28 @@ body {
 .line-links ul li {
   list-style-type: none;
   display: inline-block;
-  margin: 5px;
+  margin: 1px;
   text-transform: uppercase;
-  color: #fff;
+      color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
   cursor: pointer;
 }
 
@@ -676,7 +779,26 @@ body {
 }
 a {
     text-decoration: none;
-    color: white;
+        color: white;
+    
+    color: #FEFCE8;
+    
+/*
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+*/
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 nav {
     z-index: 100000000000;
@@ -691,4 +813,9 @@ nav {
   -webkit-transform: translate(-50%, 0) rotate(-180deg);
   transform: translate(-50%, 0) rotate(-180deg);
     font-size: 1.25em;
+}
+svg {
+	height: 0;
+	width: 0;
+	visibility: hidden;
 }
