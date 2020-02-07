@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <img class="intro-text" src="YESTERDAY-ANIMATION2.gif"/>
+        <img class="intro-text" src="YESTERDAY-ANIMATION3.gif"/>
         <div class="menu">
             <ul>
                 <li class="trigger">
@@ -122,7 +122,7 @@
             turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
         }});
         //            Modify this value, turbVal (the first one) between 0 and .5 over time.
-            btTl.to(turbVal, .1, { val: 0.1 })
+            btTl.to(turbVal, .2, { val: 0.1 })
                 .to(turbVal, 0.00000000001, { val: 0.00000000001 });
         function repeatGlitch( ){
             btTl.restart();
