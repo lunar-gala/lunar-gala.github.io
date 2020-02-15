@@ -45,7 +45,6 @@ body {
   margin-left: -75px;
   background: #111;
 }
-
 .button {
   position: relative;
   display: inline-block;
@@ -674,10 +673,10 @@ a {
     color: #FDF9D1;
     -webkit-text-stroke: .5px black;
     
-/*
     color: #FDF6BB;
     -webkit-text-stroke: 1px black;
     
+/*
     color: #FCF3A4;
     -webkit-text-stroke: 1.5px black;
     
@@ -703,10 +702,10 @@ a {
     color: #FDF9D1;
     -webkit-text-stroke: .5px black;
     
-/*
     color: #FDF6BB;
     -webkit-text-stroke: 1px black;
     
+/*
     color: #FCF3A4;
     -webkit-text-stroke: 1.5px black;
     

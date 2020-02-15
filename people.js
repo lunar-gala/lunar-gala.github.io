@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+  $(".loader").fadeOut(1500, function() { $(this).remove(); });
+});
+
 (function(f) {
   if (typeof exports === "object" && typeof module !== "undefined") {
     module.exports = f();
