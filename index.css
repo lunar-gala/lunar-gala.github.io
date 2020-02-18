@@ -60,7 +60,16 @@ body {
   line-height: 20px;
   cursor: pointer;
 }
-
+.flowers {
+    width: 20vw;
+    z-index: 1000000;
+    position: absolute;
+    bottom: -1vh;
+    right: 5vw;
+}
+.fimg {
+    width: 100%;
+}
 @-webkit-keyframes flicker {
   0% {
     opacity: 0.3498644051;
@@ -662,6 +671,8 @@ svg {
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
   z-index: 999999;
+        -webkit-filter: url(#noise);
+	filter: url(#noise);
 }
 a {
     text-decoration: none;
