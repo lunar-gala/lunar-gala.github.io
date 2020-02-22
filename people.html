@@ -1489,7 +1489,7 @@
             turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
         }});
         //            Modify this value, turbVal (the first one) between 0 and .5 over time.
-            btTl.to(turbVal, 0.3, { val: 0.1 })
+            btTl.to(turbVal, 0.4, { val: 0.1 })
                 .to(turbVal, 0.00000000001, { val: 0.00000000001 });
         function repeatGlitch( ){
             btTl.restart();
