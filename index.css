@@ -754,6 +754,7 @@ a {
 	
 	.mobile-nav ul {
 		margin: 0;	
+		padding: 0; 
 	}
 	
 	.mobile-nav ul li {
