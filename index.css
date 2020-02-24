@@ -752,6 +752,10 @@ a {
 		transform: translate(-50%, -50%);
 	}
 	
+	.mobile-nav ul {
+		margin: 0;	
+	}
+	
 	.mobile-nav ul li {
 		color: #fff;
 		display: block;
@@ -759,7 +763,9 @@ a {
 		font-family: FONT;
 		text-align: center;
 		font-size: 80px;
-		margin: 30px;
+		margin: 0;
+		margin-top: 15px;
+		margin-bottom: 20px;
 		text-transform: uppercase;
 	}
 	
