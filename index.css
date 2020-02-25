@@ -761,9 +761,9 @@ a {
 		color: #fff;
 		display: block;
 		list-style-type: none;
-		font-family: FONT;
+		font-family: Helvetica, 'Bai Jamjuree', sans-serif;
 		text-align: center;
-		font-size: 80px;
+		font-size: 2em;
 		margin: 0;
 		margin-top: 15px;
 		margin-bottom: 20px;
