@@ -305,7 +305,15 @@ p {
   background-size: cover;
 }
 
-
+.parallax2 {
+  background-image: url('images/POST2/1.png');
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .titles {
     position: absolute;
     top: 50%;
