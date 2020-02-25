@@ -727,3 +727,47 @@ a {
     -webkit-filter: url(#noise);
 	filter: url(#noise);
 }
+
+@media(max-width: 1000px) {
+  .desktop {
+     display: none;	  
+   }
+   .mobile {
+      display: block !important; 
+	}
+   .mobile {
+	width: 100%;
+	   position: absolute;
+	   height: 100vh;
+	   background: blue;
+	   top: 0;
+	   left: 0;
+	}
+	
+	.mobile-nav {
+	  	position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	
+	.mobile-nav ul {
+		margin: 0;	
+		padding: 0; 
+	}
+	
+	.mobile-nav ul li {
+		color: #fff;
+		display: block;
+		list-style-type: none;
+		font-family: FONT;
+		text-align: center;
+		font-size: 80px;
+		margin: 0;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	
+}
