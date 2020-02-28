@@ -420,6 +420,21 @@ body div div h1 {
     font-size: 5em;
 
 }
+.sponsors {
+    position: absolute;
+    top: 17200px;
+    z-index: 100;
+}
+.s {
+    width: 30vw;
+    height: 30vw;
+    display: inline-block;
+}
+.sp {
+    width: 60vw;
+    height: 30vw;
+    display: inline-block;
+}
 .P {
     position: absolute;
     top: -120px;
