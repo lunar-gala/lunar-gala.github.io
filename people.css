@@ -43,10 +43,8 @@ body {
     color: #FCF3A4;
     -webkit-text-stroke: 1.5px black;
     
-/*
     color: #FCF08E;
     -webkit-text-stroke: 2px black;
-*/
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -352,10 +350,8 @@ body {
     color: #FCF3A4;
     -webkit-text-stroke: 3px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 4px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -377,10 +373,8 @@ body {
     color: #FCF3A4;
     -webkit-text-stroke: 1.5px black;
     
-/*
     color: #FCF08E;
     -webkit-text-stroke: 2px black;
-*/
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -435,6 +429,19 @@ body div div h1 {
     height: 30vw;
     display: inline-block;
 }
+.ppl {
+    width: 75vw;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 17800px;
+    font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+    font-size: 2em;
+}
 .P {
     position: absolute;
     top: -120px;
@@ -451,10 +458,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -476,10 +481,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -501,10 +504,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -526,10 +527,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -551,10 +550,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -576,10 +573,8 @@ body div div h1 {
     color: #FCF3A4;
     -webkit-text-stroke: 4px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
@@ -599,10 +594,8 @@ a {
     color: #FCF3A4;
     -webkit-text-stroke: 1.5px black;
     
-/*
     color: #FCF08E;
-    -webkit-text-stroke: 2px black;
-*/
+    -webkit-text-stroke: 1.5px black;
     
     -webkit-filter: url(#noise);
 	filter: url(#noise);
