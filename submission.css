@@ -1,0 +1,179 @@
+html,
+body {
+  margin: 0;
+}
+
+.form-container {
+  width: 750px;
+  margin-left: 21%;
+  margin-top: 200px;
+  position: relative;
+  font-family: "DINPro", Sans-serif;
+}
+
+.info {
+  positon: absolute;
+  left: 0;
+  padding-top: 100px;
+}
+
+.form-container h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+@media (max-width: 1000px) {
+  .form-container {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .info { 
+    position: realtive;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+  .form {
+    position: relative;
+    margin-left: 100px;
+  }
+}
+
+
+.form-container h1 {
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-container h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.form-container p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+input {
+  margin-top: 5px;
+  font-size: 21px;
+  line-height: 30px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  display: block;
+  padding-left: 10px;
+}
+
+/*CHECK BOXES*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #e8e8e8;
+}
+
+/* When the radio button is checked, add a blue background */
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #000;
+}
+
+
+.box {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #000;
+}
+
+.right {
+  left: 280px;
+  bottom: 78px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#uploadfile {
+  font-size: 16px;
+  line-height: 100%;
+}
+
+#submit {
+  text-transform: uppercase;
+  background: #000;
+  border: 0;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
