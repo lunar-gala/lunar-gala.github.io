@@ -1,0 +1,621 @@
+/*Universal Grid Styles*/
+/*********************************************/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  background: #2900ff;
+  z-index: 10000000;
+}
+
+.loader h2 {
+  font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+        font-weight: 700;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 100px;
+        color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+
+.loader .static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(LOADING.gif);
+  opacity: 1;
+}
+.vert {z-index: 10000000000;}
+.wallpaper {
+    background-image: url("people-assets/jacyesterday08.png");
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+
+.people-background {
+  width: 200%;
+  height: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("people-assets/jacyesterday08.png");
+  opacity: .4;
+    background-color: black;
+}
+
+.people-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-size: 800px 800px;
+}
+
+
+/*Universal Grid Element Behavoir*/
+/*-------------------------------------------*/
+.Grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.Grid-cell {
+  /*Positioning*/
+  position: relative;
+
+  /*Display and Box Model*/
+  flex: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*-------------------------------------------*/
+
+/*Individual Cell Behavoir for Screen Sizes*/
+/*===========================================*/
+
+/*Mobile First Individual Cell Sizing*/
+/*-------------------------------------------*/
+.Grid--cols-1 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-2 > .Grid-cell {
+  /*change individual*/
+  flex: 0 0 50%;
+}
+
+.Grid--cols-3 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-4 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex3 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex4 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-flex5 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-inline > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.alignCenter > .Grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------------------------*/
+
+/*800px or More Screens Default Desktop Behavoir*/
+/*-------------------------------------------*/
+@media (min-width: 800px) {
+  .Grid--cols-1 > .Grid-cell {
+    flex: 0 0 100%;
+  }
+  .Grid--cols-2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-3 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+  .Grid--cols-4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+  .Grid--cols-5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+  .Grid--cols-6 > .Grid-cell {
+    flex: 0 0 16.66%;
+  }
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -2em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 2em;
+  }
+}
+/*-------------------------------------------*/
+
+/*1000px or More Screens 2 per Row*/
+/*-------------------------------------------*/
+@media (min-width: 1000px) {
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+}
+/*-------------------------------------------*/
+
+/*1200px or More Screens, Flex 3 per Row*/
+/*-------------------------------------------*/
+@media (min-width: 1200px) {
+  .Grid--cols-flex3 > .Grid-cell {
+    flex: 0 0 33.33%;
+  }
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 33.3%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 33.3%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -2em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 2em;
+  }
+}
+/*-------------------------------------------*/
+
+/*1400px or More Screens, Flex 4 per Row*/
+/*-------------------------------------------*/
+@media (min-width: 1400px) {
+  .Grid--cols-flex4 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 25%;
+  }
+}
+/*-------------------------------------------*/
+
+/*1600px or More Screens, Flex 5 per Row*/
+/*-------------------------------------------*/
+@media (min-width: 1600px) {
+  .Grid--cols-flex5 > .Grid-cell {
+    flex: 0 0 20%;
+  }
+  /*Gutters*/
+  .Grid--gutters {
+    margin-left: -2em;
+  }
+  .Grid--gutters .Grid-cell {
+    padding-left: 2em;
+  }
+}
+/*-------------------------------------------*/
+
+/*===========================================*/
+
+/*********************************************/
+
+/*Custom Grid Styles for Gallery Template*/
+/*********************************************/
+
+/*Gallery Custom Styles*/
+/*===========================================*/
+
+/*Gallery Elements Styling*/
+/*-------------------------------------------*/
+.Gallery {
+  width: 1200px;
+  margin-left: 100px;
+    margin-top: 100px;
+}
+
+[class*="Gallery-content"] {
+  /*Display and Box Model*/
+  width: 512px;
+  height: 588px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+/*-------------------------------------------*/
+
+/*Gallery Images*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+
+/*===========================================*/
+
+/*********************************************/
+
+.people-container {
+  width: 4000px;
+  margin: 0;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.people-container:focus {
+    outline:0;
+}
+.people {
+  width: 100%;
+  height: 100%;
+}
+
+
+.info {
+    font-size: 1em;
+  color: #fff;
+    font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+  background: none;
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+    left: 100px;
+  opacity: 0;
+  z-index: 10000;
+}
+.info h1 {
+    font-size: 3em;
+    line-height: .9em;
+                color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 2px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 4px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.info h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-weight: 500;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.Gallery-content:hover .info {
+  opacity: 1;
+}
+
+.frame-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-size: contain;
+  background-image: url("https://i.imgur.com/qFTWGAg.png");
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.headshot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  -webkit-transform: scale(.7);
+  transform: scale(.7);
+}
+body div div h1 {
+    color: #fff;
+    font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+    font-size: 5em;
+
+}
+.sponsors {
+    position: absolute;
+    top: 17200px;
+    z-index: 100;
+}
+.s {
+    width: 30vw;
+    height: 30vw;
+    display: inline-block;
+}
+.sp {
+    width: 60vw;
+    height: 30vw;
+    display: inline-block;
+}
+.ppl {
+    width: 75vw;
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 17800px;
+    font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+    color: #FCF08E;
+    -webkit-text-stroke: 2px black;
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+    font-size: 2em;
+}
+.P {
+    position: absolute;
+    top: -120px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.C {
+    position: absolute;   
+    top: -120px;
+    left: 1350px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.D {
+    position: absolute;   
+    top: 3480px;
+    left: 675px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.M {
+    position: absolute;    
+    top: 6350px;
+    left: 2025px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.DA {
+    position: absolute;  
+    top: 12820px;
+    left: 1350px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+.PR {
+    position: absolute; 
+    top: 14980px;
+    left: 2025px;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 4px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+a {
+    text-decoration: none;
+            color: white;
+    
+    color: #FEFCE8;
+    
+    color: #FDF9D1;
+    -webkit-text-stroke: .5px black;
+    
+    color: #FDF6BB;
+    -webkit-text-stroke: 1px black;
+    
+    color: #FCF3A4;
+    -webkit-text-stroke: 1.5px black;
+    
+    color: #FCF08E;
+    -webkit-text-stroke: 1.5px black;
+    
+    -webkit-filter: url(#noise);
+	filter: url(#noise);
+}
+nav {
+  cursor: pointer;
+  list-style-type: none;
+  font-family: Helvetica, 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0) rotate(-180deg);
+  transform: translate(-50%, 0) rotate(-180deg);
+    font-size: 1.25em;
+    z-index: 5000;
+}
+svg {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}

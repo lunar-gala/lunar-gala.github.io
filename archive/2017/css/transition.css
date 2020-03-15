@@ -1,0 +1,86 @@
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp;
+}
+.m-scene .scene_element--fadeindown {
+  animation-name: fadeInDown;
+}
+.m-scene .scene_element--fadeinright {
+  animation-name: fadeInRight;
+}
+.m-scene .scene_element--fadeinleft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    top: 0px
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    top: 0px
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    top: 0px
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    top: 0px;
+  }
+}
