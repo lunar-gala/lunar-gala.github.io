@@ -116,3 +116,7 @@ function imageTwentytwo() {
   var x = document.getElementsByClassName("intro");
   x[0].innerHTML = "<br><br>YEAR OF THE OX <br><br> Jimmy Chiang <br><br> Birth of Lunar Gala Fashion Show <br><br> Keeping with the tradition of new clothes being worn on Lunar New Year’s Day, the first Lunar Gala show celebrated the Year or the Ox with a theme of “high fashion”.";
 }
+function imageTwentythree() {
+  var x = document.getElementsByClassName("intro");
+  x[0].innerHTML = "<br><br>YESTERDAY <br><br> Ugne Ziausyte, Michael Powell <br><br> Yesterday defines our current moment as a liminal space constantly in tension between the past and future. <br>For this year’s show, we drew inspiration from Pittsburgh’s industrial history. In the 1980s, Pittsburgh experienced a massive transition out of its identity as an industrial city, forcing it to adapt and rebuild. Today, Pittsburgh demonstrates resilience by continuing to evolve with the times while honoring its roots.<br><br>Year of the rat";
+}
