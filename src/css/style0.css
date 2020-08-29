@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+ * v2.0 | 20110126
+ * License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* CUSTOM CODE */
@@ -80,50 +80,50 @@ table {
 }
 
 a {
-    color: black;
+  color: black;
 }
 a.dropdown * {
-    color: black;
+  color: black;
 }
-a: any-link {
-    color: black;
+a:any-link {
+  color: black;
 }
 a:default {
-    color: black;
+  color: black;
 }
 html, body {
 
   background-color: #FFFFFF;
   color: black !important;
   font-family: "DIN Regular", sans-serif;
-    height: 100vh;
+  height: 100vh;
   overflow-y: hidden;
 
 }
 
 .nav {
-    position: absolute;
-    left: 1vw;
-    top: 48vh;
-    transform: rotate(90deg);
-    z-index: 100;
-      font-family: "DIN Regular", sans-serif;
-    color: rgb(0,0,0)!important;
-    font-size: 1.2em;
-    text-decoration: none!important;
-    transition: all .6s ease;
+  position: absolute;
+  left: 1vw;
+  top: 48vh;
+  transform: rotate(90deg);
+  z-index: 100;
+  font-family: "DIN Regular", sans-serif;
+  color: rgb(0,0,0)!important;
+  font-size: 1.2em;
+  text-decoration: none!important;
+  transition: all .6s ease;
 
 }
 
 .nav:hover {
-        opacity: .6;
-    color:black;!important
-text-decoration: none;!important
+  opacity: .6;
+  color:black;!important
+  text-decoration: none;!important
 }
 #sidebar {
   display: block;
   position: absolute;
-    z-index: 10;
+  z-index: 10;
   background-image: linear-gradient(to right, rgba(256,256,256,1), rgba(256,256,256,.9),rgba(256,256,256,.0));
   font-family: "DIN Regular", sans-serif;
   font-size: 1em;
@@ -155,7 +155,7 @@ text-decoration: none;!important
   position: relative;
   height: 53vh;
   min-height: 100px;
-    padding-top: 1em;
+  padding-top: 1em;
   margin-left: 10vw;
   margin-right: 5vw;
   overflow: auto;
@@ -166,10 +166,10 @@ text-decoration: none;!important
 }
 
 .swiper-container {
-    width: 100%;
-    height: 100vh;
-    max-width: 1920px;
-    color: black;
+  width: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  color: black;
 }
 
 .swiper-wrapper {
@@ -202,69 +202,69 @@ text-decoration: none;!important
   width: 100%;
   text-align: center;
   bottom: -2em;
-    color: black;
+  color: black;
 }
 
 /*post modifications*/
 div.caption {
-    color:black;
+  color:black;
 }
 .post {
-    margin-top: 10vw;
-    margin-left: 10vw;
-    margin-bottom: 10vw;
-    width: 40vh;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 10vw;
+  width: 40vh;
 }
 
 .body {
-    font-family: "DIN Light", sans-serif;
-    margin-top: 2em;
+  font-family: "DIN Light", sans-serif;
+  margin-top: 2em;
 }
 
 /*
 .one {
-    opacity: 0;
-    display: hidden;
-    position: absolute;
+  opacity: 0;
+  display: hidden;
+  position: absolute;
 }
 */
 
 
 .year {
-    font-family: "DIN Bold", sans-serif;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 3em;
-    letter-spacing: 0.5em;
+  font-family: "DIN Bold", sans-serif;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 3em;
+  letter-spacing: 0.5em;
 }
 
 .animal {
-    font-family: "DIN Bold", sans-serif;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 3em;
-    letter-spacing: 0.5em;
+  font-family: "DIN Bold", sans-serif;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 3em;
+  letter-spacing: 0.5em;
 }
 
 .producer {
-    font-family: "DIN Light", sans-serif;
+  font-family: "DIN Light", sans-serif;
 
 }
 
 .title {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .link a {
-    color: blue;
-    border-bottom: 2px;
-    border-bottom-color: blue;
+  color: blue;
+  border-bottom: 2px;
+  border-bottom-color: blue;
 }
 
 .arrows-container {
-    display: block;
+  display: block;
   position: absolute;
   bottom: 30px;
   right: 25px;
@@ -278,7 +278,7 @@ div.caption {
   height: 30px;
   background: #fff;
   border-radius: 100%;
-        z-index: 100;
+  z-index: 100;
 }
 
 .swiper-arrow:focus {
@@ -319,7 +319,7 @@ div.caption {
 @media only screen and (max-width: 600px){
 
   .nav {
-      display:none;
+    display:none;
   }
 
   #sidebar {
@@ -347,9 +347,9 @@ div.caption {
   }
 
   .body {
-      display: block;
-      margin: 12vw;
-      width: 76vw;
+    display: block;
+    margin: 12vw;
+    width: 76vw;
   }
 
   #intro {
@@ -364,7 +364,7 @@ div.caption {
     margin-left: 3vh;
     margin-right: 3vh;
     z-index: 10;
-}
+  }
 
   .swiper-container {
     display:block;
@@ -376,7 +376,7 @@ div.caption {
     top: 45vh;
     z-index: 1;
     overflow-y: scroll;
-}
+  }
 
   .swiper-slide {
     height: 40vh;
@@ -387,10 +387,10 @@ div.caption {
   }
 
   .caption {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: -2em;;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -2em;;
   }
 
   .arrows-container {
@@ -401,7 +401,7 @@ div.caption {
 @media only screen and (min-width: 600px) and (max-width: 1024px){
 
   .nav {
-      display:none;
+    display:none;
   }
 
   #sidebar {
@@ -429,9 +429,9 @@ div.caption {
   }
 
   .body {
-      display: block;
-      margin: 12vw;
-      width: 76vw;
+    display: block;
+    margin: 12vw;
+    width: 76vw;
   }
 
   #intro {
@@ -446,7 +446,7 @@ div.caption {
     margin-left: 3vh;
     margin-right: 3vh;
     z-index: 10;
-}
+  }
 
   .swiper-container {
     display:block;
@@ -457,9 +457,9 @@ div.caption {
     padding-bottom:2em;
     top: 33vh;
     z-index: 1;
-        overflow-y: scroll;
+    overflow-y: scroll;
 
-}
+  }
 
   .swiper-slide {
     height: 55vh;
@@ -470,11 +470,11 @@ div.caption {
   }
 
   .caption {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: -2em;
-  font-size:1.1em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -2em;
+    font-size:1.1em;
   }
 
   .arrows-container {
