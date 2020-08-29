@@ -17,3 +17,7 @@ It can be found at https://lunargala.org/
 ## Build
 
 Github pages automatically serves the `master` branch of this repo
+
+## Developing
+
+Since this is a static page, you can just open `index.html` in your browser to see your changes.
