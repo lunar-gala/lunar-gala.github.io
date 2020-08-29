@@ -944,12 +944,12 @@ body {
 
 @font-face {
     font-family: 'DIN Medium';
-    src: url('../../../fonts/dinpro-medium-webfont.eot');
-    src: url('../../../fonts/dinpro-medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
-         url('../../../fonts/dinpro-medium-webfont.woff2') format('woff2'),
-         url('../../../fonts/dinpro-medium-webfont.woff') format('woff'),
-         url('../../../fonts/dinpro-medium-webfont.ttf') format('truetype'),
-         url('../../../fonts/dinpro-bmediumold-webfont.html') format('svg');
+    src: url('../../../../assets/fonts/dinpro-medium-webfont.eot');
+    src: url('../../../../assets/fonts/dinpro-medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../../../../assets/fonts/dinpro-medium-webfont.woff2') format('woff2'),
+         url('../../../../assets/fonts/dinpro-medium-webfont.woff') format('woff'),
+         url('../../../../assets/fonts/dinpro-medium-webfont.ttf') format('truetype'),
+         url('../../../../assets/fonts/dinpro-bmediumold-webfont.html') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -957,12 +957,12 @@ body {
 
 @font-face {
     font-family: 'DIN Regular';
-    src: url('../../../fonts/dinpro-regular-webfont.eot');
-    src: url('../../../fonts/dinpro-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
-         url('../../../fonts/dinpro-regular-webfont.woff2') format('woff2'),
-         url('../../../fonts/dinpro-regular-webfont.woff') format('woff'),
-         url('../../../fonts/dinpro-regular-webfont.ttf') format('truetype'),
-         url('../../../fonts/dinpro-regular-webfont.svg') format('svg');
+    src: url('../../../../assets/fonts/dinpro-regular-webfont.eot');
+    src: url('../../../../assets/fonts/dinpro-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../../../../assets/fonts/dinpro-regular-webfont.woff2') format('woff2'),
+         url('../../../../assets/fonts/dinpro-regular-webfont.woff') format('woff'),
+         url('../../../../assets/fonts/dinpro-regular-webfont.ttf') format('truetype'),
+         url('../../../../assets/fonts/dinpro-regular-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -973,11 +973,11 @@ body {
 
 @font-face {
     font-family: 'DIN Light';
-    src: url('../../../fonts/DIN-Light.eot');
-    src: url('../../../fonts/DIN-Lightd41d.eot?#iefix') format('embedded-opentype'),
-         url('../../../fonts/DIN-Light.woff') format('woff'),
-         url('../../../fonts/DIN-Light.ttf') format('truetype'),
-         url('../../../fonts/DIN-Light.svg') format('svg');
+    src: url('../../../../assets/fonts/DIN-Light.eot');
+    src: url('../../../../assets/fonts/DIN-Lightd41d.eot?#iefix') format('embedded-opentype'),
+         url('../../../../assets/fonts/DIN-Light.woff') format('woff'),
+         url('../../../../assets/fonts/DIN-Light.ttf') format('truetype'),
+         url('../../../../assets/fonts/DIN-Light.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 

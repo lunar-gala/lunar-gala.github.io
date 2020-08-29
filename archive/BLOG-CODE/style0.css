@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,32 +51,32 @@ table {
 
 @font-face {
   font-family: "DIN Black Alternate";
-  src: url("../assets/fonts/DIN-BlackAlternate.ttf");
+  src: url("../../assets/fonts/DIN-BlackAlternate.ttf");
 }
 
 @font-face {
   font-family: "DIN Bold";
-  src: url("../assets/fonts/dinpro-bold-webfont.ttf");
+  src: url("../../assets/fonts/dinpro-bold-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Light";
-  src: url("../assets/fonts/DIN-Light.ttf");
+  src: url("../../assets/fonts/DIN-Light.ttf");
 }
 
 @font-face {
   font-family: "DIN Medium";
-  src: url("../assets/fonts/dinpro-medium-webfont.ttf");
+  src: url("../../assets/fonts/dinpro-medium-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular";
-  src: url("../assets/fonts/dinpro-regular-webfont.ttf");
+  src: url("../../assets/fonts/dinpro-regular-webfont.ttf");
 }
 
 @font-face {
   font-family: "DIN Regular Alternate";
-  src: url("../assets/fonts/DIN-RegularAlternate.ttf");
+  src: url("../../assets/fonts/DIN-RegularAlternate.ttf");
 }
 
 a {
@@ -250,7 +250,7 @@ div.caption {
 
 .producer {
     font-family: "DIN Light", sans-serif;
-    
+
 }
 
 .title {
@@ -316,7 +316,7 @@ div.caption {
   right: 0;
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 600px){
 
   .nav {
       display:none;
@@ -345,11 +345,11 @@ div.caption {
     bottom:none;
     left:0vh;
   }
-    
+
   .body {
       display: block;
       margin: 12vw;
-      width: 76vw;       
+      width: 76vw;
   }
 
   #intro {
@@ -392,13 +392,13 @@ div.caption {
   text-align: center;
   bottom: -2em;;
   }
-    
+
   .arrows-container {
     display: none;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px){ 
+@media only screen and (min-width: 600px) and (max-width: 1024px){
 
   .nav {
       display:none;
@@ -427,11 +427,11 @@ div.caption {
     bottom:none;
     left:0vh;
   }
-    
+
   .body {
       display: block;
       margin: 12vw;
-      width: 76vw;       
+      width: 76vw;
   }
 
   #intro {
@@ -476,7 +476,7 @@ div.caption {
   bottom: -2em;
   font-size:1.1em;
   }
-    
+
   .arrows-container {
     display: none;
   }
