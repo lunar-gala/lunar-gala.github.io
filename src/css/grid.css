@@ -265,16 +265,15 @@ background: white;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-text a{
-    text-decoration: none;
-    color: black;
-}
+
 .mdesc {
-    display: none;
+  display: none;
 }
-    .heads {
-        padding-top: 0vh;
-    }
+
+.heads {
+  padding-top: 0vh;
+}
+
 @media (max-width: 800px) {
     .mdesc {
     display: block;
@@ -336,7 +335,4 @@ text a{
   .grid-system p {
     font-size: 20px;
   }
-}
-img.contact-icon {
-    width: 15%;
 }
