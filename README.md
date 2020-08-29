@@ -7,7 +7,7 @@ It can be found at https://lunargala.org/
 
 - `20xximages/`: images from previous years
 - `archive/`: old LG files
-- `assets/`: put all your media files here! This includes images, fonts, etc.
+- `assets/`: put all your media files here! This includes images, fonts, pdfs, etc.
 - `LG2020/`: content from LG2020
 - `main-content/`: images for the site, should probably go under `assets/`
 - `src/`: code for the site, javascript, css, html
