@@ -11,16 +11,102 @@
   <link rel="stylesheet" type="text/css" href="../src/css/index.css">
   <link rel="stylesheet" type="text/css" href="../src/css/grid.css">
   <link rel="stylesheet" type="text/css" href="../src/css/menu.css">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap.css">
+
+  <!--Bootstrap js, Popper.js and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .section {
+      margin-top: 4rem;
+      padding: 2rem;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .Landing {
+      margin-top: 50px;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    p {
+      margin-right: 1rem;
+    }
+
+    .fixed-image {
+      position: fixed;
+      z-index: -100;
+      top: 0;
+    }
+
+    @media(max-width: 768px) {
+      .section {}
+    }
+
+    /*
+    body {
+      background-image: url(../../assets/img/background.png);
+      background-size: cover;
+      -webkit-transition: all 6s ease;
+      transition: all 6s ease;
+    }*/
+  </style>
+
 </head>
 
 <body>
+
   <div class="fixed-image">
     <div class="background"></div>
     <div class="overlay"></div>
   </div>
 
+  <nav class="nav-left" style="margin-top: 7px;">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="apply.html">Apply</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-container">
+
+    <div class="mobile-head">
+      <div class="title">LUNAR GALA</div>
+      <div class="button-container">
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="back"></div>
+      <div class="links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="info.html">Info</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!--
   <div class="Landing">
-    <text class="heads" id="abt"style="font-size: 1em; letter-spacing: 0px; left: 10vw; position: absolute;   padding-top: 0vh; padding-bottom: 10vh; width: 20vw;">
+    <text class="heads" id="abt"
+      style="font-size: 1em; letter-spacing: 0px; left: 10vw; position: absolute;   padding-top: 0vh; padding-bottom: 10vh; width: 20vw;">
       Apply to Lunar Gala 2021
       <ul>
         <li>
@@ -37,26 +123,28 @@
       </ul>
       <div class="contact-links">
         <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg" style="width:20%;">
-          <img class="contact-icon" src="../assets/icons/Youtube.png"/>
+          <img class="contact-icon" src="../assets/icons/Youtube.png" />
         </a>
         <a href="https://vimeo.com/lunargala">
-          <img class="contact-icon" src="../assets/icons/Vimeo.png"/>
+          <img class="contact-icon" src="../assets/icons/Vimeo.png" />
         </a>
         <a href="https://www.facebook.com/lunargala">
-          <img class="contact-icon" src="../assets/icons/Facebook.png"/>
+          <img class="contact-icon" src="../assets/icons/Facebook.png" />
         </a>
         <a href="https://www.instagram.com/lunargala/">
-          <img class="contact-icon" src="../assets/icons/Instagram.png"/>
+          <img class="contact-icon" src="../assets/icons/Instagram.png" />
         </a>
         <a href="mailto:cmu.lunargala@gmail.com">
-          <img class="contact-icon" src="../assets/icons/Email.png"/>
+          <img class="contact-icon" src="../assets/icons/Email.png" />
         </a>
       </div>
     </text>
   </div>
+  -->
 
   <div class="logo-right dynamic">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 648 792" style="enable-background:new 0 0 0 0; fill: black" xml:space="preserve">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" viewBox="0 0 648 792" style="enable-background:new 0 0 0 0; fill: black" xml:space="preserve">
 
       <text>LUNAR GALA</text>
       <path d="M380,751.3c-3.2-0.4-6.3-0.6-9.5-1.1c-15-2.2-28.6-7.5-39.1-19c-9.7-10.6-13.7-23.2-12-37.3
@@ -68,89 +156,139 @@
       c0.1-0.5,0.1-1,0.2-1.8c-7.9,0-15.6,0-23.7,0c0.8-4.5,1.6-8.8,2.4-13.1c30,0,60,0,90.2,0c-0.7,4.2-1.4,8.3-2.3,12.4
       c-0.1,0.3-1.1,0.7-1.7,0.7c-6.7,0-13.3,0-20,0c-0.7,0-1.4,0-2.2,0c-15.5,86.5-31,172.8-46.5,259.2c-0.8,0-1.5,0-2.2,0
       c-13.1,0-26.2,0-39.3,0c-0.9,0-1.8,0.1-2.6,0.3c-8.2,2.6-16.6,4.2-25.1,4.7c-0.5,0-1,0.2-1.5,0.3C388.5,751.3,384.2,751.3,380,751.3
-      z"/>
-      <path d="M504.7,279.7c0.7-4,1.4-7.7,2-11.5c4-22,7.9-43.9,11.9-65.9c4.1-22.4,8.1-44.8,12.2-67.3
+      z" />
+      <path
+        d="M504.7,279.7c0.7-4,1.4-7.7,2-11.5c4-22,7.9-43.9,11.9-65.9c4.1-22.4,8.1-44.8,12.2-67.3
       c2.7-15.2,5.6-30.3,8.1-45.6c0.7-4,0.6-8.3,0-12.3c-1.2-7.8-6-13-13.5-14.9c-16-4.2-30.6-1.6-43,10c-6.3,5.9-9.4,13.5-10.9,21.9
       c-4.4,25-9.1,49.9-13.7,74.9c-4.3,23.5-8.6,47-12.9,70.6c-4.2,22.9-8.4,45.8-12.6,68.6c-1,5.3-2,10.7-2.9,16c-0.2,1-0.4,1.4-1.5,1.4
       c-13.4,0-26.8,0-40.2,0c-0.2,0-0.5-0.1-0.9-0.1c0.5-3,1.1-6,1.6-9c4.3-23.6,8.7-47.1,13-70.7c4.3-23.2,8.5-46.3,12.8-69.5
       c3.5-19.1,7.1-38.1,10.5-57.2c3.3-18.8,12.9-33.7,27.8-45.3c13.3-10.4,28.4-16.4,45-18.5c11.5-1.5,22.9-1.5,34.3,1.1
       c27,6.2,42.1,30.4,43.9,50.4c0.7,7.6-0.5,15-1.9,22.5c-3.7,20-7.2,40.1-10.8,60.2c-3.8,21.4-7.7,42.9-11.5,64.3
-      c-1.5,8.2-2.9,16.3-4.4,24.5c-0.2,1.1-0.6,1.6-1.8,1.6c-13.1,0-26.2,0-39.3,0C505.8,279.8,505.4,279.7,504.7,279.7z"/>
+      c-1.5,8.2-2.9,16.3-4.4,24.5c-0.2,1.1-0.6,1.6-1.8,1.6c-13.1,0-26.2,0-39.3,0C505.8,279.8,505.4,279.7,504.7,279.7z" />
       <path d="M125.6,739.6c0.6,0.1,1,0.2,1.5,0.2c12-0.1,24.1,0.2,36.1-0.3c16.1-0.6,31-5.2,43.6-15.6
       c8.9-7.3,15.2-16.7,20-27.1c7.1-15.3,12.1-31.4,16.6-47.6c7.1-25.8,12.7-52,17.7-78.4c0.4-2.3,0.9-4.6,1.4-7c2.6,0,5.1,0,7.9,0
       c-11.3,60.7-22.7,121.4-34,182c-64,0-127.8,0-191.9,0c0.3-1.9,0.6-3.6,1.1-5.4c0.1-0.4,1.1-0.7,1.7-0.7c5.8-0.1,11.7,0,17.5,0
       c5.4,0,10.7,0,16.1,0c1.3,0,1.8-0.3,2.1-1.7c3.8-20.1,7.7-40.1,11.5-60.2c4.7-24.3,9.3-48.7,14-73c4.7-24.3,9.3-48.6,14-72.9
       c4.8-24.9,9.6-49.8,14.3-74.8c1.5-7.7,2.9-15.4,4.4-23.1c0.6-3.1,0.2-2.6,3-2.6c12.5,0,25,0,37.5,0c0.7,0,1.4,0,2.5,0
-      C164.6,534.3,145.1,636.9,125.6,739.6z"/>
+      C164.6,534.3,145.1,636.9,125.6,739.6z" />
       <path d="M162,325.5c16.6-86.6,33.2-173,49.8-259.7c-12.1,0-24,0-36.1,0c0.4-2.1,0.7-3.8,1-5.6c0.1-0.3,0.6-0.5,0.9-0.6
       c0.4-0.1,0.8,0,1.2,0c37.1,0,74.2,0,111.3,0c0.6,0,1.3,0,2,0c-0.3,1.6-0.7,3-0.8,4.5c-0.1,1.4-0.8,1.7-2.1,1.7
       c-10.9,0-21.8,0-32.7,0c-3.3,0-2.6-0.5-3.2,2.8c-6.6,34.4-13.1,68.7-19.6,103.1c-7.4,38.8-14.8,77.5-22.1,116.3
-      c-2.3,12-4.6,24.1-6.9,36.1c-0.1,0.5-0.2,1-0.4,1.6C190.2,325.5,176.2,325.5,162,325.5z"/>
-
+      c-2.3,12-4.6,24.1-6.9,36.1c-0.1,0.5-0.2,1-0.4,1.6C190.2,325.5,176.2,325.5,162,325.5z" />
     </svg>
+  </div>
+
+  <div class="Landing container mt-0">
+    <div class="section">
+      <h3>INFO SESSION</h3>
+      <div class="row">
+        <div class="col-3-md mx-lg-3 my-2 ">
+          <p>
+            Sept. 11 @ 7-8:30 PM EST
+            <br> Zoom / Pass: 930402
+            <br> + Google Calendar
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>DESIGN</h3>
+      <div class="row">
+        <div class="col-3-md mx-lg-3 my-2 ">
+          <p>
+            Informal portfolio Review
+            <br> Sept. 14 @ 5 - 10PM EST
+            <br> Zoom + Google Calendar
+          </p>
+        </div>
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Portfolio Deadling
+            <br> Sept. 18 @ 11:59PM EST
+            <br> Google Form
+          </p>
+        </div>
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Interviews
+            <br> Sept. 19-20 @ Time TBD
+            <br> Will be scheduled through email.
+          </p>
+        </div>
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Portfolio resubmission
+            <br> Sept. 25 @ 11:59PM EST
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>MODEL</h3>
+      <div class="row">
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Audition training
+            <br> Sept. 11-12 @ 10PM - 12AM EST
+            <br> CUC Connan
+          </p>
+        </div>
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Auditions
+            <br> Sept. 18-20 @ 5PM - [time]
+            <br> [link]
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>ENTERTAINMENT</h3>
+      <div class="row">
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Auditions
+            <br> Sept.22 @ [time]
+            <br> [link/location]
+          </p>
+        </div>
+        <div class="col-3-md mx-lg-3 my-2">
+          <p>
+            Makeup Auditions
+            <br> Sept.26 @ [time]
+            <br> [link/location]
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg">
+          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Youtube.png" />
+        </a>
+        <a href="https://vimeo.com/lunargala">
+          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Vimeo.png" />
+        </a>
+        <a href="https://www.facebook.com/lunargala">
+          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Facebook.png" />
+        </a>
+        <a href="https://www.instagram.com/lunargala/">
+          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Instagram.png" />
+        </a>
+        <a href="mailto:cmu.lunargala@gmail.com">
+          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Email.png" />
+        </a>
+      </div>
+
+    </div>
 
   </div>
 
-  <nav class="nav-left">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="info.html">Info</a></li>
-      <li><a href="apply.html">Apply</a></li>
-    </ul>
-  </nav>
+</body>
 
-  <div class="mobile-container">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../src/js/index.js"></script>
+<script type="text/javascript" src="../src/js/submenu.js"></script>
 
-    <div class="mobile-head">
-
-      <div class="title">LUNAR GALA</div>
-
-      <div class="button-container">
-        <!--
-          <div class="a">Menu</div>
-          <div class="b">Close</div>
-        -->
-        <span></span>
-        <span></span>
-      </div>
-
-    </div>
-
-    <div class="mobile-menu">
-      <div class="back"></div>
-
-      <div class="links">
-        <ul>
-
-          <!--          <li> <a href="blog.html">Blog</a></li>-->
-          <li><a href="index.html">Home</a></li><li><a href="NEWTIMELINE/index2.html">Timeline</a></li>
-          <li> <a href="BLOG-CODE/blog.html">Blog</a></li>
-
-          <!--
-            <li> <a href="contact.html">Contact</a></li>
-            <li> <a href="https://tickets.lunargala.org">Tickets</a>
-            -->
-          </ul>
-        </div>
-
-        <!--
-          <div class="icons">
-            <ul>
-              <li> <a href="#"><i class="fa fa-youtube-play"></i></a></li>
-              <li> <a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-              <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li> <a href="#"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-          </div>
-        -->
-      </div>
-
-    </div>
-  </body>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../src/js/index.js"></script>
-    <script type="text/javascript" src="../src/js/submenu.js"></script>
 </html>
