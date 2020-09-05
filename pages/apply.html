@@ -28,13 +28,9 @@
 
   <style>
     .section {
-      margin-top: 4rem;
+      margin-top: 3rem;
       padding: 2rem;
-    }
-
-    img {
-      width: 50px;
-      height: 50px;
+      margin-left: 5rem;
     }
 
     .Landing {
@@ -52,17 +48,18 @@
       top: 0;
     }
 
-    @media(max-width: 768px) {
-      .section {}
+    @media(max-width: 1000px) {
+      p {
+        margin-left: 15px;
+      }
+      .section {
+        margin: .5rem;
+        padding: .5rem;
+
+      }
+
     }
 
-    /*
-    body {
-      background-image: url(../../assets/img/background.png);
-      background-size: cover;
-      -webkit-transition: all 6s ease;
-      transition: all 6s ease;
-    }*/
   </style>
 
 </head>
@@ -79,15 +76,18 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="timeline.html">Timeline</a></li>
       <li><a href="info.html">Info</a></li>
-      <li><a href="apply.html">Apply</a></li>
+      <li><a href="#">Apply</a></li>
     </ul>
   </nav>
-  <div class="mobile-container">
 
+  <div class="mobile-container">
     <div class="mobile-head">
       <div class="title">LUNAR GALA</div>
       <div class="button-container">
+        <span></span>
+        <span></span>
       </div>
+
     </div>
     <div class="mobile-menu">
       <div class="back"></div>
@@ -100,47 +100,8 @@
         </ul>
       </div>
     </div>
-
   </div>
 
-  <!--
-  <div class="Landing">
-    <text class="heads" id="abt"
-      style="font-size: 1em; letter-spacing: 0px; left: 10vw; position: absolute;   padding-top: 0vh; padding-bottom: 10vh; width: 20vw;">
-      Apply to Lunar Gala 2021
-      <ul>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_KESvtJ7J0IloBcaLoEcN4r7ccO9NZ-T32d1UXMgxHZOT0w/viewform">
-            Designers
-          </a>
-        </li>
-        <li>
-          Models (TBD)
-        </li>
-        <li>
-          Dancers (TBD)
-        </li>
-      </ul>
-      <div class="contact-links">
-        <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg" style="width:20%;">
-          <img class="contact-icon" src="../assets/icons/Youtube.png" />
-        </a>
-        <a href="https://vimeo.com/lunargala">
-          <img class="contact-icon" src="../assets/icons/Vimeo.png" />
-        </a>
-        <a href="https://www.facebook.com/lunargala">
-          <img class="contact-icon" src="../assets/icons/Facebook.png" />
-        </a>
-        <a href="https://www.instagram.com/lunargala/">
-          <img class="contact-icon" src="../assets/icons/Instagram.png" />
-        </a>
-        <a href="mailto:cmu.lunargala@gmail.com">
-          <img class="contact-icon" src="../assets/icons/Email.png" />
-        </a>
-      </div>
-    </text>
-  </div>
-  -->
 
   <div class="logo-right dynamic">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -178,7 +139,7 @@
     </svg>
   </div>
 
-  <div class="Landing container mt-0">
+  <div class="Landing container">
     <div class="section">
       <h3>INFO SESSION</h3>
       <div class="row">
@@ -225,6 +186,7 @@
         </div>
       </div>
     </div>
+
     <div class="section">
       <h3>MODEL</h3>
       <div class="row">
@@ -244,6 +206,7 @@
         </div>
       </div>
     </div>
+
     <div class="section">
       <h3>ENTERTAINMENT</h3>
       <div class="row">
@@ -280,9 +243,7 @@
           <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Email.png" />
         </a>
       </div>
-
     </div>
-
   </div>
 
 </body>
