@@ -2,10 +2,10 @@
   font-family: 'DIN Bold';
   src: url('../../assets/fonts/dinpro-bold-webfont.eot');
   src: url('../../assets/fonts/dinpro-bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
-       url('../../assets/fonts/dinpro-bold-webfont.woff2') format('woff2'),
-       url('../../assets/fonts/dinpro-bold-webfont.woff') format('woff'),
-       url('../../assets/fonts/dinpro-bold-webfont.ttf') format('truetype'),
-       url('../../assets/fonts/dinpro-bold-webfont.html') format('svg');
+  url('../../assets/fonts/dinpro-bold-webfont.woff2') format('woff2'),
+  url('../../assets/fonts/dinpro-bold-webfont.woff') format('woff'),
+  url('../../assets/fonts/dinpro-bold-webfont.ttf') format('truetype'),
+  url('../../assets/fonts/dinpro-bold-webfont.html') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,10 +14,10 @@
   font-family: 'DIN Medium';
   src: url('../../assets/fonts/dinpro-medium-webfont.eot');
   src: url('../../assets/fonts/dinpro-medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
-       url('../../assets/fonts/dinpro-medium-webfont.woff2') format('woff2'),
-       url('../../assets/fonts/dinpro-medium-webfont.woff') format('woff'),
-       url('../../assets/fonts/dinpro-medium-webfont.ttf') format('truetype'),
-       url('../../assets/fonts/dinpro-medium-webfont.html') format('svg');
+  url('../../assets/fonts/dinpro-medium-webfont.woff2') format('woff2'),
+  url('../../assets/fonts/dinpro-medium-webfont.woff') format('woff'),
+  url('../../assets/fonts/dinpro-medium-webfont.ttf') format('truetype'),
+  url('../../assets/fonts/dinpro-medium-webfont.html') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,10 +26,10 @@
   font-family: 'DIN Regular';
   src: url('../../assets/fonts/dinpro-regular-webfont.eot');
   src: url('../../assets/fonts/dinpro-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
-       url('../../assets/fonts/dinpro-regular-webfont.woff2') format('woff2'),
-       url('../../assets/fonts/dinpro-regular-webfont.woff') format('woff'),
-       url('../../assets/fonts/dinpro-regular-webfont.ttf') format('truetype'),
-       url('../../assets/fonts/dinpro-regular-webfont.svg') format('svg');
+  url('../../assets/fonts/dinpro-regular-webfont.woff2') format('woff2'),
+  url('../../assets/fonts/dinpro-regular-webfont.woff') format('woff'),
+  url('../../assets/fonts/dinpro-regular-webfont.ttf') format('truetype'),
+  url('../../assets/fonts/dinpro-regular-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,9 +38,9 @@
   font-family: 'DIN Light';
   src: url('../../assets/fonts/DIN-Light.eot');
   src: url('../../assets/fonts/DIN-Lightd41d.eot?#iefix') format('embedded-opentype'),
-       url('../../assets/fonts/DIN-Light.woff') format('woff'),
-       url('../../assets/fonts/DIN-Light.ttf') format('truetype'),
-       url('../../assets/fonts/DIN-Light.svg') format('svg');
+  url('../../assets/fonts/DIN-Light.woff') format('woff'),
+  url('../../assets/fonts/DIN-Light.ttf') format('truetype'),
+  url('../../assets/fonts/DIN-Light.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -80,23 +80,22 @@ html, body {
 }
 
 text {
-background: white;
- position: fixed;
- transform: translate(100px, 395px);
- font-family: "Din Regular", sans-serif;
- font-weight: 500;
- font-size: 50px;
- letter-spacing: 16px;
- color: black;
- fill: black;
- -webkit-transition: all 1s ease;
- transition: all 1s ease;
- -webkit-transition-delay: 2s;
- transition-delay: 2s;
+  position: fixed;
+  transform: translate(100px, 395px);
+  font-family: "Din Regular", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 16px;
+  color: black;
+  fill: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
 }
 
 .landing path.active {
-    opacity:0;
+  opacity:0;
 }
 .logo-right path {
   fill: black;
@@ -223,7 +222,7 @@ background: white;
 .grid-system p {
   text-align: left;
   font-size: 1.2rem;
-    line-height: 1.75rem;
+  line-height: 1.75rem;
   font-family: "Din Regular", sans-serif;
 }
 
@@ -275,9 +274,9 @@ background: white;
 }
 
 @media (max-width: 800px) {
-    .mdesc {
+  .mdesc {
     display: block;
-}
+  }
   .grid-system > div.left {
     flex-grow: 0;
     visibility: hidden;
@@ -290,36 +289,36 @@ background: white;
     flex-grow: 0;
     visibility: hidden;
   }
-        #desc {
-        display: none;
+  #desc {
+    display: none;
 
-    }
-    #abt{
-        width:80vw!important;
-        left:-20vw!important;
-    }    .heads {
-        padding-top: 71vh;
-    }
+  }
+  #abt{
+    width:80vw!important;
+    left:-20vw!important;
+  }    .heads {
+    padding-top: 71vh;
+  }
 }
 
 @media (max-width: 800px) {
-    #slideshow {
-        display: none;
-    }
-    .heads {
-        padding-top: 71vh;
-    }
-    .mdesc {
+  #slideshow {
+    display: none;
+  }
+  .heads {
+    padding-top: 71vh;
+  }
+  .mdesc {
     display: block;
-}
-    #desc {
-        display: none;
+  }
+  #desc {
+    display: none;
 
-    }
-    #abt{
-        width:80vw!important;
-        left:-20vw!important;
-    }
+  }
+  #abt{
+    width:80vw!important;
+    left:-20vw!important;
+  }
   .logo-right {
     display: none;
   }
