@@ -167,10 +167,6 @@
   transition: background-color 0.8s ease;
 }
 
-.mobile-head.open {
-  background-color: black;
-}
-
 .mobile-head.open .title {
   color: white;
 }
