@@ -1,0 +1,76 @@
+html, body {
+    overflow-x: hidden;
+    overflow: visible;
+}
+
+h5 {
+    font-family: 'DIN Regular', sans-serif;
+    font-weight: bolder;
+}
+
+.section {
+    margin-left: 5rem;
+}
+
+.Landing {
+    padding-top: 1rem;
+    background: rgba(0, 0, 0, 0);
+}
+
+p {
+    font-family: 'DIN Regular', sans-serif;
+    margin-right: 1rem;
+    font-size: 14px;
+}
+
+#atSign {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 12px;
+}
+
+.fixed-image {
+    position: fixed;
+    z-index: -100;
+    top: 0;
+}
+
+.contact-links {
+    margin-top: 1.5rem;
+}
+
+.contact-links a:hover{
+    text-decoration: none;
+}
+
+@media(max-width: 1000px) {
+    p {
+        margin-left: 15px;
+    }
+    .section {
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .row {
+        display: block;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
+    .Landing {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-links {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(min-width: 1000px) {
+    .Landing {
+        height: 100vh;
+    }
+}

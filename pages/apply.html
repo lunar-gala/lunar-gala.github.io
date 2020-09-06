@@ -3,6 +3,7 @@
 
 <head>
   <title>Lunar Gala</title>
+  <link rel="shortcut icon" href="../assets/img/logo-black.png" />
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Lunar Gala is a student fashion organization of Carnegie Mellon University" />
@@ -11,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../src/css/index.css">
   <link rel="stylesheet" type="text/css" href="../src/css/grid.css">
   <link rel="stylesheet" type="text/css" href="../src/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="../src/css/apply.css">
 
   <!--Bootstrap-->
   <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap.css">
@@ -27,65 +29,32 @@
     crossorigin="anonymous"></script>
 
   <style>
-    html, body {
-      overflow-x: hidden;
-      overflow: visible;
+    .container-fluid {
+      padding-left: 12rem;
     }
 
-    .section {
-      margin-top: .25rem;
-      padding: .5rem;
-      margin-left: 5rem;
+    a {
+      color: black;
+      text-decoration: underline;
+      transition: .3s;
     }
 
-    .Landing {
-      padding-top: 1rem;
-      background: rgba(0, 0, 0, 0);
+    a:hover {
+      color: #888;
+      transition: .3s;
     }
 
-    p {
-      margin-right: 1rem;
-      font-size: 14px;
-    }
-
-    .fixed-image {
-      position: fixed;
-      z-index: -100;
-      top: 0;
-    }
 
     @media(max-width: 1000px) {
-      p {
-        margin-left: 15px;
-      }
-
-      .section {
-        margin: .5rem;
-        padding: .5rem;
-      }
-
       .row {
         display: block;
       }
 
-      h4 {
-        text-decoration: underline;
-      }
-      
-      .Landing {
-        margin-top: 1rem;
-        margin-left: 1rem;
-        padding-left: 1rem;
-      }
-    }
-
-    @media(min-width: 1000px) {
-      .Landing {
-        height: 100vh;
+      .container-fluid {
+        padding-left: 2rem;
       }
     }
   </style>
-
 </head>
 
 <body>
@@ -163,49 +132,49 @@
     </svg>
   </div>
 
-  <div class="Landing container d-flex">
+  <div class="Landing container-fluid d-flex">
     <div class="align-self-lg-center pt-5 pt-lg-0">
       <div class="section">
-        <h4>INFO SESSION</h4>
+        <h5>INFO SESSION</h5>
         <div class="row">
-          <div class="col-3-xl mx-lg-3 my-2 ">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1 ">
             <p>
-              Sept. 11 @ 7-8:30 PM EST
-              <br> Zoom / Pass: 930402
-              <br> + Google Calendar
+              Sept.11 <span id="atSign">@</span> 7-8:30 PM EST
+              <br> <a href="">Zoom</a> / Pass: 930402
+              <br> + <a href="">Google Calendar</a>
             </p>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <h4>DESIGN</h4>
+        <h5>DESIGN</h5>
         <div class="row">
-          <div class="col-3-xl mx-lg-3 my-2 ">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1 ">
             <p>
               Informal portfolio Review
-              <br> Sept. 14 @ 5 - 10PM EST
-              <br> Zoom + Google Calendar
+              <br> Sept.14 <span id="atSign">@</span> 5-10PM EST
+              <br> <a href="">Zoom</a> + <a href="">Google Calendar</a>
             </p>
           </div>
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Portfolio Deadling
-              <br> Sept. 18 @ 11:59PM EST
-              <br> Google Form
+              <br> Sept.18 <span id="atSign">@</span> 11:59PM EST
+              <br> <a href="">Google Form</a>
             </p>
           </div>
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Interviews
-              <br> Sept. 19-20 @ Time TBD
+              <br> Sept.19-20 <span id="atSign">@</span> Time TBD
               <br> Will be scheduled through email.
             </p>
           </div>
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Portfolio resubmission
-              <br> Sept. 25 @ 11:59PM EST
+              <br> Sept.25 <span id="atSign">@</span> 11:59PM EST
               <br>
             </p>
           </div>
@@ -213,59 +182,60 @@
       </div>
 
       <div class="section">
-        <h4>MODEL</h4>
+        <h5>MODEL</h5>
         <div class="row">
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Audition training
-              <br> Sept. 11-12 @ 10PM - 12AM EST
+              <br> Sept.11-12 <span id="atSign">@</span> 10PM-12AM EST
               <br> CUC Connan
             </p>
           </div>
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Auditions
-              <br> Sept. 18-20 @ 5PM - [time]
-              <br> [link]
+              <br> Sept.18-20 <span id="atSign">@</span> 5PM-[time]
+              <br> [<a href="">link</a>]
             </p>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <h4>ENTERTAINMENT</h4>
+        <h5>ENTERTAINMENT</h5>
         <div class="row">
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Auditions
-              <br> Sept.22 @ [time]
-              <br> [link/location]
+              <br> Sept.22 <span id="atSign">@</span> [time]
+              <br> [<a href="">link</a>/location]
             </p>
           </div>
-          <div class="col-3-xl mx-lg-3 my-2">
+          <div class="col-3-xl ml-lg-3 mr-lg-4 my-1">
             <p>
               Makeup Auditions
-              <br> Sept.26 @ [time]
-              <br> [link/location]
+              <br> Sept.26 <span id="atSign">@</span> [time]
+              <br> [<a href="">link</a>/location]
             </p>
           </div>
         </div>
-
-        <div class="contact-links mt-3">
+      </div>
+      <div class="section mt-0 pt-0">
+        <div class="contact-links">
           <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg">
-            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Youtube.png" />
+            <img class="contact-icon" style="width:40px;height:40px;" src="../assets/icons/Youtube.png" />
           </a>
           <a href="https://vimeo.com/lunargala">
-            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Vimeo.png" />
+            <img class="contact-icon" style="width:40px;height:40px;" src="../assets/icons/Vimeo.png" />
           </a>
           <a href="https://www.facebook.com/lunargala">
-            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Facebook.png" />
+            <img class="contact-icon" style="width:40px;height:40px;" src="../assets/icons/Facebook.png" />
           </a>
           <a href="https://www.instagram.com/lunargala/">
-            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Instagram.png" />
+            <img class="contact-icon" style="width:40px;height:40px;" src="../assets/icons/Instagram.png" />
           </a>
           <a href="mailto:cmu.lunargala@gmail.com">
-            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Email.png" />
+            <img class="contact-icon" style="width:40px;height:40px;" src="../assets/icons/Email.png" />
           </a>
         </div>
       </div>
