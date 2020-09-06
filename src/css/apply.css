@@ -42,6 +42,10 @@ p {
     text-decoration: none;
 }
 
+.col-3-xl{
+    width: 230px;
+}
+
 @media(max-width: 1000px) {
     p {
         margin-left: 15px;
