@@ -10,49 +10,12 @@
   }
 }
 
-.mobile-container {
-  position: fixed;
-  z-index: 1000;
-}
-
-.mobile-head {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  z-index: 1000;
-  background: white;
-  opacity: .9;
-  top: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  opacity: 0;
-  pointer-events: none;
-  background: white;
-  z-index: 999;
-  top: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
 .title {
   position: absolute;
   font-family: "DIN Medium", sans-serif;
   line-height: 50px;
   padding-left: 10px;
   color: black;
-}
-
-.mobile-menu.open {
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .back {
@@ -80,7 +43,7 @@
 }
 
 .links ul li a {
-  color: black;
+  color:white;
   text-decoration: none;
 }
 
@@ -126,12 +89,6 @@
   transition-delay: .4s;
 }
 
-.mobile-menu.open .icons ul li {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
 .icons ul li a {
   list-style-type: none;
   height: 20px;
@@ -152,8 +109,9 @@
   cursor: pointer;
 }
 
-
-
+.button-container.open span {
+  background: white;
+}
 
 .button-container span {
   position: absolute;
@@ -161,8 +119,6 @@
   height: 1px;
   left: 55px;
   background:black;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
 }
 
 .button-container span:nth-of-type(1) {
@@ -190,4 +146,52 @@
   -webkit-transform: translate(0, -5px) rotate(135deg);
   transform: translate(0, -5px) rotate(135deg);
   width: 30px;
+}
+
+/* Mobile CSS */
+.mobile-container {
+  position: fixed;
+  z-index: 1000;
+}
+
+.mobile-head {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+  background: transparent;
+  opacity: .9;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: background-color 0.8s ease;
+}
+
+.mobile-head.open .title {
+  color: white;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.8s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: black;
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu.open .icons ul li {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
 }

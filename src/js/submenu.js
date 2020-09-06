@@ -1,6 +1,7 @@
 $(".button-container").click(function() {
   $(".button-container").toggleClass("open");
   $(".mobile-menu").toggleClass("open");
+  $(".mobile-head").toggleClass("open");
 });
 
 
