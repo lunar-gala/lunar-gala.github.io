@@ -54,6 +54,7 @@ p {
 @media(max-width: 1000px) {
     p {
         margin-left: 15px;
+        margin-bottom: 30px;
     }
     .section {
         margin: .5rem;
