@@ -1,0 +1,56 @@
+/* Main.css
+*
+* Used it with apply.html first
+*/
+
+@font-face {
+    font-family: 'din_lightregular';
+    src: url('../../assets/fonts/din-light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/din-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'din_lightregular';
+	/*font-family: Arial;*/
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px; /*or 130% */
+	color: #000000;
+}
+
+.section {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  margin-left: 5rem;
+}
+
+.Landing {
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0);
+}
+
+p {
+  margin-right: 1rem;
+}
+
+.fixed-image {
+  position: fixed;
+  z-index: -100;
+  top: 0;
+}
+
+@media(max-width: 1000px) {
+  p {
+    margin-left: 15px;
+  }
+  .section {
+    margin: .5rem;
+    padding: .5rem;
+
+  }
+
+}
