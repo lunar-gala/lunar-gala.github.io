@@ -10,6 +10,11 @@ h5 {
 
 .section {
     margin-left: 5rem;
+    margin-top: 24px;
+}
+
+.section h5 {
+    font-weight: bold;
 }
 
 .Landing {
@@ -76,5 +81,30 @@ p {
 @media(min-width: 1000px) {
     .Landing {
         height: 100vh;
+    }
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+a:hover {
+    color: #888;
+    transition: .3s;
+}
+
+.container-fluid {
+    padding-left: 11rem;
+}
+
+@media(max-width: 1000px) {
+    .row {
+        display: block;
+    }
+
+    .container-fluid {
+        padding-left: 2rem;
     }
 }
