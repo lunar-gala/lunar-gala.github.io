@@ -25,7 +25,7 @@ h5 {
 p {
     font-family: 'DIN Regular', sans-serif;
     margin-right: 1rem;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #atSign {
@@ -40,7 +40,7 @@ p {
 }
 
 .contact-links {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 .contact-links a:hover{
