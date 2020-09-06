@@ -27,19 +27,25 @@
     crossorigin="anonymous"></script>
 
   <style>
+    html, body {
+      overflow-x: hidden;
+      overflow: visible;
+    }
+
     .section {
-      margin-top: 3rem;
-      padding: 2rem;
+      margin-top: .25rem;
+      padding: .5rem;
       margin-left: 5rem;
     }
 
     .Landing {
-      margin-top: 50px;
+      padding-top: 1rem;
       background: rgba(0, 0, 0, 0);
     }
 
     p {
       margin-right: 1rem;
+      font-size: 14px;
     }
 
     .fixed-image {
@@ -52,14 +58,32 @@
       p {
         margin-left: 15px;
       }
+
       .section {
         margin: .5rem;
         padding: .5rem;
-
       }
 
+      .row {
+        display: block;
+      }
+
+      h4 {
+        text-decoration: underline;
+      }
+      
+      .Landing {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+      }
     }
 
+    @media(min-width: 1000px) {
+      .Landing {
+        height: 100vh;
+      }
+    }
   </style>
 
 </head>
@@ -139,109 +163,111 @@
     </svg>
   </div>
 
-  <div class="Landing container">
-    <div class="section">
-      <h3>INFO SESSION</h3>
-      <div class="row">
-        <div class="col-3-md mx-lg-3 my-2 ">
-          <p>
-            Sept. 11 @ 7-8:30 PM EST
-            <br> Zoom / Pass: 930402
-            <br> + Google Calendar
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>DESIGN</h3>
-      <div class="row">
-        <div class="col-3-md mx-lg-3 my-2 ">
-          <p>
-            Informal portfolio Review
-            <br> Sept. 14 @ 5 - 10PM EST
-            <br> Zoom + Google Calendar
-          </p>
-        </div>
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Portfolio Deadling
-            <br> Sept. 18 @ 11:59PM EST
-            <br> Google Form
-          </p>
-        </div>
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Interviews
-            <br> Sept. 19-20 @ Time TBD
-            <br> Will be scheduled through email.
-          </p>
-        </div>
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Portfolio resubmission
-            <br> Sept. 25 @ 11:59PM EST
-            <br>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>MODEL</h3>
-      <div class="row">
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Audition training
-            <br> Sept. 11-12 @ 10PM - 12AM EST
-            <br> CUC Connan
-          </p>
-        </div>
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Auditions
-            <br> Sept. 18-20 @ 5PM - [time]
-            <br> [link]
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3>ENTERTAINMENT</h3>
-      <div class="row">
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Auditions
-            <br> Sept.22 @ [time]
-            <br> [link/location]
-          </p>
-        </div>
-        <div class="col-3-md mx-lg-3 my-2">
-          <p>
-            Makeup Auditions
-            <br> Sept.26 @ [time]
-            <br> [link/location]
-          </p>
+  <div class="Landing container d-flex">
+    <div class="align-self-lg-center pt-5 pt-lg-0">
+      <div class="section">
+        <h4>INFO SESSION</h4>
+        <div class="row">
+          <div class="col-3-xl mx-lg-3 my-2 ">
+            <p>
+              Sept. 11 @ 7-8:30 PM EST
+              <br> Zoom / Pass: 930402
+              <br> + Google Calendar
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="contact-links">
-        <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg">
-          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Youtube.png" />
-        </a>
-        <a href="https://vimeo.com/lunargala">
-          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Vimeo.png" />
-        </a>
-        <a href="https://www.facebook.com/lunargala">
-          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Facebook.png" />
-        </a>
-        <a href="https://www.instagram.com/lunargala/">
-          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Instagram.png" />
-        </a>
-        <a href="mailto:cmu.lunargala@gmail.com">
-          <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Email.png" />
-        </a>
+      <div class="section">
+        <h4>DESIGN</h4>
+        <div class="row">
+          <div class="col-3-xl mx-lg-3 my-2 ">
+            <p>
+              Informal portfolio Review
+              <br> Sept. 14 @ 5 - 10PM EST
+              <br> Zoom + Google Calendar
+            </p>
+          </div>
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Portfolio Deadling
+              <br> Sept. 18 @ 11:59PM EST
+              <br> Google Form
+            </p>
+          </div>
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Interviews
+              <br> Sept. 19-20 @ Time TBD
+              <br> Will be scheduled through email.
+            </p>
+          </div>
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Portfolio resubmission
+              <br> Sept. 25 @ 11:59PM EST
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h4>MODEL</h4>
+        <div class="row">
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Audition training
+              <br> Sept. 11-12 @ 10PM - 12AM EST
+              <br> CUC Connan
+            </p>
+          </div>
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Auditions
+              <br> Sept. 18-20 @ 5PM - [time]
+              <br> [link]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h4>ENTERTAINMENT</h4>
+        <div class="row">
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Auditions
+              <br> Sept.22 @ [time]
+              <br> [link/location]
+            </p>
+          </div>
+          <div class="col-3-xl mx-lg-3 my-2">
+            <p>
+              Makeup Auditions
+              <br> Sept.26 @ [time]
+              <br> [link/location]
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-links mt-3">
+          <a href="https://www.youtube.com/channel/UC5eDMZLUtbDUi2WE2XU8ptg">
+            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Youtube.png" />
+          </a>
+          <a href="https://vimeo.com/lunargala">
+            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Vimeo.png" />
+          </a>
+          <a href="https://www.facebook.com/lunargala">
+            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Facebook.png" />
+          </a>
+          <a href="https://www.instagram.com/lunargala/">
+            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Instagram.png" />
+          </a>
+          <a href="mailto:cmu.lunargala@gmail.com">
+            <img class="contact-icon" style="width:50px;height:50px;" src="../assets/icons/Email.png" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
