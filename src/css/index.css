@@ -43,27 +43,15 @@ img::-moz-selection {
   min-width: 100%;
   min-height: 100%;
   z-index: 0;
-  background-image: url(../../assets/img/background.png);
-  opacity: 0;
+  background-image: url(../../assets/img/bg_web_l.png);
   background-size: cover;
-  -webkit-transition: all 6s ease;
-  transition: all 6s ease;
+  background-position: right center;
+  opacity: 0;
+  transition: opacity 3s;
 }
 
 .background.active {
   opacity: 1;
-}
-
-/* Minimum aspect ratio */
-@media (max-aspect-ratio: 5/4) {
-  .background {
-    background-image: url(../../assets/img/bg_bw_m.jpg);
-    transform: scale(1.5);
-  }
-
-  .background.active {
-    opacity: 0.3;
-  }
 }
 
 .overlay {
