@@ -10,7 +10,6 @@ h5 {
 
 .section {
     margin-left: 5rem;
-    margin-top: 24px;
 }
 
 .section h5 {
@@ -40,7 +39,7 @@ p {
 }
 
 .contact-links {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .contact-links a:hover{

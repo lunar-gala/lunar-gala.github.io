@@ -4,11 +4,20 @@
 
 $(window).scroll(function() {
   var wScroll = $(window).scrollTop();
+
+  // TODO: fix transparency scroll
+  /*
   if (wScroll < $(window).height()) {
     opac = wScroll/400;
-    if (opac > .2) {opac = .2; }
-    $(".overlay").css("opacity", 0.5 + opac);
+    if (opac > .2) {
+      opac = .2;
+    }
+
+    $(".background").css("opacity", 0.5 + opac);
+    $(".mobile-head-background").css("opacity", 0.5 + opac);
   }
+  */
+
   if (wScroll > $(window).height()/2) {
     $(".logo-right").addClass("active");
   } else {
@@ -27,6 +36,7 @@ window.onload = function() {
   $("text").addClass("fade");
 
   $(".background").addClass("active");
+  $(".mobile-head-background").addClass("active");
 }
 
 
