@@ -32,7 +32,8 @@ const DATA =
     "zodiac": "pig",
     "site": "https://2019.lunargala.org/",
     "og": false,
-    "has_bg": false
+    "has_bg": true,
+    "img_ext": "jpg"
   },
   {
     "year": 2018,
