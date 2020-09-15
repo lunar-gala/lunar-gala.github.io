@@ -1,7 +1,22 @@
 /**
  * Code for the timeline swiper.
  *
+ * README:
  * Please edit the DATA variable for future years
+ *
+ * The format is
+ * {
+ *  year:
+ *  title:
+ *  directors:
+ *  description:
+ *  zodiac: zodiac animal
+ *  site: website link
+ *  video: video link
+ *  og: set to false if you want "Year of the <zodiac_animal>" appended to the description
+ *  has_bg: set to true if there exists a background
+ *  img_ext: image extension of the background in assets/img/timeline
+ * }
  */
 
 /** @brief First year of LG */
@@ -288,10 +303,11 @@ function build_timeline () {
     let new_elem = document.createElement('div');
     new_elem.classList.add('swiper-slide');
     new_elem.classList.add(`c${i}`);
+    new_elem.onclick = function on_click () { $('.intro').html(info) };
+    new_elem.style.cursor = 'pointer';
 
     let new_elem_background = document.createElement('div');
     new_elem_background.classList.add('background');
-    new_elem_background.onclick = on_click_function;
 
     if (curr_entry.has_bg) {
       new_elem_background.style = `background-image: url(../assets/img/timeline/${curr_entry.year}.${curr_entry.img_ext})`;
@@ -335,8 +351,6 @@ function build_timeline () {
     new_elem.appendChild(links);
 
     $('.swiper-wrapper').append(new_elem);
-
-    console.log(curr_entry);
   }
 }
 
