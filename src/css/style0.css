@@ -97,6 +97,7 @@ html, body {
   color: black !important;
   font-family: "DIN Regular", sans-serif;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-y: hidden;
 
 }
@@ -153,7 +154,7 @@ html, body {
 #intro {
   display: block;
   position: relative;
-  height: 53vh;
+  height: 40vh;
   min-height: 100px;
   padding-top: 1em;
   margin-left: 10vw;
@@ -324,6 +325,7 @@ div.caption {
   #sidebar {
     position:absolute;
     height:12vh;
+    height: calc(var(--vh, 1vh) * 12);
     width:100%;
     left: 0;
   }
@@ -352,13 +354,14 @@ div.caption {
   }
 
   #intro {
-    display: inline block;
+    display: block;
     position: absolute;
     font-size: 2.2vmax;
     overflow: auto;
-    height:42vh;
+    height: 30vh;
+    height: calc(var(--vh, 1vh) * 30);
     min-height:50px;
-    padding-top:0px;
+    padding-top:25px;
     margin-top: 8vh;
     margin-left: 3vh;
     margin-right: 3vh;
@@ -370,17 +373,19 @@ div.caption {
     position:absolute;
     width: 100%;
     height: 54vh;
-    margin-top:2vh;
+    height: calc(var(--vh, 1vh) * 54);
     padding-bottom:2em;
     top: 45vh;
+    top: calc(var(--vh, 1vh) * 45);
     z-index: 1;
     overflow-y: scroll;
   }
 
   .swiper-slide {
     height: 40vh;
-    min-height: 300px;
+    height: calc(var(--vh, 1vh) * 40);
     width: 28vh;
+    width: calc(var(--vh, 1vh) * 28);
     min-width: 150px;
     margin:2vh;
   }
@@ -433,20 +438,6 @@ div.caption {
     width: 76vw;
   }
 
-  #intro {
-    display: inline block;
-    position: absolute;
-    font-size: 2.2vmax;
-    overflow: auto;
-    height:30vh;
-    min-height:50px;
-    padding-top:25px;
-    margin-top: 8vh;
-    margin-left: 3vh;
-    margin-right: 3vh;
-    z-index: 10;
-  }
-
   .swiper-container {
     display:block;
     position:absolute;
@@ -461,9 +452,10 @@ div.caption {
   }
 
   .swiper-slide {
-    height: 55vh;
-    min-height: 300px;
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     width: 28vh;
+    width: calc(var(--vh, 1vh) * 28);
     min-width: 150px;
     margin:2vh;
   }
