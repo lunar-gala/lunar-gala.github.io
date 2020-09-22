@@ -44,8 +44,8 @@ const DATA =
     "has_bg": true,
     "img_ext": "png",
     "links": {
-      "website": ["http://lunargala.org/LG2020/"],
-      "video": [
+      "website": ["http://2020.lunargala.org"],
+      "livestream": [
         "https://livestream.com/cmutvlive/lg2020/videos/202420260"
       ]
     }
@@ -61,7 +61,7 @@ const DATA =
     "img_ext": "jpg",
     "links": {
       "website": ["https://2019.lunargala.org/"],
-      "video": [
+      "livestream": [
         "https://livestream.com/cmutvlive/lg2019/videos/188209816"
       ]
     }
@@ -78,9 +78,8 @@ const DATA =
     "has_bg": true,
     "video": "https://www.youtube.com/watch?v=KLvRES_aGAs",
     "links": {
-        "website": ["https://2018.lunargala.org"],
-        "video": [
-          "https://www.youtube.com/watch?v=tMoRp8GI53g&list=PLCSO71HhvyTxyoRO8kYOT4EurAb8mDnZ5",
+        "website": ["http://2018.lunargala.org"],
+        "livestream": [
           "https://livestream.com/cmutvlive/ferox/videos/170381507"
         ]
     }
@@ -95,9 +94,11 @@ const DATA =
     "img_ext": "jpg",
     "has_bg": true,
     "links": {
-      "website": ["https://2017.lunargala.org"],
+      "website": ["http://2017.lunargala.org"],
+      "livestream": [
+        "https://livestream.com/cmutvlive/lunargala2017"
+      ],
       "video": [
-        "https://livestream.com/cmutvlive/lunargala2017",
         "https://youtu.be/mthoGEVeMpI",
         "https://youtu.be/ootduS2YHUY",
         "https://youtu.be/ALTPrhvka2I"
@@ -115,9 +116,9 @@ const DATA =
     "og": false,
     "has_bg": true,
     "links": {
-      "website": ["https://2016.lunargala.org"],
+      "website": ["http://2016.lunargala.org"],
+      "livestream": ["https://livestream.com/cmutvlive/lg2016/videos/112298433"],
       "video": [
-        "https://livestream.com/cmutvlive/lg2016/videos/112298433",
         "https://www.youtube.com/watch?v=BNB7bdi2mWw",
         "https://youtu.be/7Au1KumBiYE",
         "https://youtu.be/20bksB2Xd7I"
@@ -134,10 +135,10 @@ const DATA =
     "img_ext": "jpg",
     "has_bg": true,
     "links": {
-      "website": ["https://2015.lunargala.org"],
+      // "website": ["http://2015.lunargala.org"],
       "video": [
         "https://www.youtube.com/watch?v=qA_eEz5e2Go",
-        "https://www.youtube.com/edit?o=U&video_id=8ABvXV5SoBw"
+        "https://www.youtube.com/watch?v=8ABvXV5SoBw"
       ]
     }
   },
@@ -226,13 +227,12 @@ const DATA =
     "img_ext": "jpg",
     "og": false,
     "has_bg": true,
-    "video": "https://www.youtube.com/watch?v=3oMTZ9b1G8s",
     "links": {
       "video": [
         "https://www.youtube.com/watch?v=3oMTZ9b1G8s",
         "https://www.youtube.com/watch?v=oGkypgilCv0",
         "https://vimeo.com/10527379",
-        "https://vimeo.com/9692177"
+        // "https://vimeo.com/9692177", copy-striked
       ]
     }
   },
@@ -486,13 +486,17 @@ function build_timeline () {
       }
     }
 
-    // List out all videos
+    // List out all livestreams, videos, then other links in that order
+    if (curr_entry.links.livestream) {
+      appendLinks(curr_entry.links.livestream, 'Livestream');
+    }
+
     if (curr_entry.links.video) {
       appendLinks(curr_entry.links.video, 'Video');
     }
 
     for (const property in curr_entry.links) {
-      if (property != 'website' && property != 'video') {
+      if (property != 'website' && property != 'livestream' && property != 'video') {
         appendLinks(curr_entry.links[property], property);
       }
     }
