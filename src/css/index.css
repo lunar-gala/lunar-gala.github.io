@@ -2,32 +2,11 @@
  * Main stylesheet, common styles used throughout the website
  */
 
- /* Highlight Color */
-
-::-moz-selection {
-  text-shadow: none;
-  background: #333;
-  color: white;
-}
-
-::selection {
-  text-shadow: none;
-  background: #333;
-  color: white;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
 .Landing {
   width: 100%;
-  height: 100vh;
   background: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .fixed-image {
@@ -63,21 +42,25 @@ img::-moz-selection {
   opacity: 0.1;
 }
 
+.logo-wrapper {
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(.2);
-  transform: translate(-50%, -50%) scale(.2);
+  width: 350px;
 }
 
 @media (max-width: 800px) {
   .logo {
-    -webkit-transform: translate(-50%, -50%) scale(.5);
-    transform: translate(-50%, -50%) scale(.5);
+    width: 250px;
+    z-index: 1000;
   }
 }
-
 
 path {
   -webkit-transition: stroke-dashoffset 3s ease, fill 1s ease 2s;
@@ -337,22 +320,4 @@ text.fade {
 
 .hover-img-6 {
   background-image: url(../../assets/img/6.jpg);
-}
-
-/* Links */
-text a{
-    color: black;
-}
-
-/* Contact links */
-.contact-links {
-  margin-top: 120px;
-}
-
-.contact-links a {
-  text-decoration: none;
-}
-
-img.contact-icon {
-    width: 15%;
 }
