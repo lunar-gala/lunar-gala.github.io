@@ -21,3 +21,7 @@ Github pages automatically serves the `master` branch of this repo
 ## Developing
 
 Since this is a static page, you can just open `index.html` in your browser to see your changes.
+
+## Design doc
+
+[Figma Here](https://www.figma.com/file/IDfrngBNxcVzKtSXMcOvEx/LG%3A-Website-Wireframes?node-id=144%3A2)
