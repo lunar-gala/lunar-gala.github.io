@@ -143,6 +143,10 @@ text {
   opacity: .6;
 }
 
+.nav-left #nav-active {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.750);
+}
+
 .grid-system {
   position: relative;
   margin: 0;
