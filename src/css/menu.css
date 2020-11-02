@@ -160,7 +160,6 @@
   top: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  /*transition: background-color 0.8s ease;*/
   overflow: hidden;
 }
 
@@ -173,7 +172,6 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  /*background-color: white;*/
   width: 100%;
 }
 
@@ -181,19 +179,12 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  /*background-image: url(../../assets/img/bg_web_l.png);*/
   background-color: black;
   width: 100%;
   height: 100vh;
-  /*background-size: cover;
-  background-position: right center;*/
   transition: opacity 3s;
   opacity: 0;
 }
-
-/*.mobile-head .mobile-head-background.active {
-  opacity: 1;
-}*/
 
 .mobile-head .title {
   z-index: 1000;

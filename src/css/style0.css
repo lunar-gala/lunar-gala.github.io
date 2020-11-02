@@ -222,15 +222,6 @@ div.caption {
   margin-top: 2em;
 }
 
-/*
-.one {
-  opacity: 0;
-  display: hidden;
-  position: absolute;
-}
-*/
-
-
 .year {
   font-family: "DIN Bold", sans-serif;
   color: white;
@@ -472,5 +463,3 @@ div.caption {
     display: none;
   }
 }
-
-/*
