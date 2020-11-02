@@ -4,6 +4,11 @@ $(".button-container").click(function() {
   $(".mobile-head").toggleClass("open");
 });
 
+$(".back").click(function() {
+  $(".button-container").toggleClass("open");
+  $(".mobile-menu").toggleClass("open");
+  $(".mobile-head").toggleClass("open");
+});
 
   $(".one").click(function() {
     $(".one").addClass("active");
