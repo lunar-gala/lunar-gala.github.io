@@ -1,110 +1,115 @@
-html, body {
-    overflow-x: hidden;
-    overflow: visible;
+html,
+body {
+  overflow-x: hidden;
+  overflow: visible;
 }
 
 h5 {
-    font-family: 'DIN Regular', sans-serif;
-    font-weight: bolder;
+  font-family: "DIN Regular", sans-serif;
+  font-weight: bolder;
 }
 
 .section {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .section h5 {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.section:first-child {
+  margin-bottom: 40px;
 }
 
 .Landing {
-    padding-top: 1rem;
-    background: rgba(0, 0, 0, 0);
+  padding-top: 1rem;
+  background: rgba(0, 0, 0, 0);
 }
 
 p {
-    font-family: 'DIN Regular', sans-serif;
-    margin-right: 1rem;
-    font-size: 15px;
+  font-family: "DIN Regular", sans-serif;
+  margin-right: 1rem;
+  font-size: 15px;
 }
 
 #atSign {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
 }
 
 .fixed-image {
-    position: fixed;
-    z-index: -100;
-    top: 0;
+  position: fixed;
+  z-index: -100;
+  top: 0;
 }
 
 .contact-links {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.contact-links a:hover{
-    text-decoration: none;
+.contact-links a:hover {
+  text-decoration: none;
 }
 
-.col-3-xl{
-    width: 230px;
+.col-3-xl {
+  width: 230px;
 }
 
-@media(max-width: 1000px) {
-    p {
-        margin-left: 15px;
-        margin-bottom: 30px;
-    }
-    .section {
-        margin: .5rem;
-        padding: .5rem;
-    }
-    .row {
-        display: block;
-    }
+@media (max-width: 1000px) {
+  p {
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+  .section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .row {
+    display: block;
+  }
 
-    h4 {
-        text-decoration: underline;
-    }
+  h4 {
+    text-decoration: underline;
+  }
 
-    .Landing {
-        margin-top: 1rem;
-        margin-left: 1rem;
-        padding-left: 1rem;
-    }
-    .contact-links {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-    }
+  .Landing {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  .contact-links {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 
-@media(min-width: 1000px) {
-    .Landing {
-        height: 100vh;
-    }
+@media (min-width: 1000px) {
+  .Landing {
+    height: 100vh;
+  }
 }
 
 a {
-    color: black;
-    text-decoration: underline;
-    transition: .3s;
+  color: black;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 a:hover {
-    color: #888;
-    transition: .3s;
+  color: #888;
+  transition: 0.3s;
 }
 
 .container-fluid {
-    padding-left: 11rem;
+  padding-left: 11rem;
 }
 
-@media(max-width: 1000px) {
-    .row {
-        display: block;
-    }
+@media (max-width: 1000px) {
+  .row {
+    display: block;
+  }
 
-    .container-fluid {
-        padding-left: 2rem;
-    }
+  .container-fluid {
+    padding-left: 2rem;
+  }
 }
