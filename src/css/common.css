@@ -12,6 +12,11 @@
   pointer-events: none;
 }
 
+#atSign {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+}
+
 .background {
   position: absolute;
   min-width: 100%;
