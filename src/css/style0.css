@@ -80,21 +80,18 @@ table {
 }
 
 a {
-  color: black;
+  color: #FFF;
 }
 a.dropdown * {
-  color: black;
+  color: #FFF;
 }
 a:any-link {
-  color: black;
+  color: #FFF;
 }
 a:default {
-  color: black;
+  color: #FFF;
 }
 html, body {
-
-  background-color: #FFFFFF;
-  color: black !important;
   font-family: "DIN Regular", sans-serif;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -109,7 +106,7 @@ html, body {
   transform: rotate(90deg);
   z-index: 100;
   font-family: "DIN Regular", sans-serif;
-  color: rgb(0,0,0)!important;
+  color: #FFF !important;
   font-size: 1.2em;
   text-decoration: none!important;
   transition: all .6s ease;
@@ -118,7 +115,7 @@ html, body {
 
 .nav:hover {
   opacity: .6;
-  color:black !important;
+  color:#FFF !important;
   text-decoration: none !important;
 }
 #sidebar {
@@ -170,7 +167,7 @@ html, body {
   width: 100%;
   height: 100vh;
   max-width: 1920px;
-  color: black;
+  color: #FFF;
 }
 
 .swiper-wrapper {
@@ -203,7 +200,7 @@ html, body {
   width: 100%;
   text-align: center;
   bottom: -2em;
-  color: black;
+  color: #FFF;
 }
 
 /*post modifications*/
