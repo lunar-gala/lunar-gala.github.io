@@ -38,9 +38,6 @@
 }
 
 @media (max-width: 800px) {
-  #desc {
-    display: none;
-  }
   .heads {
     padding-top: 71vh;
   }
@@ -49,9 +46,6 @@
 @media (max-width: 800px) {
   .heads {
     padding-top: 71vh;
-  }
-  #desc {
-    display: none;
   }
   .nav-left {
     display: none;
