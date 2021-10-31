@@ -2,6 +2,13 @@
  * Common styles used throughout the website
  */
 
+/* CSS VARIABLES */
+:root {
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-black-gradient: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.9),rgba(0,0,0,.0));
+}
+
 /* Background */
 .fixed-image {
   position: fixed;
@@ -15,18 +22,6 @@
 #atSign {
   font-family: 'Helvetica', sans-serif;
   font-size: 12px;
-}
-
-.background {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 0;
-  background-image: url(../../assets/img/bg_web_l.png);
-  background-size: cover;
-  background-position: right center;
-  opacity: 0;
-  transition: opacity 3s;
 }
 
 .background.active {
@@ -43,8 +38,8 @@
 }
 
 /* Links */
-text a{
-    color: black;
+p, a {
+    color: var(--color-white);
 }
 
 /* Contact links */

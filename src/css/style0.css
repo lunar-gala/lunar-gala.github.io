@@ -118,14 +118,14 @@ html, body {
 
 .nav:hover {
   opacity: .6;
-  color:black;!important
-  text-decoration: none;!important
+  color:black !important;
+  text-decoration: none !important;
 }
 #sidebar {
   display: block;
   position: absolute;
   z-index: 10;
-  background-image: linear-gradient(to right, rgba(256,256,256,1), rgba(256,256,256,.9),rgba(256,256,256,.0));
+  background-image: var(--color-black-gradient);
   font-family: "DIN Regular", sans-serif;
   font-size: 1em;
   top:0;

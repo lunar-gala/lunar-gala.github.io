@@ -17,12 +17,6 @@ $(window).scroll(function() {
     $(".mobile-head-background").css("opacity", 0.5 + opac);
   }
   */
-
-  if (wScroll > $(window).height()/2) {
-    $(".logo-right").addClass("active");
-  } else {
-    $(".logo-right").removeClass("active");
-  }
   if (wScroll > $(window).height()) {
     $(".freeze").addClass("fixed");
   } else {
