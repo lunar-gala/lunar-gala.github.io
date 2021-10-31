@@ -10,6 +10,7 @@ h5 {
 
 .section {
     margin-left: 5rem;
+    margin-bottom: 30px;
 }
 
 .section h5 {
@@ -75,12 +76,6 @@ p {
     .contact-links {
         margin-top: 3rem;
         margin-bottom: 2rem;
-    }
-}
-
-@media(min-width: 1000px) {
-    .Landing {
-        height: 100vh;
     }
 }
 
