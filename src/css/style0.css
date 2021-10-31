@@ -157,6 +157,7 @@ html, body {
   margin-left: 10vw;
   margin-right: 5vw;
   overflow: auto;
+  color: #fff;
 }
 
 .active {
