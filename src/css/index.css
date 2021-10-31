@@ -20,10 +20,67 @@
 .home-img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  filter: grayscale(1.0);
+  transition: filter 750ms;
+}
+
+.home-img:hover {
+  filter: grayscale(0.5);
+}
+
+.home-1 {
+  animation: 75s cubic-bezier(.3,.01,.69,.99) 0s infinite alternate translate-home-1;
 }
 
 .home-2 {
   position: relative;
   top: -25%;
+  animation: 80s cubic-bezier(.3,.01,.69,.99) 0s infinite alternate translate-home-2;
+}
+
+.home-3 {
+  animation: 90s cubic-bezier(.3,.01,.69,.99) 0s infinite alternate translate-home-3;
+}
+
+/* all other browsers */
+@keyframes translate-home-1 {
+  from {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
+}
+
+/* all other browsers */
+@keyframes translate-home-2 {
+  from {
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+  }
+  to {
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+}
+
+/* all other browsers */
+@keyframes translate-home-3 {
+  from {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
 }
