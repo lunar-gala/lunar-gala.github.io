@@ -1,5 +1,28 @@
-/* NAVIGATION */
+/* LOGO */
+.logo {
+    width: 70px;
+}
 
+/* NEW NAVIGATION */
+.nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0 0;
+}
+
+.nav-item {
+    padding-bottom: 0.5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
 
 /* LEGACY NAVIGATION */
 .nav-left {

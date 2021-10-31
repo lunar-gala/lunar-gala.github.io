@@ -1,6 +1,29 @@
 /**
  * Main stylesheet, common styles used throughout the website
  */
-.logo {
-  width: 70px;
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.images {
+  grid-column: 3 / span 9;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.home-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.home-2 {
+  position: relative;
+  top: -25%;
 }
