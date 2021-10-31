@@ -3,6 +3,10 @@
     width: 70px;
 }
 
+.nav-container {
+  grid-column: span 2;
+}
+
 /* NEW NAVIGATION */
 .nav {
     position: fixed;
@@ -22,6 +26,12 @@
 
 .nav-item a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
 }
 
 /* LEGACY NAVIGATION */

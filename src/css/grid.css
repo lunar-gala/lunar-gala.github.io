@@ -24,3 +24,11 @@
 .grid-span-3 {
   grid-column: span 3;
 }
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-column-gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
