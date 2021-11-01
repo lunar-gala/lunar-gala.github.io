@@ -3,6 +3,15 @@
     width: 70px;
 }
 
+.mobile-logo {
+  display: none;
+  z-index: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .nav-container {
   grid-column: span 2;
 }
@@ -31,6 +40,9 @@
 @media screen and (max-width: 768px) {
   .nav-container {
     display: none;
+  }
+  .mobile-logo {
+    display: block;
   }
 }
 

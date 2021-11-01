@@ -46,15 +46,6 @@
   animation: 90s cubic-bezier(.3,.01,.69,.99) 0s infinite alternate translate-home-3;
 }
 
-.mobile-logo {
-  display: none;
-  z-index: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* keyframe animations */
 @keyframes translate-home-1 {
   from { transform: translateY(0);}
@@ -106,9 +97,5 @@
   
   .home-3 {
     animation-duration: 25s;
-  }
-
-  .mobile-logo {
-    display: block;
   }
 }
