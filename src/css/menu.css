@@ -1,10 +1,10 @@
-@media(min-width: 1000px) {
+@media(min-width: 768px) {
   .mobile-container {
     display: none;
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 768px) {
   .nav-left {
     display: none;
   }
@@ -15,7 +15,7 @@
   font-family: "DIN Medium", sans-serif;
   line-height: 50px;
   padding-left: 10px;
-  color: black;
+  color: white;
 }
 
 .links {
@@ -117,7 +117,7 @@
   width: 30px;
   height: 1px;
   left: 55px;
-  background:black;
+  background:white;
 }
 
 .button-container span:nth-of-type(1) {

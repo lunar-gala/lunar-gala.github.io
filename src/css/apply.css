@@ -80,13 +80,13 @@ p {
 }
 
 a {
-    color: black;
+    color: #FFF;
     text-decoration: underline;
     transition: .3s;
 }
 
 a:hover {
-    color: #888;
+    color: #F2f2f2;
     transition: .3s;
 }
 
