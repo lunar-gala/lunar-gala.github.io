@@ -3,26 +3,21 @@ html, body {
     overflow: visible;
 }
 
-h5 {
-    font-family: 'DIN Regular', sans-serif;
-    font-weight: bolder;
-}
-
-.info-section h5 {
-    font-weight: bold;
-}
-
 p {
   font-family: 'DIN Regular', sans-serif;
 }
 
 .applications {
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
-  grid-column: 2 / span 10;
-  grid-template-columns: repeat(10, 1fr);
+  grid-column: 2 / span 11;
+  grid-row-gap: 3rem;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: auto auto;
   grid-column-gap: 2rem;
+  font-weight: 400;
+  margin: 10rem 0;
 }
 
 .info-group {
@@ -31,6 +26,13 @@ p {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2rem;
   font-size: 1rem !important;
+}
+
+.info-group:nth-child(odd) {
+  grid-row: 1;
+}
+.info-group:nth-child(even) {
+  grid-row: 2;
 }
 
 .info-group--col1 {
@@ -46,15 +48,18 @@ p {
   margin: 0px;
   justify-self: flex-end;
   height: 100%;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .info-group__events {
   grid-column: 3 / span 3;
   margin: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
+.info-group__events p:first-child {
+  font-weight: 600;
+}
 
 .info-group__events * {
   margin: 0px;
