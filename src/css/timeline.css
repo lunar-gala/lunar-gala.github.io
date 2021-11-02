@@ -12,4 +12,12 @@
 
 .splide__slide {
     height: 100vh !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.splide__slide img {
+    height: auto;
+    width: 40rem;
 }
