@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-weight: 400;
+}
+
+html {
+    font-family: DIN, Helvetica, sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+}
+
+a {
+    color:  #FFF;
+    text-decoration: none;
+}
