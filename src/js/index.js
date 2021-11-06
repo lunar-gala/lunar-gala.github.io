@@ -3,9 +3,6 @@
  */
 
 window.onload = function() {
-  $("path").addClass("stroke");
-  $("text").addClass("fade");
-
   $(".background").addClass("active");
   $(".mobile-head-background").addClass("active");
 }
