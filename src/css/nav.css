@@ -1,6 +1,6 @@
 /* LOGO */
 .logo {
-    width: 70px;
+    width: 53px;
 }
 
 .nav-container {
@@ -17,7 +17,7 @@
 .nav-list {
     list-style-type: none;
     margin: 0;
-    padding: 1rem 0 0;
+    padding: 2rem 0 0;
 }
 
 .nav-item {
@@ -26,6 +26,11 @@
 
 .nav-item a {
     text-decoration: none;
+    opacity: 0.9;
+}
+
+.nav-item a:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {

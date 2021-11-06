@@ -55,6 +55,17 @@
   transform: translate(-50%, -50%);
 }
 
+.mobile-overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 30vh;
+  color: black;
+  z-index: 1000;
+}
+
 /* keyframe animations */
 @keyframes translate-home-1 {
   from { transform: translateY(0);}
