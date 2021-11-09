@@ -58,24 +58,25 @@
 }
 
 
+/*add old blog posts*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: DIN, sans-serif;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
 /* BODY STYLES */
 body {
   background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'DIN Light', sans-serif;
-}
-
-/*add old blog posts*/
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: "Din Regular", sans-serif;
-  color: var(--color-white);
-  font-weight: 500;
-  font-size: 1em;
-  letter-spacing: 0;
+  font-family: DIN, sans-serif;
+  font-weight: 300;
 }
 
 /* Background */

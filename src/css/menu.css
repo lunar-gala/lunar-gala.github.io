@@ -18,6 +18,12 @@
   color: white;
 }
 
+@media(max-width: 768px) {
+  .title {
+    padding-left: 1rem;
+  }
+}
+
 .links {
   position: absolute;
   top: 200px;
