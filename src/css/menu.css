@@ -221,6 +221,7 @@
 .mobile-menu.open {
   opacity: 1;
   pointer-events: auto;
+  margin: 0 1rem;
 }
 
 .mobile-menu.open .icons ul li {
