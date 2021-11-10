@@ -5,50 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/common.css">
     <link rel="stylesheet" type="text/css" href="src/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
     <link rel="stylesheet" type="text/css" href="src/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
-    <link rel="stylesheet" type="text/css" href="src/css/menu.css">
     <link rel="stylesheet" type="text/css" href="src/css/timeline.css">
-    <link rel="assets/libs/splide/css/splide-core.min.css"></link>
 
-    <script src="assets/libs/splide/js/splide.min.js"></script>
+    <script src="assets/libs/tweezer.js"></script>
     <script src="src/js/timeline.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="grid">
-            <!-- NAV START -->
-            <header class="nav-container">
-                <nav class="nav">
-                    <a href="index.html">
-                        <img class="logo" src="assets/logo/logo-white.svg" />
-                    </a>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="timeline.html">Timeline</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/info.html">Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/apply.html">Apply</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- NAV END -->
-            <div class="splide">
-              <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">Slide 01</li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                    </ul>
-              </div>
-            </div>
-        </div>
-  </div>
+    <div class="grid">
+        <header class="nav-container">
+            <nav class="nav">
+                <a href="index.html">
+                    <img class="logo" src="assets/logo/logo-white.svg" />
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="timeline.html">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/apply.html">Apply</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="timeline"></section>
+        <section class="grid content-grid">
+            <section class="content"></section>
+        </section>
+    </div>
 </body>
 </html>
