@@ -146,7 +146,7 @@ function vh(v) {
     };
 
     const years = await (await fetch('assets/data/timeline.json')).json();;
-    Object.keys(years).forEach((year) => {
+    Object.keys(years).reverse().forEach((year) => {
         const datum = years[year];
 
         const element = document.createElement('div');
