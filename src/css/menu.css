@@ -18,6 +18,12 @@
   color: white;
 }
 
+@media(max-width: 768px) {
+  .title {
+    padding-left: 1rem;
+  }
+}
+
 .links {
   position: absolute;
   top: 200px;
@@ -215,6 +221,7 @@
 .mobile-menu.open {
   opacity: 1;
   pointer-events: auto;
+  margin: 0 1rem;
 }
 
 .mobile-menu.open .icons ul li {

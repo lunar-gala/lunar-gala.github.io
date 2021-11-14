@@ -9,8 +9,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 2rem;
   position: relative;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
+  height: 100%;
 }
 
 .grid-span-1 {
@@ -23,6 +24,18 @@
 
 .grid-span-3 {
   grid-column: span 3;
+}
+
+.grid-row-1 {
+  grid-row: 1;
+}
+
+.grid-row-2 {
+  grid-row: 2;
+}
+
+.grid-row-3 {
+  grid-row: 3;
 }
 
 @media screen and (max-width: 768px) {

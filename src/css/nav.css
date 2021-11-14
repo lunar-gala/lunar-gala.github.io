@@ -3,6 +3,15 @@
     width: 53px;
 }
 
+.mobile-logo {
+  display: none;
+  z-index: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .nav-container {
   grid-column: span 2;
 }
@@ -22,6 +31,20 @@
 
 .nav-item {
     padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.nav-item.active::before {
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 3.5px;
+    height: 3.5px;
+    content: '';
+    position: absolute;
+    vertical-align: middle;
 }
 
 .nav-item a {
@@ -35,6 +58,12 @@
 
 @media screen and (max-width: 767px) {
   .nav-container {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .nav-item.active::before {
     display: none;
   }
 }
