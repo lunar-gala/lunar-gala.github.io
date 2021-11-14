@@ -33,27 +33,6 @@ function vh(v) {
         animation = null;
 
         const currentYear = years[$timeline.children[scrollIndex].dataset.id];
-        $title.textContent = currentYear.title;
-        $subtitle.textContent = currentYear.directors.join(', ');
-        $body.textContent = currentYear.description;
-
-        [].slice.call($content.children).forEach((element) => {
-            if (element.tagName === 'A') {
-                element.remove();
-            }
-        })
-
-        Object.keys(currentYear.links).forEach((link) => {
-            const $link = document.createElement('a');
-            $link.classList.add('link');
-            $link.textContent = `${link} →`;
-            $link.href = currentYear.links[link][0];
-            $link.target = '_blank';
-            $link.rel = 'noopener noreferrer';
-            $content.appendChild($link);
-        });
-
-        $content.classList.remove('blank');
     };
 
     const endAnimation = () => {
@@ -126,8 +105,6 @@ function vh(v) {
     const onInteractionStart = () => {
         endAnimation();
         isActiveInteraction = true;
-
-        $content.classList.add('blank');
     };
 
     const onInteractionEnd = () => {
@@ -140,51 +117,79 @@ function vh(v) {
         if (scrollTimeout) clearTimeout(scrollTimeout);
         if (isActiveInteraction || animation) return;
 
-        $content.classList.add('blank');
-
         scrollTimeout = setTimeout(findSnapTarget, 500);
+    };
+
+    const onScroll = () => {
+        const elementsInView = getElementsInView();
+        [].slice.call($timeline.children).filter((element) => !elementsInView.includes(element)).forEach((element) => element.classList.add('slide-fade'));
+        elementsInView.forEach((element) => element.classList.remove('slide-fade'));
     };
 
     const years = await (await fetch('assets/data/timeline.json')).json();;
     Object.keys(years).reverse().forEach((year) => {
         const datum = years[year];
 
-        const element = document.createElement('div');
-        element.classList.add('slide');
-        element.dataset.id = year;
+        const $slide = document.createElement('div');
+        $slide.classList.add('slide');
+        $slide.dataset.id = year;
 
-        const image = document.createElement('img');
-        image.classList.add('image');
-        image.src = `assets/img/timeline/${year}.jpg`;
+        const $media = document.createElement('div');
+        $media.classList.add('media');
 
-        const caption = document.createElement('p');
-        caption.classList.add('caption');
-        caption.textContent = `${year} / Year of the ${datum.zodiac}`;
+        const $image = document.createElement('img');
+        $image.classList.add('image');
+        $image.src = `assets/img/timeline/${year}.jpg`;
+        $media.appendChild($image);
 
-        element.appendChild(image);
-        element.appendChild(caption);
+        const $caption = document.createElement('p');
+        $caption.classList.add('caption');
+        $caption.textContent = `${year} / Year of the ${datum.zodiac}`;
+        $media.appendChild($caption);
 
-        $timeline.appendChild(element);
+        $slide.appendChild($media);
+
+        const $content = document.createElement('div');
+        $content.classList.add('content');
+
+        const $title = document.createElement('h1');
+        $title.classList.add('title');
+        $title.textContent = datum.title;
+        $content.appendChild($title);
+
+        const $subtitle = document.createElement('h2');
+        $subtitle.classList.add('subtitle');
+        $subtitle.textContent = datum.directors.join(', ');
+        $content.appendChild($subtitle);
+
+        if (datum.description) {
+            const $body = document.createElement('p');
+            $body.classList.add('body');
+            $body.textContent = datum.description;
+            $content.appendChild($body);
+        }
+
+        const $break = document.createElement('p');
+        $break.classList.add('break');
+        $break.textContent = '—';
+        $content.appendChild($break);
+
+        if (datum.links) {
+            Object.keys(datum.links).forEach((link) => {
+                const $link = document.createElement('a');
+                $link.classList.add('link');
+                $link.textContent = `${link} →`;
+                $link.href = datum.links[link];
+                $link.target = '_blank';
+                $link.rel = 'noopener noreferrer';
+                $content.appendChild($link);
+            });
+        }
+
+        $slide.appendChild($content);
+
+        $timeline.appendChild($slide);
     });
-
-    const $content = document.querySelector('.content');
-
-    const $title = document.createElement('h1');
-    $title.classList.add('title');
-    $content.appendChild($title);
-
-    const $subtitle = document.createElement('h2');
-    $subtitle.classList.add('subtitle');
-    $content.appendChild($subtitle);
-
-    const $body = document.createElement('p');
-    $body.classList.add('body');
-    $content.appendChild($body);
-
-    const $break = document.createElement('p');
-    $break.classList.add('break');
-    $break.textContent = '—';
-    $content.appendChild($break);
 
     resetAnimation();
 
@@ -193,6 +198,8 @@ function vh(v) {
     document.addEventListener('touchstart', onInteractionStart, { passive: true });
     document.addEventListener('touchend', onInteractionEnd, { passive: true });
     document.addEventListener('wheel', onInteraction, { passive: true });
+
+    document.addEventListener('scroll', onScroll, { passive: true });
 
     findSnapTarget();
 })();

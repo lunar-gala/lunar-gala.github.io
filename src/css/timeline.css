@@ -1,33 +1,36 @@
 .timeline {
-    grid-column: span 4;
-}
-
-.content-grid {
-    position: fixed;
-    width: 100%;
-}
-
-.content {
-    grid-column: 7 / 11;
-    height: 80vh;
-    padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: opacity 0.3s ease-out;
-}
-
-.blank {
-    opacity: 0;
+    grid-column: 3 / -1;
 }
 
 .slide {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 2rem;
     height: 80vh;
+    margin: 0;
     padding: 5vh 0;
+}
+
+.slide-fade {
+    opacity: 0.5;
 }
 
 .slide:last-child {
     margin-bottom: 10vh;
+}
+
+.media {
+    height: 70vh;
+    grid-column: 1 / 5;
+}
+
+.content {
+    grid-column: 6 / 9;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
 }
 
 .image {
