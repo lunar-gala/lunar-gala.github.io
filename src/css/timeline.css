@@ -1,33 +1,36 @@
 .timeline {
-    grid-column: span 4;
-}
-
-.content-grid {
-    position: fixed;
-    width: 100%;
-}
-
-.content {
-    grid-column: 7 / 11;
-    height: 80vh;
-    padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: opacity 0.3s ease-out;
-}
-
-.blank {
-    opacity: 0;
+    grid-column: 3 / -2;
 }
 
 .slide {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 2rem;
     height: 80vh;
+    margin: 0;
     padding: 5vh 0;
+}
+
+.slide-fade {
+    opacity: 0.5;
 }
 
 .slide:last-child {
     margin-bottom: 10vh;
+}
+
+.media {
+    height: 70vh;
+    grid-column: 1 / 5;
+}
+
+.content {
+    grid-column: 6 / 9;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
 }
 
 .image {
@@ -64,4 +67,43 @@
 .link {
     font-size: 1.6rem;
     opacity: 0.5;
+}
+
+.bar {
+    position: fixed;
+    top: 50%;
+    right: 8.7rem;
+    grid-column: span 1;
+    height: 70rem;
+    width: 0.3rem;
+    transform: translateY(-50%);
+    background-color: #A9A9A9;
+}
+
+.bar::before {
+    content: "2020";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2rem;
+    color: #A9A9A9;
+}
+
+.bar::after {
+    content: "1997";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 2rem;
+    color: #A9A9A9;
+}
+
+.circle {
+    position: absolute;
+    top: 0%;
+    left: -350%;
+    height: 2.4rem;
+    width: 2.4rem;
+    border: .1rem solid #A9A9A9;
+    border-radius: 50%;
 }
