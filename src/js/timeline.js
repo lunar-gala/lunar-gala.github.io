@@ -3,12 +3,14 @@ function vh(v) {
     return (v * h) / 100;
 }
 
-// Based on https://www.npmjs.com/package/react-use-scroll-snap
 (async function() {
     // Use a Promise to wait for the DOM to finish loading.
     await new Promise((resolve, reject) => {
         document.addEventListener('DOMContentLoaded', resolve);
     });
+
+    // Scroll Animation
+    // Based on https://www.npmjs.com/package/react-use-scroll-snap
 
     const $timeline = document.querySelector('.timeline');
     const duration = 100;
@@ -121,9 +123,16 @@ function vh(v) {
     };
 
     const onScroll = () => {
+        // Fade Animation
         const elementsInView = getElementsInView();
         [].slice.call($timeline.children).filter((element) => !elementsInView.includes(element)).forEach((element) => element.classList.add('slide-fade'));
         elementsInView.forEach((element) => element.classList.remove('slide-fade'));
+
+        // Circle Animation - TODO: Sync with other scroll.
+        // if (circleData.clicked) return;
+        // const percentage = Math.min(1, Math.max(0, scrollY / document.body.scrollHeight));
+        // const yCoord = circleData.max * percentage;
+        // $circle.style.top = `${yCoord}px`;
     };
 
     const years = await (await fetch('assets/data/timeline.json')).json();;
@@ -202,4 +211,45 @@ function vh(v) {
     document.addEventListener('scroll', onScroll, { passive: true });
 
     findSnapTarget();
+
+    // Circle Animation
+    const circleData = {
+        clicked: false,
+        current: 0,
+        max: 0
+    };
+    const $bar = document.querySelector('.bar');
+    const $circle = document.querySelector('.circle');
+
+    const barRect = $bar.getBoundingClientRect();
+    const circleRect = $circle.getBoundingClientRect();
+
+    circleData.max = barRect.top + barRect.height - circleRect.height - 70;
+
+    const onCircleSelect = (event) => {
+        event.preventDefault();
+        circleData.clicked = true;
+    };
+
+    const onCircleDeselect = (event) => {
+        circleData.clicked = false;
+    };
+
+    const onCircleMove = (event) => {
+        if (!circleData.clicked) return;
+
+        const rect = $circle.getBoundingClientRect();
+        circleData.current = event.screenY - rect.height - barRect.top - 106;
+
+        const yCoord = Math.min(circleData.max, Math.max(0, circleData.current));
+        $circle.style.top = `${yCoord}px`;
+
+        const percentage = Math.min(1, Math.max(0, circleData.current / circleData.max));
+        const scrollPosition = percentage * document.body.scrollHeight;
+        scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    };
+
+    $circle.addEventListener('mousedown', onCircleSelect);
+    document.addEventListener('mouseup', onCircleDeselect);
+    document.addEventListener('mousemove', onCircleMove);
 })();
