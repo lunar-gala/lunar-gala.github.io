@@ -34,7 +34,7 @@ function vh(v) {
         targetScrollOffset = 0;
         animation = null;
 
-        const currentYear = years[$timeline.children[scrollIndex].dataset.id];
+        $timeline.children[scrollIndex].classList.remove('slide-fade');
     };
 
     const endAnimation = () => {
@@ -125,8 +125,10 @@ function vh(v) {
     const onScroll = () => {
         // Fade Animation
         const elementsInView = getElementsInView();
-        [].slice.call($timeline.children).filter((element) => !elementsInView.includes(element)).forEach((element) => element.classList.add('slide-fade'));
-        elementsInView.forEach((element) => element.classList.remove('slide-fade'));
+        const currentElement = elementsInView[1];
+
+        [].slice.call($timeline.children).filter((element) => currentElement !== element).forEach((element) => element.classList.add('slide-fade'));
+        currentElement.classList.remove('slide-fade');
 
         // Circle Animation - TODO: Sync with other scroll.
         // if (circleData.clicked) return;
