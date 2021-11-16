@@ -108,3 +108,45 @@
     border: .1rem solid #A9A9A9;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1200px) {
+    .timeline {
+        grid-column: 2 / -2;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide:not(:first-child) {
+        padding-top: 0;
+    }
+
+    .slide:last-child {
+        margin-bottom: 0;
+    }
+
+    .slide, .media, .content {
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .caption {
+        margin: 1.6rem 0;
+        text-align: left;
+    }
+
+    .break {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .body, .bar {
+        display: none;
+    }
+}
