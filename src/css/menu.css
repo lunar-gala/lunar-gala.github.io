@@ -52,114 +52,114 @@
 }
 
 .button-container.open span {
-  background: white;
-  width: 30px;
-  height: 1px;
-  left: 55px;
+    background: white;
+    width: 30px;
+    height: 1px;
+    left: 55px;
 }
 
 .button-container span {
-  position: absolute;
-  width: 30px;
-  height: 1px;
-  left: 55px;
-  background:white;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: 55px;
+    background:white;
 }
 
 .button-container span:nth-of-type(1) {
-  top: 20px;
+    top: 20px;
 }
 
 .button-container span:nth-of-type(2) {
-  top: 30px;
+    top: 30px;
 }
 
 .button-container.open .a {
-  opacity: 0;
+    opacity: 0;
 }
 
 .button-container.open .b {
-  opacity: 1;
+    opacity: 1;
 }
 
 .button-container.open span:nth-of-type(1) {
-  -webkit-transform: translate(0, 5px) rotate(45deg);
-  transform: translate(0, 5px) rotate(45deg);
+    -webkit-transform: translate(0, 5px) rotate(45deg);
+    transform: translate(0, 5px) rotate(45deg);
 }
 
 .button-container.open span:nth-of-type(2) {
-  -webkit-transform: translate(0, -5px) rotate(-45deg);
-  transform: translate(0, -5px) rotate(-45deg);
+    -webkit-transform: translate(0, -5px) rotate(-45deg);
+    transform: translate(0, -5px) rotate(-45deg);
 }
 
 /* Mobile CSS */
 .mobile-container {
-  position: fixed;
-  z-index: 1000;
+    position: fixed;
+    z-index: 1000;
 }
 
 .mobile-head {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  top: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
 }
 
 .mobile-head.open {
-  z-index: 10000;
-  background-color: black !important;
+    z-index: 10000;
+    background-color: black !important;
 }
 
 .mobile-head .mobile-head-background-backdrop {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 .mobile-head .mobile-head-background {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-  transition: opacity 3s;
-  opacity: 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 3s;
+    opacity: 0;
 }
 
 .mobile-head .title {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .mobile-head .button-container {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .mobile-head.open .title {
-  color: white;
+    color: white;
 }
 
 .mobile-menu {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  transition: all 0.8s ease;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 999;
-  top: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.8s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background-color: black;
 }
 
 .mobile-menu.open {
-  opacity: 1;
-  pointer-events: auto;
-  margin: 0 1rem;
+    opacity: 1;
+    pointer-events: auto;
+    margin: 0 1rem;
 }

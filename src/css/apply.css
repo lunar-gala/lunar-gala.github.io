@@ -3,26 +3,8 @@ html, body {
     overflow: visible;
 }
 
-h5 {
-    font-family: 'DIN Regular', sans-serif;
-    font-weight: bolder;
-}
-
-.info-section h5 {
-    font-weight: bold;
-}
-
 p {
   font-family: 'DIN Regular', sans-serif;
-}
-
-.applications {
-  display: grid;
-  align-items: center;
-  height: 100vh;
-  grid-column: 2 / span 10;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 2rem;
 }
 
 .info-group {
