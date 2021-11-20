@@ -254,7 +254,7 @@
     const barRect = $bar.getBoundingClientRect();
     const circleRect = $circle.getBoundingClientRect();
 
-    circleData.max = barRect.top + barRect.height - circleRect.height - 70;
+    circleData.max = barRect.height + (circleRect.height / 2);
 
     const onCircleSelect = (event) => {
         event.preventDefault();
@@ -271,7 +271,7 @@
         const rect = $circle.getBoundingClientRect();
         circleData.current = event.screenY - rect.height - barRect.top - 106;
 
-        const yCoord = Math.min(circleData.max, Math.max(0, circleData.current));
+        const yCoord = Math.min(circleData.max - circleRect.height - (circleRect.height / 2), Math.max(0, circleData.current));
         $circle.style.top = `${yCoord}px`;
 
         const percentage = Math.min(1, Math.max(0, circleData.current / circleData.max));
