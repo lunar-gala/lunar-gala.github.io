@@ -1,8 +1,3 @@
-/* specific to the info page */
-.landing path.active {
-  opacity: 0;
-}
-
 /* GRID */
 .grid {
   display: grid;

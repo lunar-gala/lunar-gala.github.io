@@ -1,21 +1,15 @@
 @media(min-width: 768px) {
-  .mobile-container {
-    display: none;
-  }
-}
-
-@media(max-width: 768px) {
-  .nav-left {
-    display: none;
-  }
+    .mobile-container {
+        display: none;
+    }
 }
 
 .title {
-  position: absolute;
-  font-family: "DIN Medium", sans-serif;
-  line-height: 50px;
-  padding-left: 10px;
-  color: white;
+    position: absolute;
+    font-family: "DIN Medium", sans-serif;
+    line-height: 50px;
+    padding-left: 10px;
+    color: white;
 }
 
 @media(max-width: 768px) {
@@ -25,82 +19,28 @@
 }
 
 .links {
-  position: absolute;
-  top: 200px;
+    position: absolute;
+    top: 200px;
 }
 
 .links ul li {
-  list-style-type: none;
-  font-family: "Din Medium", sans-serif;
-  font-size: 30px;
-  margin-bottom: 10px;
+    list-style-type: none;
+    font-family: "Din Medium", sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .links ul li a {
-  color:white;
-  text-decoration: none;
+    color:white;
+    text-decoration: none;
 }
-
-.icons {
-  position: absolute;
-  bottom: 0px;
-  right: 13px;
-}
-
-.icons ul li {
-  list-style-type: none;
-  height: 40px;
-  width: 40px;
-  margin-bottom: 10px;
-  border: 2px solid #999;
-  color: black;
-  border-radius: 100%;
-  text-align: center;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  -webkit-transform: translate(50px, 0);
-  transform: translate(50px, 0);
-  opacity: 0;
-}
-
-.icons ul li:nth-of-type(2) {
-  -webkit-transition-delay: .1s;
-  transition-delay: .1s;
-}
-
-.icons ul li:nth-of-type(3) {
-  -webkit-transition-delay: .2s;
-  transition-delay: .2s;
-}
-
-.icons ul li:nth-of-type(4) {
-  -webkit-transition-delay: .3s;
-  transition-delay: .3s;
-}
-
-.icons ul li:nth-of-type(5) {
-  -webkit-transition-delay: .4s;
-  transition-delay: .4s;
-}
-
-.icons ul li a {
-  list-style-type: none;
-  height: 20px;
-  color: #fff;
-}
-
-.icons ul li a i {
-  font-size: 24px;
-  line-height: 40px;
-}
-
 
 .button-container {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  right: 0;
-  cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    right: 0;
+    cursor: pointer;
 }
 
 .back {
@@ -222,10 +162,4 @@
   opacity: 1;
   pointer-events: auto;
   margin: 0 1rem;
-}
-
-.mobile-menu.open .icons ul li {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1;
 }
