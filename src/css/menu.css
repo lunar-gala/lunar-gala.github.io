@@ -6,7 +6,8 @@
 
 .title {
     position: absolute;
-    font-family: "DIN Medium", sans-serif;
+    font-family: DIN, sans-serif;
+    font-weight: 500;
     line-height: 50px;
     padding-left: 10px;
     color: white;
@@ -25,14 +26,10 @@
 
 .links ul li {
     list-style-type: none;
-    font-family: "Din Medium", sans-serif;
-    font-size: 30px;
+    font-family: DIN, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
     margin-bottom: 10px;
-}
-
-.links ul li a {
-    color:white;
-    text-decoration: none;
 }
 
 .button-container {

@@ -48,7 +48,7 @@
     opacity: 0.5;
 }
 
-.title, .subtitle, .body {
+.headline, .subtitle, .body {
     font-size: 1.6rem;
 }
 
