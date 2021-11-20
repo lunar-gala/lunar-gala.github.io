@@ -1,0 +1,35 @@
+/* CSS VARIABLES */
+:root {
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-black-gradient: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.9),rgba(0,0,0,.0));
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+html {
+    font-family: DIN, Helvetica, sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    color: var(--color-white);
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+  
