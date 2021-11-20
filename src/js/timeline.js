@@ -62,7 +62,7 @@
         $content.classList.add('content');
 
         const $title = document.createElement('h1');
-        $title.classList.add('title');
+        $title.classList.add('headline');
         $title.textContent = datum.title;
         $content.appendChild($title);
 
