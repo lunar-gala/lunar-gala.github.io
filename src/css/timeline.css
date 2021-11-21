@@ -5,7 +5,7 @@
 .slide {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-column-gap: 2rem;
+    grid-column-gap: 4rem;
     height: 80vh;
     margin: 0;
     padding: 5vh 0;
@@ -47,26 +47,27 @@
 
 .caption {
     margin-top: 1.8rem;
-    font-size: 1.6rem;
+    font-size: var(--body-size);
     text-align: center;
     opacity: 0.5;
 }
 
 .headline, .subtitle, .body {
-    font-size: 1.6rem;
+    font-size: var(--body-size);
 }
 
 .headline{
-    font-weight: 500;
+    font-weight: var(--h1-weight);
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .body {
     padding: 2.5rem 0;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .break {
@@ -74,8 +75,8 @@
 }
 
 .link {
-    font-size: 1.6rem;
-    opacity: 0.5;
+    font-size: var(--body-size);
+    /* opacity: 0.5; */
 }
 
 .bar {

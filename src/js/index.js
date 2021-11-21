@@ -4,7 +4,7 @@
 
 window.onload = function() {
   $(".background").addClass("active");
-  $(".mobile-head-background").addClass("active");
+  // $(".mobile-head-background").addClass("active");
 }
 
 if ($(window).width() > 800) {

@@ -17,7 +17,7 @@ $(".back").click(function() {
 
     $('html, body').animate({
       scrollTop: $(".elem-one").offset().top
-    }, 750);
+    }, 100);
   });
 
   $(".two").click(function() {
@@ -27,7 +27,7 @@ $(".back").click(function() {
 
     $('html, body').animate({
       scrollTop: $(".elem-two").offset().top
-    }, 750);
+    }, 100);
   });
 
   $(".three").click(function() {
@@ -37,5 +37,5 @@ $(".back").click(function() {
 
     $('html, body').animate({
       scrollTop: $(".elem-three").offset().top
-    }, 750);
+    }, 100);
   });

@@ -7,7 +7,8 @@
 .title {
     position: absolute;
     font-family: DIN, sans-serif;
-    font-weight: 500;
+    font-weight: var(--h1-weight);
+    font-size: 1.7rem;
     line-height: 50px;
     padding-left: 10px;
     color: white;
@@ -21,16 +22,24 @@
 
 .links {
     position: absolute;
-    top: 200px;
+    top: 100px;
+    right: 30px;
+    z-index: 1010;
 }
 
-.links ul li {
+.links ul li{
     list-style-type: none;
-    font-family: DIN, sans-serif;
-    font-weight: 500;
-    font-size: 32px;
+    
+    text-align: right;
     margin-bottom: 10px;
 }
+
+.links ul li a{
+    font-family: DIN, sans-serif;
+    font-weight: var(--label-weight);
+    font-size: var(--mobile-menu-size);
+}
+
 
 .button-container {
     position: absolute;
@@ -101,8 +110,8 @@
     height: 50px;
     background: transparent;
     top: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    /* -webkit-transform: translate3d(0, 0, 0); */
+    /* transform: translate3d(0, 0, 0); */
     overflow: hidden;
 }
 
@@ -125,7 +134,7 @@
     background-color: black;
     width: 100%;
     height: 100vh;
-    transition: opacity 3s;
+    /* transition: opacity 0s; */
     opacity: 0;
 }
 
@@ -145,13 +154,13 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    transition: all 0.8s ease;
+    /* transition: all 0.1s ease; */
     opacity: 0;
     pointer-events: none;
     z-index: 999;
     top: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    /* -webkit-transform: translate3d(0, 0, 0); */
+    /* transform: translate3d(0, 0, 0); */
     background-color: black;
 }
 
