@@ -3,6 +3,12 @@
     --color-black: #000;
     --color-white: #FFF;
     --color-black-gradient: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.9),rgba(0,0,0,.0));
+    --body-size: 1.6rem;
+    --body-line-height: 1.25;
+    --mobile-menu-size: 3.2rem;
+    --body-weight: 300;
+    --label-weight: 400;
+    --h1-weight: 500;
 }
 
 *, *::before, *::after {
@@ -10,8 +16,12 @@
     padding: 0;
     box-sizing: inherit;
     font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 1.25;
+}
+
+p,a{
+    font-size: var(--body-size);
+    font-size: var(--body-size);
+    line-height: var(--body-line-height);
 }
 
 html {

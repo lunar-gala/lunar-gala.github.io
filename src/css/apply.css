@@ -11,8 +11,8 @@ p {
   display: grid;
   align-items: flex-start;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 2rem;
-  font-size: 1rem !important;
+  grid-column-gap: 4rem;
+  /* font-size: 1rem !important; */
 }
 
 .info-group--col1 {
@@ -25,7 +25,7 @@ p {
 
 .info-group__label {
   grid-column: 1 / span 2;
-  margin: 0px;
+  margin: 0;
   justify-self: flex-end;
   height: 100%;
 }
