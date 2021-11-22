@@ -16,6 +16,14 @@
   grid-column: span 2;
 }
 
+.nav a {
+  opacity: 1;
+}
+
+.nav a:hover{
+  opacity: .9;
+}
+
 /* NEW NAVIGATION */
 .nav {
     position: fixed;
@@ -60,7 +68,18 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 767px) {
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 15vh;
+  background: linear-gradient(180deg, #000000 30%, rgba(0, 0, 0, 0) 100%);;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
   .nav-container {
     display: none;
   }
@@ -70,4 +89,9 @@
   .nav-item.active::before {
     display: none;
   }
+  .mobile-overlay {
+    display: block;
+  }
 }
+
+

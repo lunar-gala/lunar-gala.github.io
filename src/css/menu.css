@@ -17,6 +17,7 @@
 @media(max-width: 768px) {
   .title {
     padding-left: 1rem;
+    opacity: 1;
   }
 }
 
@@ -38,6 +39,7 @@
     font-family: DIN, sans-serif;
     font-weight: var(--label-weight);
     font-size: var(--mobile-menu-size);
+    opacity: 1;
 }
 
 
@@ -60,14 +62,14 @@
 .button-container.open span {
     background: white;
     width: 30px;
-    height: 1px;
+    height: 2px;
     left: 55px;
 }
 
 .button-container span {
     position: absolute;
     width: 30px;
-    height: 1px;
+    height: 2px;
     left: 55px;
     background:white;
 }
