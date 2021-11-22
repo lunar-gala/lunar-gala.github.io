@@ -42,5 +42,7 @@ body {
 a {
     color: var(--color-white);
     text-decoration: none;
+    opacity: .5;
+    /* border-bottom: 1px solid white; */
 }
   

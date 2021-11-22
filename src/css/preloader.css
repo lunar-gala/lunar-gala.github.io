@@ -16,7 +16,7 @@
     font-family: "noto-serif";
     font-style: italic;
     font-size: 32px;
-    transition: 1s opacity;
+    transition: .5s opacity;
     pointer-events: none;
   }
 

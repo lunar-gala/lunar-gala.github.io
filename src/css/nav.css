@@ -16,6 +16,14 @@
   grid-column: span 2;
 }
 
+.nav a {
+  opacity: 1;
+}
+
+.nav a:hover{
+  opacity: .9;
+}
+
 /* NEW NAVIGATION */
 .nav {
     position: fixed;
