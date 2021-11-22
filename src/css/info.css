@@ -109,6 +109,10 @@
     padding-bottom: 10px;
   }
 
+  .first-label{
+    padding-top: 8rem;
+  }
+
   .info-group__events {
     grid-column: 6 / span 5;
     margin: 0px;

@@ -30,6 +30,12 @@ p {
   height: 100%;
 }
 
+.info-group:first-child .info-group__label{
+  padding-top: 8rem;
+}
+
+
+
 .info-group__events {
   grid-column: 3 / span 3;
   margin: 0px;

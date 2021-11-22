@@ -47,17 +47,6 @@
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4)); /* this doesn't work on img */
 }
 
-.mobile-overlay {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 20vh;
-  background: linear-gradient(180deg, #000000 30%, rgba(0, 0, 0, 0) 100%);;
-  z-index: 1000;
-}
-
 /* keyframe animations */
 @keyframes translate-home-1 {
   from { transform: translateY(0);}
@@ -76,9 +65,6 @@
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
-  .mobile-overlay {
-    display: block;
-  }
 
   .home-1, .home-2, .home-3 {
     grid-column: span 4;

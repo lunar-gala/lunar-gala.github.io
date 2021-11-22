@@ -1,0 +1,25 @@
+.loadingScreen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    overflow-x: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-black);
+    color: #ffbb7c;
+    font-family: "noto-serif";
+    font-style: italic;
+    font-size: 32px;
+    transition: 1s opacity;
+    pointer-events: none;
+  }
+
+  .hideLoading {
+    opacity: 0;
+  }
