@@ -32,11 +32,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .info-group:nth-child(odd) {
+  .row-1 {
     grid-row: 1;
   }
-  .info-group:nth-child(even) {
+  .row-2 {
     grid-row: 2;
+  }
+
+  .row-3 {
+    grid-row: 3;
   }
 }
 

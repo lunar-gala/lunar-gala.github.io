@@ -13,7 +13,9 @@
   height: auto;
   margin-bottom: 2rem;
   filter: grayscale(1.0);
-  transition: filter 750ms;
+  transition: filter 750ms, .2s;
+  transform: scale(1.00);
+  
 }
 
 .home-img:hover {
