@@ -25,7 +25,7 @@ p,a{
 }
 
 html {
-    font-family: DIN, sans-serif;
+    font-family: "DIN", sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
     color: var(--color-white);
