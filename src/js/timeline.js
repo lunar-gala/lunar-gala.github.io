@@ -122,7 +122,7 @@
     };
 
     const resetAnimation = () => {
-        currentScrollOffset = pageYOffset;
+        currentScrollOffset = scrollY;
         targetScrollOffset = 0;
         animation = null;
 
@@ -144,7 +144,7 @@
                 element = element.offsetParent;
                 top += element.offsetTop;
             }
-            return top < (pageYOffset + innerHeight) && (top + height) > pageYOffset;
+            return top < (scrollY + innerHeight) && (top + height) > scrollY;
         });
     };
 
@@ -183,8 +183,8 @@
     };
 
     const findSnapTarget = () => {
-        const deltaY = pageYOffset - currentScrollOffset;
-        currentScrollOffset = pageYOffset;
+        const deltaY = scrollY - currentScrollOffset;
+        currentScrollOffset = scrollY;
 
         const elementsInView = getElementsInView();
         if (!elementsInView || elementsInView.length < 2) return;
