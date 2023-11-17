@@ -16,3 +16,7 @@ Github pages automatically serves the `master` branch of this repo
 ## Developing
 
 Since this is a static page, you can just open `index.html` in your browser to see your changes.
+
+## Installation
+
+Run `npm install csv-parse` to use.

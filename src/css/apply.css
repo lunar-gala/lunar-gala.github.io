@@ -36,6 +36,16 @@ p {
 }
 
 
+a button{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+}
+
 
 .info-group__events {
   grid-column: 3 / span 3;
