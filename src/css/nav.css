@@ -102,4 +102,8 @@
   }
 }
 
+.links a.disabled {
+  pointer-events: none;
+}
+
 
