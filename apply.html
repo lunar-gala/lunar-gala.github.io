@@ -21,12 +21,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
     <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/apply.css">
     <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="src/css/grid.css">
     <link rel="stylesheet" type="text/css" href="src/css/nav.css">
     <link rel="stylesheet" type="text/css" href="src/css/menu.css" />
     <link rel="stylesheet" type="text/css" href="src/css/info.css" />
     <link rel="stylesheet" type="text/css" href="src/css/preloader.css" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
   </head>
 
   <body>
@@ -58,59 +60,78 @@
           <div class="info-group row-1 info-group--col1">
             <p class="info-group__label first-label">DESIGN</p>
             <div class="info-group__events">
-              <p>Info Session</p>
-              <p>Sept. 27 @ 10PM EST</p>
-              <a href="https://cmu.zoom.us/j/8620443535">Zoom link</a>
+              <p id="InfoTitle"></p>
+              <p id="InfoDate"></p>
+              <a href="" id="InfoLink">Zoom link</a>
             </div>
             <div class="info-group__events">
-              <p>Office Hours (optional)</p>
-              <p>Oct. 01 @ TBD</p>
-              <a href="https://cmu.zoom.us/j/8620443535">Zoom link</a>
+              <p id="OHTitle"></p>
+              <p id="OHDate"></p>
+              <a href="" id="OHLink">Zoom link</a>
             </div>
             <div class="info-group__events">
-              <p>Portfolio Deadline</p>
-              <p>Oct. 07 @ 11:59PM EST</p>
-              <a href="https://drive.google.com/file/d/1Og3skfQ5C6ozaFQ6t9MuayNnMa4lmjbO/view?usp=sharing">Submission link</a>
+              <p id="PortfolioTitle"></p>
+              <p id="PortfolioDate"></p>
+              <a href="" id="PortfolioLink">Submission link</a>
             </div>
             <div class="info-group__events">
-              <p>Informal Reviews/Interviews</p>
-              <p>Oct. 08 – Oct.09</p>
-              <p>Will be scheduled via email.</p>
-              <a href="https://cmu.zoom.us/j/8620443535">Zoom link</a>
+              <p id="ReviewsTitle"></p>
+              <p id="ReviewsDate"></p>
+              <p id="ReviewsInfo"></p>
+              <a href="" id="ReviewsLink"></a>
             </div>
             <div class="info-group__events">
-              <p>Portfolio Resubmission</p>
-              <p>Oct. 15 @ 11:59PM EST</p>
+              <p id="ResubmissionTitle"></p>
+              <p id="ResubmissionDate"></p>
+       
               <br />
-              <p><i>Email final portfolio to design@lunargala.org</i></p>
+              <p id = "ResubmissionInfo"><i></i></p>
             </div>
             <div class="info-group__events">
-              <p>Final Decisions</p>
-              <p>Oct. 17</p>
+              <p id="FinalTitle"></p>
+              <p id="FinalDate"></p>
             </div>
             <div class="info-group__events">
-              <p>First Meeting</p>
-              <p>Oct. 18</p>
+              <p id="MeetingTitle"></p>
+              <p id="MeetingDate"></p>
             </div>
           </div>
 
-          
-
           <div class="info-group row-2 info-group--col1">
-            <p class="info-group__label">PRODUCTION</p>
+            <p class="info-group__label">LOCAL DESIGN</p>
             <div class="info-group__events">
-              <p>Application Deadline</p>
-              <p>Dec. 17</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_vkhA6KWCoCI6LYk8y12dH2JvPa5dasNvGbwjZ_91yJqNFw/viewform?usp=send_form">Application form</a>
+              <p  id="LocalDesignTitle">Submission Deadline</p>
+              <p  id="LocalDesignDate">Dec. 31</p>
+              <a id="LocalAppLink1" href="https://docs.google.com/forms/d/e/1FAIpQLSdPzRuNuWOVuwxXtJKGzXJbD2TlFAGnmn7WRHcVdGxbxgBqDw/viewform?pli=1" target="_blank"><span>Alumni Form</span></a>
+              <br>
+              <a href = "https://drive.google.com/file/d/1HW6unxYVBAj5BEOnkcrhSW3xcgtrCVCH/view?pli=1">Alumni Instructions</a>
+              <br>
+              <a id="LocalAppLink2" href="https://docs.google.com/forms/d/e/1FAIpQLScoYxabHBYLoemKjkosllbXi21Cf72B-Ea6mHN7Hsu1VBAxgw/viewform" target="_blank"><span>Local Applicant</span></a>
+              <br>
+              <a herf="https://drive.google.com/file/d/1UQFv_LUMpu-yBLNuOye_9y7Bz4uVqN2u/view">Local Instructions</a>
             </div>
           </div>
 
           <div class="info-group row-3 info-group--col1">
+            <p class="info-group__label">PRODUCTION</p>
+            <div class="info-group__events">
+              <p  id="ProductionAppTitle"></p>
+              <p  id="ProductionAppDate"></p>
+              
+              <a id="ProductionAppLink" href="https://docs.google.com/forms/d/e/1FAIpQLSc_vkhA6KWCoCI6LYk8y12dH2JvPa5dasNvGbwjZ_91yJqNFw/viewform?usp=send_form" target="_blank"><button disabled><span>Deadline Passed</span></button></a>
+            </div>
+          </div>
+
+          <div class="info-group row-3 info-group--col2">
             <p class="info-group__label">SOUND DESIGN</p>
             <div class="info-group__events">
-              <p>Application Deadline</p>
-              <p>Jan. 30 ✨</p>
-              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf0XmYFo5uPxw3WBRFdHAWwwXgpw1mLyP4K41_lc-wSEpp5sQ/viewform?usp=send_form">Application form</a>
+              <p id="SoundAppTitle"></p>
+              <p id="SoundAppDate"></p>
+              <a id="SoundAppLink" href="https://docs.google.com/forms/d/e/1FAIpQLSf0XmYFo5uPxw3WBRFdHAWwwXgpw1mLyP4K41_lc-wSEpp5sQ/viewform?usp=send_form" target="_blank">
+                <button disabled>
+                  <span>Deadline Passed</span>
+                </button>
+              </a>              
             </div>
           </div>
           
@@ -124,44 +145,39 @@
           <div class="info-group row-1 info-group--col2">
             <p class="info-group__label">MODEL</p>
             <div class="info-group__events">
-              <p>Pre-Audition Training (optional)</p>
-              <p>Sept. 27 & 29 @ 10PM-12AM EST</p>
-              <p>Location: Simmons A</p>
+              <p id="preTrainingTitle"></p>
+              <p id="preTrainingDate"></p>
+              <p id="preTrainingLocation"></p>
               <br />
-              <p><i>Bring heels</i></p>
+              <p id="preTrainingInfo"><i></i></p>
             </div>
             <div class="info-group__events">
-              <p>Auditions</p>
-              <p>TBD</p>
+              <p id="AuditionTitle"></p>
+              <p id="AuditionDate"></p>
               <br />
-              <p><i>Bring 4+ inch heels and wear black tight fitting clothes</i></p>
+              <p id="AuditionInfo"><i></i></p>
             </div>
             <div class="info-group__events">
-              <p>Info Session</p>
-              <p>Sept. 27 @ 10PM EST</p>
-              <a href="https://cmu.zoom.us/j/8620443535">Zoom link</a>
+              <p id="modelInfoTitle"></p>
+              <p id="modelInfoDate"></p>
+              <a href="https://cmu.zoom.us/j/8620443535" id="modelInfoLink"></a>
             </div>
             <div class="info-group__events">
-              <p>Info Session</p>
-              <p>Sept. 27 @ 10PM EST</p>
-              <a href="https://cmu.zoom.us/j/8620443535">Zoom link</a>
+              <p id="modelDecisionsTitle"></p>
+              <p id="modelDecisionsDate"></p>
             </div>
             <div class="info-group__events">
-              <p>Final Decisions</p>
-              <p>Oct. 09</p>
-            </div>
-            <div class="info-group__events">
-              <p>First Model Practice</p>
-              <p>Oct. 11 @ 10PM-12AM</p>
+              <p id="firstPracticeTitle"></p>
+              <p id="firstPracticeDate"></p>
             </div>
           </div>
 
           <div class="info-group row-2 info-group--col2">
             <p class="info-group__label">CINEMATOGRAPHY</p>
             <div class="info-group__events">
-              <p>Application Deadline</p>
-              <p>Nov. 14</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3SLCfFBIVhKoVYOOHcndEOHC3-uMVJDjoGjYQbgQduAyZaQ/viewform">Application form</a>
+              <p id="CinematographyAppTitle"></p>
+              <p id="CinematographyAppDate"></p>
+              <a id="CinematographyLink" href="https://docs.google.com/forms/d/e/1FAIpQLSe3SLCfFBIVhKoVYOOHcndEOHC3-uMVJDjoGjYQbgQduAyZaQ/viewform" target="_blank"><button disabled><span>Deadline Passed</span></button></a>
             </div>
           </div>
 
@@ -199,6 +215,40 @@
           </div>
       </div>
     </div>
+
+    <script>
+      d3.csv("/data/applyConfig.csv", function (data) {
+        for (var i = 0; i < data.length; i++) {
+            console.log(data[i]);
+
+            console.log(data[i].Title);
+            if (data[i].Title != ""){
+              document.getElementById(`${data[i].id}Title`).innerHTML =
+              data[i].Title;
+            }
+            console.log(data[i].Date); 
+           if (data[i].Date != ""){
+              document.getElementById(`${data[i].id}Date`).innerHTML =
+              data[i].Date;
+            }
+            console.log(data[i].Link);
+            if (data[i].Link != ""){
+              link = document.getElementById(`${data[i].id}Link`);
+              link.href = data[i].Link;
+            }
+            console.log(data[i].Info);
+            if (data[i].Info != ""){
+              document.getElementById(`${data[i].id}Info`).innerHTML =
+              data[i].Info;
+            }
+            console.log(data[i].Location);
+            if (data[i].Location != ""){
+              document.getElementById(`${data[i].id}Location`).innerHTML =
+              data[i].Location;
+            }
+        }
+      });
+    </script>
 
     <script
       type="text/javascript"

@@ -1,4 +1,4 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+
 
 .info-container {
   display: grid;
@@ -30,7 +30,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   align-items: flex-start;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 4rem;
+  grid-row-gap: -0.5rem;
   /* font-size: 1rem; */
+}
+@media screen and (min-width: 1250px) {
+html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 @media screen and (min-width: 768px) {
