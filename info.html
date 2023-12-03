@@ -192,7 +192,7 @@
     <!-- MOBILE NAVIGATION END -->
 
     <script>
-      d3.csv("/data/config.csv", function (data) {
+      d3.csv("/data/infoConfig.csv", function (data) {
         for (var i = 0; i < data.length; i++) {
           document.getElementById(`${data[i].id}Title`).innerHTML =
             data[i].Position;
