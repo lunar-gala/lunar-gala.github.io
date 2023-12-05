@@ -192,12 +192,13 @@
     <!-- MOBILE NAVIGATION END -->
 
     <script>
-      d3.csv("/data/config.csv", function (data) {
+      d3.csv("/data/infoConfig.csv", function (data) {
         for (var i = 0; i < data.length; i++) {
           document.getElementById(`${data[i].id}Title`).innerHTML =
             data[i].Position;
           document.getElementById(`${data[i].id}Name`).innerHTML =
             data[i].Names;
+            console.log(data[i].Email);
           document.getElementById(`${data[i].id}Email`).innerHTML =
             data[i].Email;
         }

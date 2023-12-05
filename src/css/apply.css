@@ -1,11 +1,9 @@
-html, body {
-    overflow-x: hidden;
-    overflow: visible;
-}
+
 
 p {
   font-family: "DIN", sans-serif;
 }
+
 
 .info-group {
   display: grid;
