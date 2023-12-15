@@ -6,7 +6,7 @@
   grid-column: 2 / span 11;
   grid-row-gap: 3rem;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(5, auto);
   grid-column-gap: 4rem;
   margin: 10rem 0;
 }
@@ -72,6 +72,7 @@
   justify-self: flex-end;
   height: 100%;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .info-group__events {
