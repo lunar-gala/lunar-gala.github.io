@@ -30,7 +30,30 @@ p {
 
 
 .info-group:first-child .info-group__label{
-  padding-top: 8rem;
+  padding-top: 0;
+}
+
+.apply-notice {
+  grid-column: 1 / -1;
+  margin: 10rem 0 0;
+  line-height: 1.5;
+}
+
+.apply-notice + .info-container {
+  margin-top: 4rem;
+}
+
+.apply-notice a {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+@media screen and (max-width: 768px) {
+  .apply-notice {
+    grid-column: 1 / -1;
+    margin-top: 6rem;
+  }
 }
 
 
