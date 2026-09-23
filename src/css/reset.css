@@ -2,6 +2,8 @@
 :root {
     --color-black: #000;
     --color-white: #FFF;
+    --page-gutter: 4.8rem;
+    --nav-rail: 26rem;
     --color-black-gradient: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.9),rgba(0,0,0,.0));
     --body-size: 1.6rem;
     --body-line-height: 1.25;

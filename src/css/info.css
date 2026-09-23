@@ -3,7 +3,7 @@
 .info-container {
   display: grid;
   align-items: flex-start;
-  grid-column: 2 / span 11;
+  grid-column: 1 / -1;
   grid-row-gap: 3rem;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(5, auto);
